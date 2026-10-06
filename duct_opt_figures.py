@@ -1,11 +1,11 @@
 """Paper-ready figures and tables for the Stage 2 duct-optimization proof of
-concept (stage_2_plan.txt Section 5B). Reads ONLY artifacts/duct_opt/results.json
+concept (stage_2_plan.txt Section 5B). Reads ONLY results/stage2/results.json
 (measures nothing itself, per plan Section 6/2.2's rule) and writes, per item,
 a vector PDF, a 300-dpi PNG, a CSV twin of the plotted data, and (for tables)
 a LaTeX booktabs file. Also writes captions.md.
 
-Run with:
-    .venv/bin/python examples/scratch/duct_opt_figures.py
+Run with (NumPy and Matplotlib only; no LMhdX needed):
+    python duct_opt_figures.py
 """
 
 from __future__ import annotations
@@ -20,8 +20,8 @@ import numpy as np
 from matplotlib.lines import Line2D
 from matplotlib.patches import Circle, Wedge
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-DATA_DIR = REPO_ROOT / "artifacts" / "duct_opt"
+REPO_ROOT = Path(__file__).resolve().parent
+DATA_DIR = REPO_ROOT / "results" / "stage2"
 FIG_DIR = DATA_DIR / "figures"
 TAB_DIR = DATA_DIR / "tables"
 FIG_DIR.mkdir(parents=True, exist_ok=True)

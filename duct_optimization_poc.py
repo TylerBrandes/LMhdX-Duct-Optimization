@@ -10,15 +10,16 @@ STAGE-BASED, CHECKPOINTED. This sandbox does not keep a detached background
 process alive between conversation turns (its VM is recycled between them),
 so the pipeline cannot simply be launched once and polled later. Instead it
 is a set of small, independent stages, each run to completion inside one
-foreground call and its result merged into artifacts/duct_opt/checkpoint.json
+foreground call and its result merged into results/stage2/checkpoint.json
 immediately -- interrupting the whole run costs at most the one stage in
 flight. List stages with ``--list``; run one with ``--stage NAME``; once
-every stage is done, ``--finalize`` assembles artifacts/duct_opt/results.json
+every stage is done, ``--finalize`` assembles results/stage2/results.json
 for duct_opt_figures.py.
 
-    PYTHONPATH=. .venv/bin/python -u examples/scratch/duct_optimization_poc.py --list
-    PYTHONPATH=. .venv/bin/python -u examples/scratch/duct_optimization_poc.py --stage <name>
-    PYTHONPATH=. .venv/bin/python -u examples/scratch/duct_optimization_poc.py --finalize
+    export PYTHONPATH=.:/path/to/LMhdX     # this repo and the LMhdX checkout (validation/)
+    python -u duct_optimization_poc.py --list
+    python -u duct_optimization_poc.py --stage <name>
+    python -u duct_optimization_poc.py --finalize
 
 Reduced from stage_2_plan.txt Section 5's full scope to fit this sandbox's
 per-call budget: 3 Pareto points per case (not 5-6), 5 design-law H values
@@ -31,6 +32,7 @@ from __future__ import annotations
 
 import argparse
 import dataclasses
+import importlib.metadata
 import platform
 import subprocess
 import sys
@@ -59,8 +61,8 @@ from ductopt.physics import (  # noqa: E402
 
 import lmhdx  # noqa: E402
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
-OUT_DIR = REPO_ROOT / "artifacts" / "duct_opt"
+REPO_ROOT = Path(__file__).resolve().parent
+OUT_DIR = REPO_ROOT / "results" / "stage2"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 CELLS_EXPLORE = 48
@@ -122,10 +124,10 @@ RAMP_REFINE = (1.0, 2.0)
 RAMP_S_STAR = 2.09  # beta* sqrt(Ha*) of the design law (Tier 0, uniform field)
 
 
-def _git_sha() -> str:
+def _git_sha(repo: Path) -> str:
     try:
         return subprocess.run(
-            ["git", "rev-parse", "HEAD"], cwd=REPO_ROOT, capture_output=True, text=True, check=True
+            ["git", "rev-parse", "HEAD"], cwd=repo, capture_output=True, text=True, check=True
         ).stdout.strip()
     except Exception:
         return "unknown"
@@ -585,13 +587,17 @@ def finalize() -> None:
 
     results = {
         "meta": {
-            "git_sha": _git_sha(), "jax_version": jax.__version__, "solvax_version": solvax.__version__,
+            "git_sha": _git_sha(REPO_ROOT),  # this repo: the study code that ran
+            "lmhdx_git_sha": _git_sha(Path(lmhdx.__file__).resolve().parents[2]),
+            "lmhdx_version": importlib.metadata.version("lmhdx"),
+            "jax_version": jax.__version__, "solvax_version": solvax.__version__,
             "python_version": platform.python_version(), "host": platform.platform(),
             "cells_explore": CELLS_EXPLORE, "cells_verify": CELLS_VERIFY,
-            "exits": EXITS, "stage_cost": ckpt.get("stage_cost", {}), "reduced_scope_note":
-                "V_min sweep 3 points, design-law 5+2 H values, validity map 5+1 gamma values "
-                "(stage_2_plan.txt's full counts are 5-6, 8+3, 7+2 respectively; reduced for this "
-                "sandbox's per-call time budget, not for scientific reasons).",
+            "exits": EXITS, "stage_cost": ckpt.get("stage_cost", {}), "scope_note":
+                "Case R: V_min 2, 5, 10, 20, 50 mm/s; Case P a check at 10 mm/s (O3). Design law: 8 H "
+                "plus 2 toward reactor Ha, 3 of them on three meshes. Validity: the open-axis ramp "
+                "(Ha 50, 200; 7 gammas); the periodic map is kept at 5 gammas plus 1 refined. "
+                "Landscapes: 9 aspects x 10 velocities.",
         },
         "inputs": cases.inputs_record(),
     }

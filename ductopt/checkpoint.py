@@ -8,7 +8,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
-CHECKPOINT_PATH = Path(__file__).resolve().parents[3] / "artifacts" / "duct_opt" / "checkpoint.json"
+CHECKPOINT_PATH = Path(__file__).resolve().parents[1] / "results" / "stage2" / "checkpoint.json"
 
 
 def load() -> dict:

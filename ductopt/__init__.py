@@ -1,6 +1,5 @@
-"""Scratch package for the Stage 2 duct-optimization proof of concept.
+"""The duct-optimization study code: evaluator, optimizer, design law, validity.
 
-Not part of the LMX package (examples/scratch/ is untracked). See
-stage_2_plan.txt at the repo root for the derivation, references and exit
-criteria this code implements.
+Runs on LMhdX (installed, with its checkout on PYTHONPATH for
+validation.shercliff); see README.md. Results live in results/<study>/.
 """
