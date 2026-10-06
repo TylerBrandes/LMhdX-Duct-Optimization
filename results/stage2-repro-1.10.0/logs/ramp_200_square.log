@@ -1,0 +1,15 @@
+lmhdx 1.10.0, JAX 0.6.2, SOLVAX 0.19.0
+host: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43, python 3.10.21
+ramp Ha=200 square beta=1.0000...
+WARNING:2026-10-06 14:55:31,942:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  gamma sqrt(Ha)=0.02 base: excess=+0.0067% x0=111 it=251 (22 s)
+  gamma sqrt(Ha)=0.05 base: excess=+0.0384% x0=44.4 it=252 (24 s)
+  gamma sqrt(Ha)=0.1 base: excess=+0.1369% x0=22.2 it=252 (25 s)
+  gamma sqrt(Ha)=0.2 base: excess=+0.4484% x0=11.1 it=250 (30 s)
+  gamma sqrt(Ha)=0.5 base: excess=+1.7604% x0=4.44 it=245 (20 s)
+  gamma sqrt(Ha)=1.0 base: excess=+3.9869% x0=2.22 it=251 (18 s)
+  gamma sqrt(Ha)=1.0 cross_72_9: excess=+3.9734% x0=2.22 it=257 (32 s)
+  gamma sqrt(Ha)=1.0 half_spacing: excess=+3.9950% x0=2.22 it=249 (25 s)
+  gamma sqrt(Ha)=2.0 base: excess=+7.0925% x0=1.11 it=250 (17 s)
+  gamma sqrt(Ha)=2.0 cross_72_9: excess=+7.0691% x0=1.11 it=257 (30 s)
+  gamma sqrt(Ha)=2.0 half_spacing: excess=+7.1137% x0=1.11 it=254 (19 s)

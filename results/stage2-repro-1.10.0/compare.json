@@ -1,0 +1,5572 @@
+{
+  "verify_R_out_2": {
+    "graded": 16,
+    "misses": [],
+    "worst_graded": {
+      "path": "meshes/0/beta_star",
+      "old": 0.14937096219260707,
+      "new": 0.14937096219260707,
+      "rel": 0.0,
+      "rtol": 1e-06,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "V_min",
+      "old": 0.01,
+      "new": 0.01,
+      "rel": 0.0
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "meshes/0/beta_star",
+        "old": 0.14937096219260707,
+        "new": 0.14937096219260707,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/u_multiplier",
+        "old": 6.890170859666662e-05,
+        "new": 6.890170859666662e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/value_star",
+        "old": 4.1184623512381134e-05,
+        "new": 4.1184623512381134e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/w_star",
+        "old": -1.901322388008279,
+        "new": -1.901322388008279,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/beta_star",
+        "old": 0.14849635886421483,
+        "new": 0.14849635886421483,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/u_multiplier",
+        "old": 6.93709474778975e-05,
+        "new": 6.93709474778975e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/value_star",
+        "old": 4.149480511406188e-05,
+        "new": 4.149480511406188e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/w_star",
+        "old": -1.9071948404728858,
+        "new": -1.9071948404728858,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/beta_star",
+        "old": 0.14810819935048533,
+        "new": 0.14810819935048533,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/u_multiplier",
+        "old": 6.958341370004148e-05,
+        "new": 6.958341370004148e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/value_star",
+        "old": 4.1635303059583454e-05,
+        "new": 4.1635303059583454e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/w_star",
+        "old": -1.9098121956319432,
+        "new": -1.9098121956319432,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/W_at_fv_beta",
+        "old": 4.174917636187014e-05,
+        "new": 4.174917636187014e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/beta_star",
+        "old": 0.14779807492473318,
+        "new": 0.14779807492473318,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/value_star",
+        "old": 4.174892716534486e-05,
+        "new": 4.174892716534486e-05,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/w_star",
+        "old": -1.9119082954193471,
+        "new": -1.9119082954193471,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "V_min",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/W/extrapolated",
+        "old": 4.1751635257643046e-05,
+        "new": 4.1751635257643046e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/W/gci_fine",
+        "old": 0.0034925949107752867,
+        "new": 0.0034925949107752867,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/W/order",
+        "old": 1.9532261986297548,
+        "new": 1.9532261986297548,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/W/order_observed",
+        "old": 1.9532261986297548,
+        "new": 1.9532261986297548,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/extrapolated",
+        "old": 0.14779846613247086,
+        "new": 0.14779846613247086,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/gci_fine",
+        "old": 0.0026140789248399205,
+        "new": 0.0026140789248399205,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/order",
+        "old": 2.0035116594407265,
+        "new": 2.0035116594407265,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/order_observed",
+        "old": 2.0035116594407265,
+        "new": 2.0035116594407265,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_2h",
+        "old": -3.402571493538199e-05,
+        "new": -3.402571493538199e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_h",
+        "old": -8.558709031324787e-06,
+        "new": -8.558709031324787e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_richardson",
+        "old": -6.970706330572071e-08,
+        "new": -6.970706330572071e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_small",
+        "old": -1.5249356741194823e-07,
+        "new": -1.5249356741194823e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_2h",
+        "old": -3.3911421805770374e-05,
+        "new": -3.3911421805770374e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_h",
+        "old": -8.526479111643914e-06,
+        "new": -8.526479111643914e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_richardson",
+        "old": -6.483154693509439e-08,
+        "new": -6.483154693509439e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_small",
+        "old": -1.430277627125728e-07,
+        "new": -1.430277627125728e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_2h",
+        "old": -3.384809811248717e-05,
+        "new": -3.384809811248717e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_h",
+        "old": -8.506490666349778e-06,
+        "new": -8.506490666349778e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_richardson",
+        "old": -5.928818430398085e-08,
+        "new": -5.928818430398085e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_small",
+        "old": -1.1114797933394561e-07,
+        "new": -1.1114797933394561e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/W_fv_over_spectral",
+        "old": -0.006092844697184963,
+        "new": -0.006092844697184963,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/beta_fv_over_spectral",
+        "old": 0.0047245807486819835,
+        "new": 0.0047245807486819835,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_2h",
+        "old": -3.3825308737253525e-05,
+        "new": -3.3825308737253525e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_h",
+        "old": -8.494623260343706e-06,
+        "new": -8.494623260343706e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_richardson",
+        "old": -5.106143470709932e-08,
+        "new": -5.106143470709932e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_small",
+        "old": -3.449527356262823e-07,
+        "new": -3.449527356262823e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "w_block_coordinate",
+        "old": -1.8993641201529776,
+        "new": -1.8993641201529776,
+        "rel": 0.0
+      }
+    ]
+  },
+  "dlaw_100": {
+    "graded": 32,
+    "misses": [],
+    "worst_graded": {
+      "path": "meshes/0/Ha_star",
+      "old": 283.7821765213721,
+      "new": 283.7821765213721,
+      "rel": 0.0,
+      "rtol": 1e-06,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "meshes/0/wall_s",
+      "old": 18.077117469999394,
+      "new": 29.419141168997157,
+      "rel": 0.38553211440959245
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "meshes/0/Ha_star",
+        "old": 283.7821765213721,
+        "new": 283.7821765213721,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/beta_star",
+        "old": 0.12417374215924137,
+        "new": 0.12417374215924137,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/dp_square",
+        "old": 107.95686622024932,
+        "new": 107.95686622024932,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/dp_star",
+        "old": 58.62888897182913,
+        "new": 58.62888897182913,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/reduction",
+        "old": 0.4569230191230561,
+        "new": 0.4569230191230561,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/s_star",
+        "old": 2.0918104442579977,
+        "new": 2.0918104442579977,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/value_star",
+        "old": 58.62888897182913,
+        "new": 58.62888897182913,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/w_star",
+        "old": -2.086073547621333,
+        "new": -2.086073547621333,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/Ha_star",
+        "old": 284.7160743963394,
+        "new": 284.7160743963394,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/beta_star",
+        "old": 0.12336047297755533,
+        "new": 0.12336047297755533,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/dp_square",
+        "old": 109.3211012179908,
+        "new": 109.3211012179908,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/dp_star",
+        "old": 59.107428704705725,
+        "new": 59.107428704705725,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/reduction",
+        "old": 0.4593227835599363,
+        "new": 0.4593227835599363,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/s_star",
+        "old": 2.081526859960485,
+        "new": 2.081526859960485,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/value_star",
+        "old": 59.107428704705725,
+        "new": 59.107428704705725,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/w_star",
+        "old": -2.0926445350503164,
+        "new": -2.0926445350503164,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/Ha_star",
+        "old": 285.1332749962664,
+        "new": 285.1332749962664,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/beta_star",
+        "old": 0.12299974053522238,
+        "new": 0.12299974053522238,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/dp_square",
+        "old": 109.94111759078545,
+        "new": 109.94111759078545,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/dp_star",
+        "old": 59.32487302693716,
+        "new": 59.32487302693716,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/reduction",
+        "old": 0.4603941243552595,
+        "new": 0.4603941243552595,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/s_star",
+        "old": 2.0769600665047534,
+        "new": 2.0769600665047534,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/value_star",
+        "old": 59.32487302693716,
+        "new": 59.32487302693716,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/2/w_star",
+        "old": -2.0955730330816813,
+        "new": -2.0955730330816813,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/Ha_star",
+        "old": 285.467752008118,
+        "new": 285.467752008118,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/beta_star",
+        "old": 0.1227116765870423,
+        "new": 0.1227116765870423,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/dp_square",
+        "old": 110.4435544656232,
+        "new": 110.4435544656232,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/dp_star",
+        "old": 59.50105843861529,
+        "new": 59.50105843861529,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/reduction",
+        "old": 0.4612536808824306,
+        "new": 0.4612536808824306,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/s_star",
+        "old": 2.0733108353996546,
+        "new": 2.0733108353996546,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/value_star",
+        "old": 59.50105843861529,
+        "new": 59.50105843861529,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/w_star",
+        "old": -2.0979177680844736,
+        "new": -2.0979177680844736,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/extrapolated",
+        "old": 0.12271218842367998,
+        "new": 0.12271218842367998,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/gci_fine",
+        "old": 0.0029222837207942766,
+        "new": 0.0029222837207942766,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/order",
+        "old": 2.0049212835040757,
+        "new": 2.0049212835040757,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/beta/order_observed",
+        "old": 2.0049212835040757,
+        "new": 2.0049212835040757,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/dp/extrapolated",
+        "old": 59.505964043258956,
+        "new": 59.505964043258956,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/dp/gci_fine",
+        "old": 0.003815663799220628,
+        "new": 0.003815663799220628,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/dp/order",
+        "old": 1.9454113312574834,
+        "new": 1.9454113312574834,
+        "rel": 0.0
+      },
+      {
+        "path": "gci/dp/order_observed",
+        "old": 1.9454113312574834,
+        "new": 1.9454113312574834,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_2h",
+        "old": -3.4142362554447286e-05,
+        "new": -3.4142362554447286e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_h",
+        "old": -8.588071311568565e-06,
+        "new": -8.588071311568565e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_richardson",
+        "old": -6.997423060899108e-08,
+        "new": -6.997423060899108e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_small",
+        "old": -1.5225366335212264e-07,
+        "new": -1.5225366335212264e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/wall_s",
+        "old": 18.077117469999394,
+        "new": 29.419141168997157,
+        "rel": 0.38553211440959245
+      },
+      {
+        "path": "meshes/1/H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_2h",
+        "old": -3.402373723406818e-05,
+        "new": -3.402373723406818e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_h",
+        "old": -8.556851733751286e-06,
+        "new": -8.556851733751286e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_richardson",
+        "old": -6.788990031232111e-08,
+        "new": -6.788990031232111e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_small",
+        "old": -1.4055215235554186e-07,
+        "new": -1.4055215235554186e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/wall_s",
+        "old": 17.2933012579997,
+        "new": 27.347565929987468,
+        "rel": 0.3676475156044125
+      },
+      {
+        "path": "meshes/2/H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_2h",
+        "old": -3.395602181554042e-05,
+        "new": -3.395602181554042e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_h",
+        "old": -8.540688563441937e-06,
+        "new": -8.540688563441937e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_richardson",
+        "old": -6.891081274244287e-08,
+        "new": -6.891081274244287e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/dW_dw_rel_small",
+        "old": -1.2199964038965254e-07,
+        "new": -1.2199964038965254e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/2/wall_s",
+        "old": 18.788162333999935,
+        "new": 28.825660464994144,
+        "rel": 0.3482139860484285
+      },
+      {
+        "path": "spectral/H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_2h",
+        "old": -3.390508542228679e-05,
+        "new": -3.390508542228679e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_h",
+        "old": -8.50205839223745e-06,
+        "new": -8.50205839223745e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_richardson",
+        "old": -3.4382715554336606e-08,
+        "new": -3.4382715554336606e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_small",
+        "old": -2.0926132347586416e-07,
+        "new": -2.0926132347586416e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      }
+    ]
+  },
+  "dlaw_1000": {
+    "graded": 32,
+    "misses": [],
+    "worst_graded": {
+      "path": "meshes/0/Ha_star",
+      "old": 6108.846423466983,
+      "new": 6108.846423466983,
+      "rel": 0.0,
+      "rtol": 1e-06,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "meshes/0/wall_s",
+      "old": 31.673185229999945,
+      "new": 30.186668526002904,
+      "rel": 0.046932971635232114
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "meshes/0/Ha_star",
+        "old": 6108.846423466983,
+        "new": 6108.846423466983,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/beta_star",
+        "old": 0.026796716760052606,
+        "new": 0.026796716760052606,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/dp_square",
+        "old": 1003.0121424795266,
+        "new": 1003.0121424795266,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/dp_star",
+        "old": 271.67579566246457,
+        "new": 271.67579566246457,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/reduction",
+        "old": 0.7291400730295645,
+        "new": 0.7291400730295645,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/s_star",
+        "old": 2.094407523883722,
+        "new": 2.094407523883722,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/value_star",
+        "old": 271.67579566246457,
+        "new": 271.67579566246457,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/0/w_star",
+        "old": -3.6194759079234218,
+        "new": -3.6194759079234218,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/Ha_star",
+        "old": 6127.06775435447,
+        "new": 6127.06775435447,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/beta_star",
+        "old": 0.026637571855913703,
+        "new": 0.026637571855913703,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/dp_square",
+        "old": 1017.0092667551094,
+        "new": 1017.0092667551094,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/dp_star",
+        "old": 273.52280745470244,
+        "new": 273.52280745470244,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/reduction",
+        "old": 0.7310518041517853,
+        "new": 0.7310518041517853,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/s_star",
+        "old": 2.085071613119214,
+        "new": 2.085071613119214,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/value_star",
+        "old": 273.52280745470244,
+        "new": 273.52280745470244,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "meshes/1/w_star",
+        "old": -3.6254325840138337,
+        "new": -3.6254325840138337,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/Ha_star",
+        "old": 6141.699038794454,
+        "new": 6141.699038794454,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/beta_star",
+        "old": 0.026510806395800734,
+        "new": 0.026510806395800734,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/dp_square",
+        "old": 1028.6970525284921,
+        "new": 1028.6970525284921,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/dp_star",
+        "old": 275.0477386110671,
+        "new": 275.0477386110671,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/reduction",
+        "old": 0.7326251320201493,
+        "new": 0.7326251320201493,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/s_star",
+        "old": 2.077625196621643,
+        "new": 2.077625196621643,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/value_star",
+        "old": 275.0477386110671,
+        "new": 275.0477386110671,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral/w_star",
+        "old": -3.63020284059232,
+        "new": -3.63020284059232,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/Ha_star",
+        "old": 6141.931647775169,
+        "new": 6141.931647775169,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/beta_star",
+        "old": 0.026508798384238676,
+        "new": 0.026508798384238676,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/dp_square",
+        "old": 1028.697118051965,
+        "new": 1028.697118051965,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/dp_star",
+        "old": 275.04503647125404,
+        "new": 275.04503647125404,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/reduction",
+        "old": 0.7326277758101388,
+        "new": 0.7326277758101388,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/s_star",
+        "old": 2.077507171121368,
+        "new": 2.077507171121368,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/value_star",
+        "old": 275.04503647125404,
+        "new": 275.04503647125404,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "spectral_64/w_star",
+        "old": -3.630278586595005,
+        "new": -3.630278586595005,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "H",
+        "old": 1000.0,
+        "new": 1000.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/H",
+        "old": 1000.0,
+        "new": 1000.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_2h",
+        "old": -3.430650838484067e-05,
+        "new": -3.430650838484067e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_h",
+        "old": -8.63542940732086e-06,
+        "new": -8.63542940732086e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_richardson",
+        "old": -7.840308148092345e-08,
+        "new": -7.840308148092345e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/dW_dw_rel_small",
+        "old": -4.1921906478184107e-07,
+        "new": -4.1921906478184107e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/0/wall_s",
+        "old": 31.673185229999945,
+        "new": 30.186668526002904,
+        "rel": 0.046932971635232114
+      },
+      {
+        "path": "meshes/1/H",
+        "old": 1000.0,
+        "new": 1000.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_2h",
+        "old": -3.41493719448624e-05,
+        "new": -3.41493719448624e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_h",
+        "old": -8.566400859448383e-06,
+        "new": -8.566400859448383e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_richardson",
+        "old": -3.874383097704359e-08,
+        "new": -3.874383097704359e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/dW_dw_rel_small",
+        "old": -1.0579257595681721e-06,
+        "new": -1.0579257595681721e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "meshes/1/wall_s",
+        "old": 33.82745192400034,
+        "new": 33.78581621800549,
+        "rel": 0.00123082596018145
+      },
+      {
+        "path": "spectral/H",
+        "old": 1000.0,
+        "new": 1000.0,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_2h",
+        "old": -3.5645019903378616e-05,
+        "new": -3.5645019903378616e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_h",
+        "old": -1.051443821652875e-05,
+        "new": -1.051443821652875e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_richardson",
+        "old": -2.1375776542454605e-06,
+        "new": -2.1375776542454605e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/dW_dw_rel_small",
+        "old": -2.1188332802930092e-05,
+        "new": -2.1188332802930092e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/H",
+        "old": 1000.0,
+        "new": 1000.0,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/dW_dw_rel_2h",
+        "old": -3.362142821273278e-05,
+        "new": -3.362142821273278e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/dW_dw_rel_h",
+        "old": -8.008593685988012e-06,
+        "new": -8.008593685988012e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/dW_dw_rel_richardson",
+        "old": 5.290178229269102e-07,
+        "new": 5.290178229269102e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/dW_dw_rel_small",
+        "old": 4.567518916892312e-06,
+        "new": 4.567518916892312e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "spectral_64/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      }
+    ]
+  },
+  "tiltlaw_100": {
+    "graded": 169,
+    "misses": [],
+    "worst_graded": {
+      "path": "beta_aligned",
+      "old": 0.12336047297755533,
+      "new": 0.12336047297755533,
+      "rel": 0.0,
+      "rtol": 1e-06,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "rows/4/meshes/0/wall_s",
+      "old": 19.050627935999728,
+      "new": 15.020396106003318,
+      "rel": 0.2115537526393307
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "beta_aligned",
+        "old": 0.12336047297755533,
+        "new": 0.12336047297755533,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/kappa",
+        "old": 0.0,
+        "new": 0.0,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/Ha_star",
+        "old": 283.7821732896248,
+        "new": 283.7821732896248,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/beta_star",
+        "old": 0.12417374498745395,
+        "new": 0.12417374498745395,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/dp_at_aligned_beta",
+        "old": 58.63035897685385,
+        "new": 58.63035897685385,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/dp_square",
+        "old": 108.73497314247383,
+        "new": 108.73497314247383,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/dp_star",
+        "old": 58.628888725493155,
+        "new": 58.628888725493155,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/reduction",
+        "old": 0.46080927753876777,
+        "new": 0.46080927753876777,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/s_star",
+        "old": 2.0918104799907002,
+        "new": 2.0918104799907002,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/value_star",
+        "old": 58.628888725493155,
+        "new": 58.628888725493155,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/0/w_star",
+        "old": -2.08607352484508,
+        "new": -2.08607352484508,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/Ha_star",
+        "old": 284.71607289669817,
+        "new": 284.71607289669817,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/beta_star",
+        "old": 0.1233604742770707,
+        "new": 0.1233604742770707,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/dp_at_aligned_beta",
+        "old": 59.10819038816904,
+        "new": 59.10819038816904,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/dp_square",
+        "old": 109.67825520118873,
+        "new": 109.67825520118873,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/dp_star",
+        "old": 59.1074285669911,
+        "new": 59.1074285669911,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/reduction",
+        "old": 0.46108343482883496,
+        "new": 0.46108343482883496,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/s_star",
+        "old": 2.081526876406045,
+        "new": 2.081526876406045,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/value_star",
+        "old": 59.1074285669911,
+        "new": 59.1074285669911,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/1/w_star",
+        "old": -2.0926445245160235,
+        "new": -2.0926445245160235,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/Ha_star",
+        "old": 285.1332738319022,
+        "new": 285.1332738319022,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/beta_star",
+        "old": 0.12299974153978065,
+        "new": 0.12299974153978065,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/dp_at_aligned_beta",
+        "old": 59.32560276666864,
+        "new": 59.32560276666864,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/dp_square",
+        "old": 110.10223349037008,
+        "new": 110.10223349037008,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/dp_star",
+        "old": 59.32487295994728,
+        "new": 59.32487295994728,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/reduction",
+        "old": 0.46118374642112925,
+        "new": 0.46118374642112925,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/s_star",
+        "old": 2.0769600792268985,
+        "new": 2.0769600792268985,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/value_star",
+        "old": 59.32487295994728,
+        "new": 59.32487295994728,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/0/meshes/2/w_star",
+        "old": -2.0955730249145237,
+        "new": -2.0955730249145237,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/kappa",
+        "old": 0.337470635401861,
+        "new": 0.337470635401861,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/Ha_star",
+        "old": 282.13877394339846,
+        "new": 282.13877394339846,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/beta_star",
+        "old": 0.12562453016253688,
+        "new": 0.12562453016253688,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/dp_at_aligned_beta",
+        "old": 58.91966095663316,
+        "new": 58.91966095663316,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/dp_square",
+        "old": 108.74315339736212,
+        "new": 108.74315339736212,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/dp_star",
+        "old": 58.91385054323394,
+        "new": 58.91385054323394,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/reduction",
+        "old": 0.4582293348809299,
+        "new": 0.4582293348809299,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/s_star",
+        "old": 2.110113606248359,
+        "new": 2.110113606248359,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/value_star",
+        "old": 58.91385054323394,
+        "new": 58.91385054323394,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/0/w_star",
+        "old": -2.074457740175497,
+        "new": -2.074457740175497,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/Ha_star",
+        "old": 283.0811036821325,
+        "new": 283.0811036821325,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/beta_star",
+        "old": 0.12478955604403595,
+        "new": 0.12478955604403595,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/dp_at_aligned_beta",
+        "old": 59.397522428299105,
+        "new": 59.397522428299105,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/dp_square",
+        "old": 109.6869180238801,
+        "new": 109.6869180238801,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/dp_star",
+        "old": 59.3947616937297,
+        "new": 59.3947616937297,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/reduction",
+        "old": 0.45850642206212067,
+        "new": 0.45850642206212067,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/s_star",
+        "old": 2.0995860556119466,
+        "new": 2.0995860556119466,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/value_star",
+        "old": 59.3947616937297,
+        "new": 59.3947616937297,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/1/w_star",
+        "old": -2.081126512093224,
+        "new": -2.081126512093224,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/Ha_star",
+        "old": 283.50226957195287,
+        "new": 283.50226957195287,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/beta_star",
+        "old": 0.1244190611937142,
+        "new": 0.1244190611937142,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/dp_at_aligned_beta",
+        "old": 59.6148792667409,
+        "new": 59.6148792667409,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/dp_square",
+        "old": 110.11111327230442,
+        "new": 110.11111327230442,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/dp_star",
+        "old": 59.61317386094077,
+        "new": 59.61317386094077,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/reduction",
+        "old": 0.4586089261170434,
+        "new": 0.4586089261170434,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/s_star",
+        "old": 2.0949091325633455,
+        "new": 2.0949091325633455,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/value_star",
+        "old": 59.61317386094077,
+        "new": 59.61317386094077,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/1/meshes/2/w_star",
+        "old": -2.084099885384957,
+        "new": -2.084099885384957,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/kappa",
+        "old": 0.8436765885046524,
+        "new": 0.8436765885046524,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/Ha_star",
+        "old": 274.0382961350861,
+        "new": 274.0382961350861,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/beta_star",
+        "old": 0.13316113335296342,
+        "new": 0.13316113335296342,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/dp_at_aligned_beta",
+        "old": 60.41865496811897,
+        "new": 60.41865496811897,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/dp_square",
+        "old": 108.78485547976962,
+        "new": 108.78485547976962,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/dp_star",
+        "old": 60.325277770940495,
+        "new": 60.325277770940495,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/reduction",
+        "old": 0.44546253699662264,
+        "new": 0.44546253699662264,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/s_star",
+        "old": 2.204362996463672,
+        "new": 2.204362996463672,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/value_star",
+        "old": 60.325277770940495,
+        "new": 60.325277770940495,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/0/w_star",
+        "old": -2.016195355099732,
+        "new": -2.016195355099732,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/Ha_star",
+        "old": 275.01116959557663,
+        "new": 275.01116959557663,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/beta_star",
+        "old": 0.1322206640035052,
+        "new": 0.1322206640035052,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/dp_at_aligned_beta",
+        "old": 60.90146819035568,
+        "new": 60.90146819035568,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/dp_square",
+        "old": 109.73133862467209,
+        "new": 109.73133862467209,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/dp_star",
+        "old": 60.82377460490838,
+        "new": 60.82377460490838,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/reduction",
+        "old": 0.4457027922264615,
+        "new": 0.4457027922264615,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/s_star",
+        "old": 2.1926761884476833,
+        "new": 2.1926761884476833,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/value_star",
+        "old": 60.82377460490838,
+        "new": 60.82377460490838,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/1/w_star",
+        "old": -2.0232830551296628,
+        "new": -2.0232830551296628,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/Ha_star",
+        "old": 275.44661714068246,
+        "new": 275.44661714068246,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/beta_star",
+        "old": 0.13180294492247183,
+        "new": 0.13180294492247183,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/dp_at_aligned_beta",
+        "old": 61.120790009749115,
+        "new": 61.120790009749115,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/dp_square",
+        "old": 110.15675820185939,
+        "new": 110.15675820185939,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/dp_star",
+        "old": 61.049726744264895,
+        "new": 61.049726744264895,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/reduction",
+        "old": 0.4457922714792236,
+        "new": 0.4457922714792236,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/s_star",
+        "old": 2.187478713052626,
+        "new": 2.187478713052626,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/value_star",
+        "old": 61.049726744264895,
+        "new": 61.049726744264895,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/2/meshes/2/w_star",
+        "old": -2.0264473132902716,
+        "new": -2.0264473132902716,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/kappa",
+        "old": 1.6873531770093049,
+        "new": 1.6873531770093049,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/Ha_star",
+        "old": 251.37837133283594,
+        "new": 251.37837133283594,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/beta_star",
+        "old": 0.15825016945305573,
+        "new": 0.15825016945305573,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/dp_at_aligned_beta",
+        "old": 65.50819136216883,
+        "new": 65.50819136216883,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/dp_square",
+        "old": 108.91772456330216,
+        "new": 108.91772456330216,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/dp_star",
+        "old": 64.5244426098995,
+        "new": 64.5244426098995,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/reduction",
+        "old": 0.4075854699627114,
+        "new": 0.4075854699627114,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/s_star",
+        "old": 2.5090431933988966,
+        "new": 2.5090431933988966,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/value_star",
+        "old": 64.5244426098995,
+        "new": 64.5244426098995,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/0/w_star",
+        "old": -1.8435781471650237,
+        "new": -1.8435781471650237,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/Ha_star",
+        "old": 252.2762002935197,
+        "new": 252.2762002935197,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/beta_star",
+        "old": 0.15712577676735962,
+        "new": 0.15712577676735962,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/dp_at_aligned_beta",
+        "old": 66.06292711040899,
+        "new": 66.06292711040899,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/dp_square",
+        "old": 109.87625651923064,
+        "new": 109.87625651923064,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/dp_star",
+        "old": 65.09699665029918,
+        "new": 65.09699665029918,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/reduction",
+        "old": 0.4075426419455249,
+        "new": 0.4075426419455249,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/s_star",
+        "old": 2.4956609193294996,
+        "new": 2.4956609193294996,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/value_star",
+        "old": 65.09699665029918,
+        "new": 65.09699665029918,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/1/w_star",
+        "old": -1.8507086684571536,
+        "new": -1.8507086684571536,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/Ha_star",
+        "old": 252.67661643250037,
+        "new": 252.67661643250037,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/beta_star",
+        "old": 0.15662817753111574,
+        "new": 0.15662817753111574,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/dp_at_aligned_beta",
+        "old": 66.31497446586437,
+        "new": 66.31497446586437,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/dp_square",
+        "old": 110.30713437232218,
+        "new": 110.30713437232218,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/dp_star",
+        "old": 65.35614628180434,
+        "new": 65.35614628180434,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/reduction",
+        "old": 0.40750753200417433,
+        "new": 0.40750753200417433,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/s_star",
+        "old": 2.4897309667245047,
+        "new": 2.4897309667245047,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/value_star",
+        "old": 65.35614628180434,
+        "new": 65.35614628180434,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/3/meshes/2/w_star",
+        "old": -1.8538805784625745,
+        "new": -1.8538805784625745,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/kappa",
+        "old": 3.3747063540186097,
+        "new": 3.3747063540186097,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/Ha_star",
+        "old": 206.32837682957725,
+        "new": 206.32837682957725,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/beta_star",
+        "old": 0.234899491557782,
+        "new": 0.234899491557782,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/dp_at_aligned_beta",
+        "old": 83.46703641666369,
+        "new": 83.46703641666369,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/dp_square",
+        "old": 109.47340925463288,
+        "new": 109.47340925463288,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/dp_star",
+        "old": 75.44086689860143,
+        "new": 75.44086689860143,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/reduction",
+        "old": 0.31087496578162166,
+        "new": 0.31087496578162166,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/s_star",
+        "old": 3.3741280288651887,
+        "new": 3.3741280288651887,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/value_star",
+        "old": 75.44086689860143,
+        "new": 75.44086689860143,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/0/w_star",
+        "old": -1.4485975518245848,
+        "new": -1.4485975518245848,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/Ha_star",
+        "old": 206.69984030031935,
+        "new": 206.69984030031935,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/beta_star",
+        "old": 0.23405596719695249,
+        "new": 0.23405596719695249,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/dp_at_aligned_beta",
+        "old": 84.10934171235168,
+        "new": 84.10934171235168,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/dp_square",
+        "old": 110.38428663716572,
+        "new": 110.38428663716572,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/dp_star",
+        "old": 76.01741897392252,
+        "new": 76.01741897392252,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/reduction",
+        "old": 0.31133840431661663,
+        "new": 0.31133840431661663,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/s_star",
+        "old": 3.3650365702515574,
+        "new": 3.3650365702515574,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/value_star",
+        "old": 76.01741897392252,
+        "new": 76.01741897392252,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/1/w_star",
+        "old": -1.452195016167116,
+        "new": -1.452195016167116,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/Ha_star",
+        "old": 206.84886272104455,
+        "new": 206.84886272104455,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/beta_star",
+        "old": 0.23371884160666032,
+        "new": 0.23371884160666032,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/dp_at_aligned_beta",
+        "old": 84.40186472509569,
+        "new": 84.40186472509569,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/dp_square",
+        "old": 110.79345972198959,
+        "new": 110.79345972198959,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/dp_star",
+        "old": 76.27857252342658,
+        "new": 76.27857252342658,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/reduction",
+        "old": 0.3115245907580655,
+        "new": 0.3115245907580655,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/s_star",
+        "old": 3.3614007593585824,
+        "new": 3.3614007593585824,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/value_star",
+        "old": 76.27857252342658,
+        "new": 76.27857252342658,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/4/meshes/2/w_star",
+        "old": -1.4536364176377217,
+        "new": -1.4536364176377217,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/kappa",
+        "old": 5.062059531027915,
+        "new": 5.062059531027915,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/Ha_star",
+        "old": 175.40096463674993,
+        "new": 175.40096463674993,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/beta_star",
+        "old": 0.3250394279802045,
+        "new": 0.3250394279802045,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/dp_at_aligned_beta",
+        "old": 105.62835342991077,
+        "new": 105.62835342991077,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/dp_square",
+        "old": 109.90833914921755,
+        "new": 109.90833914921755,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/dp_star",
+        "old": 85.241109294248,
+        "new": 85.241109294248,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/reduction",
+        "old": 0.224434561070748,
+        "new": 0.224434561070748,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/s_star",
+        "old": 4.30479063035289,
+        "new": 4.30479063035289,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/value_star",
+        "old": 85.241109294248,
+        "new": 85.241109294248,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/0/w_star",
+        "old": -1.1238087871485272,
+        "new": -1.1238087871485272,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/Ha_star",
+        "old": 175.56168004840836,
+        "new": 175.56168004840836,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/beta_star",
+        "old": 0.3244445950438909,
+        "new": 0.3244445950438909,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/dp_at_aligned_beta",
+        "old": 106.38386642709256,
+        "new": 106.38386642709256,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/dp_square",
+        "old": 110.81241254451243,
+        "new": 110.81241254451243,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/dp_star",
+        "old": 85.88765622205426,
+        "new": 85.88765622205426,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/reduction",
+        "old": 0.22492747653559209,
+        "new": 0.22492747653559209,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/s_star",
+        "old": 4.298880845494848,
+        "new": 4.298880845494848,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/value_star",
+        "old": 85.88765622205426,
+        "new": 85.88765622205426,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/1/w_star",
+        "old": -1.1256404968797606,
+        "new": -1.1256404968797606,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/Ha_star",
+        "old": 175.61290610711112,
+        "new": 175.61290610711112,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/beta_star",
+        "old": 0.32425534250863053,
+        "new": 0.32425534250863053,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/dp_at_aligned_beta",
+        "old": 106.724466912069,
+        "new": 106.724466912069,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/dp_square",
+        "old": 111.21864425215196,
+        "new": 111.21864425215196,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/dp_star",
+        "old": 86.18108592697794,
+        "new": 86.18108592697794,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/reduction",
+        "old": 0.2251201540310951,
+        "new": 0.2251201540310951,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/s_star",
+        "old": 4.297000015655286,
+        "new": 4.297000015655286,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/value_star",
+        "old": 86.18108592697794,
+        "new": 86.18108592697794,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "rows/5/meshes/2/w_star",
+        "old": -1.126223979410509,
+        "new": -1.126223979410509,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "H",
+        "old": 100.0,
+        "new": 100.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/beta/extrapolated",
+        "old": 0.12271218974194296,
+        "new": 0.12271218974194296,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/beta/gci_fine",
+        "old": 0.0029222805088647682,
+        "new": 0.0029222805088647682,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/beta/order",
+        "old": 2.0049239027945216,
+        "new": 2.0049239027945216,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/beta/order_observed",
+        "old": 2.0049239027945216,
+        "new": 2.0049239027945216,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/dp/extrapolated",
+        "old": 59.505964067786,
+        "new": 59.505964067786,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/dp/gci_fine",
+        "old": 0.0038156657318295056,
+        "new": 0.0038156657318295056,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/dp/order",
+        "old": 1.9454110888952587,
+        "new": 1.9454110888952587,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/gci/dp/order_observed",
+        "old": 1.9454110888952587,
+        "new": 1.9454110888952587,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/dW_dw_rel_2h",
+        "old": -3.414224226510764e-05,
+        "new": -3.414224226510764e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/dW_dw_rel_h",
+        "old": -8.588503328981395e-06,
+        "new": -8.588503328981395e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/dW_dw_rel_richardson",
+        "old": -7.05903502726475e-08,
+        "new": -7.05903502726475e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/dW_dw_rel_small",
+        "old": -1.6172703974650283e-07,
+        "new": -1.6172703974650283e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/0/wall_s",
+        "old": 19.023923545000798,
+        "new": 17.88172910301364,
+        "rel": 0.06003989867207543
+      },
+      {
+        "path": "rows/0/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/dW_dw_rel_2h",
+        "old": -3.40233028127616e-05,
+        "new": -3.40233028127616e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/dW_dw_rel_h",
+        "old": -8.556399425656782e-06,
+        "new": -8.556399425656782e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/dW_dw_rel_richardson",
+        "old": -6.743162995517545e-08,
+        "new": -6.743162995517545e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/dW_dw_rel_small",
+        "old": -1.6272857800113228e-07,
+        "new": -1.6272857800113228e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/1/wall_s",
+        "old": 24.134491024000454,
+        "new": 22.36189224201371,
+        "rel": 0.07344670248997544
+      },
+      {
+        "path": "rows/0/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/dW_dw_rel_2h",
+        "old": -3.395593011492476e-05,
+        "new": -3.395593011492476e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/dW_dw_rel_h",
+        "old": -8.531415410596232e-06,
+        "new": -8.531415410596232e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/dW_dw_rel_richardson",
+        "old": -5.657717582005557e-08,
+        "new": -5.657717582005557e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/dW_dw_rel_small",
+        "old": -1.7511283873482798e-07,
+        "new": -1.7511283873482798e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/0/meshes/2/wall_s",
+        "old": 25.468271577999985,
+        "new": 25.05312058798154,
+        "rel": 0.016300713173526167
+      },
+      {
+        "path": "rows/0/tilt",
+        "old": 0.0,
+        "new": 0.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/beta/extrapolated",
+        "old": 0.12412353361365008,
+        "new": 0.12412353361365008,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/beta/gci_fine",
+        "old": 0.0029690746058996936,
+        "new": 0.0029690746058996936,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/beta/order",
+        "old": 2.0040224594946277,
+        "new": 2.0040224594946277,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/beta/order_observed",
+        "old": 2.0040224594946277,
+        "new": 2.0040224594946277,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/dp/extrapolated",
+        "old": 59.794903611619844,
+        "new": 59.794903611619844,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/dp/gci_fine",
+        "old": 0.0038106038252340487,
+        "new": 0.0038106038252340487,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/dp/order",
+        "old": 1.9466498250110054,
+        "new": 1.9466498250110054,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/gci/dp/order_observed",
+        "old": 1.9466498250110054,
+        "new": 1.9466498250110054,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/dW_dw_rel_2h",
+        "old": -3.287131198464052e-05,
+        "new": -3.287131198464052e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/dW_dw_rel_h",
+        "old": -8.279433707833285e-06,
+        "new": -8.279433707833285e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/dW_dw_rel_richardson",
+        "old": -8.214094889754044e-08,
+        "new": -8.214094889754044e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/dW_dw_rel_small",
+        "old": -1.6923675616100049e-07,
+        "new": -1.6923675616100049e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/0/wall_s",
+        "old": 17.07314327200038,
+        "new": 15.525052890006918,
+        "rel": 0.09067401106697787
+      },
+      {
+        "path": "rows/1/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/dW_dw_rel_2h",
+        "old": -3.277291752745874e-05,
+        "new": -3.277291752745874e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/dW_dw_rel_h",
+        "old": -8.252859049837433e-06,
+        "new": -8.252859049837433e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/dW_dw_rel_richardson",
+        "old": -7.950622396366437e-08,
+        "new": -7.950622396366437e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/dW_dw_rel_small",
+        "old": -1.5449853447135847e-07,
+        "new": -1.5449853447135847e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/1/wall_s",
+        "old": 16.69597041400084,
+        "new": 15.260303374001523,
+        "rel": 0.08598883469483154
+      },
+      {
+        "path": "rows/1/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/dW_dw_rel_2h",
+        "old": -3.2712932546293924e-05,
+        "new": -3.2712932546293924e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/dW_dw_rel_h",
+        "old": -8.232364920536841e-06,
+        "new": -8.232364920536841e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/dW_dw_rel_richardson",
+        "old": -7.217571195114671e-08,
+        "new": -7.217571195114671e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/dW_dw_rel_small",
+        "old": -1.5349546073314493e-07,
+        "new": -1.5349546073314493e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/1/meshes/2/wall_s",
+        "old": 18.168244870999843,
+        "new": 16.931503775995225,
+        "rel": 0.06807157784287156
+      },
+      {
+        "path": "rows/1/tilt",
+        "old": 0.02,
+        "new": 0.02,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/beta/extrapolated",
+        "old": 0.13146915412178004,
+        "new": 0.13146915412178004,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/beta/gci_fine",
+        "old": 0.0031656235079586,
+        "new": 0.0031656235079586,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/beta/order",
+        "old": 2.0015776714344113,
+        "new": 2.0015776714344113,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/beta/order_observed",
+        "old": 2.0015776714344113,
+        "new": 2.0015776714344113,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/dp/extrapolated",
+        "old": 61.23705150342994,
+        "new": 61.23705150342994,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/dp/gci_fine",
+        "old": 0.0038354954468048596,
+        "new": 0.0038354954468048596,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/dp/order",
+        "old": 1.9515218901809155,
+        "new": 1.9515218901809155,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/gci/dp/order_observed",
+        "old": 1.9515218901809155,
+        "new": 1.9515218901809155,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/dW_dw_rel_2h",
+        "old": -2.729634915818973e-05,
+        "new": -2.729634915818973e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/dW_dw_rel_h",
+        "old": -6.9123030644995385e-06,
+        "new": -6.9123030644995385e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/dW_dw_rel_richardson",
+        "old": -1.1762103326947439e-07,
+        "new": -1.1762103326947439e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/dW_dw_rel_small",
+        "old": -1.8531935178288105e-07,
+        "new": -1.8531935178288105e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/0/wall_s",
+        "old": 17.336753384000986,
+        "new": 15.834883745003026,
+        "rel": 0.08662923245963353
+      },
+      {
+        "path": "rows/2/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/dW_dw_rel_2h",
+        "old": -2.724788924106412e-05,
+        "new": -2.724788924106412e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/dW_dw_rel_h",
+        "old": -6.892347138267282e-06,
+        "new": -6.892347138267282e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/dW_dw_rel_richardson",
+        "old": -1.0716643733500236e-07,
+        "new": -1.0716643733500236e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/dW_dw_rel_small",
+        "old": -1.8209232052827312e-07,
+        "new": -1.8209232052827312e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/1/wall_s",
+        "old": 15.997309592999954,
+        "new": 15.474939862993779,
+        "rel": 0.03265359884231737
+      },
+      {
+        "path": "rows/2/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/dW_dw_rel_2h",
+        "old": -2.7211281516856312e-05,
+        "new": -2.7211281516856312e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/dW_dw_rel_h",
+        "old": -6.873865483786562e-06,
+        "new": -6.873865483786562e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/dW_dw_rel_richardson",
+        "old": -9.47268060966455e-08,
+        "new": -9.47268060966455e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/dW_dw_rel_small",
+        "old": -1.9083907392072837e-07,
+        "new": -1.9083907392072837e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/2/meshes/2/wall_s",
+        "old": 19.360192698999526,
+        "new": 16.09912594500929,
+        "rel": 0.16844185410193552
+      },
+      {
+        "path": "rows/2/tilt",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/beta/extrapolated",
+        "old": 0.1562331430901418,
+        "new": 0.1562331430901418,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/beta/gci_fine",
+        "old": 0.003152645066813176,
+        "new": 0.003152645066813176,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/beta/order",
+        "old": 2.0105387888932906,
+        "new": 2.0105387888932906,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/beta/order_observed",
+        "old": 2.0105387888932906,
+        "new": 2.0105387888932906,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/dp/extrapolated",
+        "old": 65.57043341243583,
+        "new": 65.57043341243583,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/dp/gci_fine",
+        "old": 0.004098450238090894,
+        "new": 0.004098450238090894,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/dp/order",
+        "old": 1.9550424589804833,
+        "new": 1.9550424589804833,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/gci/dp/order_observed",
+        "old": 1.9550424589804833,
+        "new": 1.9550424589804833,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/dW_dw_rel_2h",
+        "old": -1.6911825802994178e-05,
+        "new": -1.6911825802994178e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/dW_dw_rel_h",
+        "old": -4.29400786135529e-06,
+        "new": -4.29400786135529e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/dW_dw_rel_richardson",
+        "old": -8.80685474756608e-08,
+        "new": -8.80685474756608e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/dW_dw_rel_small",
+        "old": -1.2866798501107514e-07,
+        "new": -1.2866798501107514e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/0/wall_s",
+        "old": 17.893947696000396,
+        "new": 14.918025132006733,
+        "rel": 0.16630888915914474
+      },
+      {
+        "path": "rows/3/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/dW_dw_rel_2h",
+        "old": -1.671738812191709e-05,
+        "new": -1.671738812191709e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/dW_dw_rel_h",
+        "old": -4.239252476074463e-06,
+        "new": -4.239252476074463e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/dW_dw_rel_richardson",
+        "old": -7.987392746025439e-08,
+        "new": -7.987392746025439e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/dW_dw_rel_small",
+        "old": -1.1933586436193317e-07,
+        "new": -1.1933586436193317e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/1/wall_s",
+        "old": 16.139901194999766,
+        "new": 16.000713071000064,
+        "rel": 0.008623852297362466
+      },
+      {
+        "path": "rows/3/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/dW_dw_rel_2h",
+        "old": -1.65999921346105e-05,
+        "new": -1.65999921346105e-05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/dW_dw_rel_h",
+        "old": -4.204581663978241e-06,
+        "new": -4.204581663978241e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/dW_dw_rel_richardson",
+        "old": -7.277817376748796e-08,
+        "new": -7.277817376748796e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/dW_dw_rel_small",
+        "old": -1.644883834580068e-07,
+        "new": -1.644883834580068e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/3/meshes/2/wall_s",
+        "old": 19.79822463399978,
+        "new": 16.212116815993795,
+        "rel": 0.18113279772811092
+      },
+      {
+        "path": "rows/3/tilt",
+        "old": 0.1,
+        "new": 0.1,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/beta/extrapolated",
+        "old": 0.23349440649693592,
+        "new": 0.23349440649693592,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/beta/gci_fine",
+        "old": 0.0012003477564193458,
+        "new": 0.0012003477564193458,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/beta/order",
+        "old": 2.26192890944907,
+        "new": 2.26192890944907,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/beta/order_observed",
+        "old": 2.26192890944907,
+        "new": 2.26192890944907,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/dp/extrapolated",
+        "old": 76.49481061852197,
+        "new": 76.49481061852197,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/dp/gci_fine",
+        "old": 0.003543558956694204,
+        "new": 0.003543558956694204,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/dp/order",
+        "old": 1.9532065850148423,
+        "new": 1.9532065850148423,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/gci/dp/order_observed",
+        "old": 1.9532065850148423,
+        "new": 1.9532065850148423,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/dW_dw_rel_2h",
+        "old": -8.533340339393864e-06,
+        "new": -8.533340339393864e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/dW_dw_rel_h",
+        "old": -2.1101724207406656e-06,
+        "new": -2.1101724207406656e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/dW_dw_rel_richardson",
+        "old": 3.088355214373377e-08,
+        "new": 3.088355214373377e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/dW_dw_rel_small",
+        "old": -6.705057807295595e-10,
+        "new": -6.705057807295595e-10,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/0/wall_s",
+        "old": 19.050627935999728,
+        "new": 15.020396106003318,
+        "rel": 0.2115537526393307
+      },
+      {
+        "path": "rows/4/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/dW_dw_rel_2h",
+        "old": -8.041305971241905e-06,
+        "new": -8.041305971241905e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/dW_dw_rel_h",
+        "old": -2.0117649911150534e-06,
+        "new": -2.0117649911150534e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/dW_dw_rel_richardson",
+        "old": -1.917997739436216e-09,
+        "new": -1.917997739436216e-09,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/dW_dw_rel_small",
+        "old": -1.288302024048916e-08,
+        "new": -1.288302024048916e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/1/wall_s",
+        "old": 16.36864957599937,
+        "new": 14.73831007402623,
+        "rel": 0.09960134428949073
+      },
+      {
+        "path": "rows/4/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/dW_dw_rel_2h",
+        "old": -7.724878814953806e-06,
+        "new": -7.724878814953806e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/dW_dw_rel_h",
+        "old": -1.945592262111338e-06,
+        "new": -1.945592262111338e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/dW_dw_rel_richardson",
+        "old": -1.916341116384847e-08,
+        "new": -1.916341116384847e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/dW_dw_rel_small",
+        "old": -7.260945556406678e-08,
+        "new": -7.260945556406678e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/4/meshes/2/wall_s",
+        "old": 22.45443147900005,
+        "new": 19.482067492004717,
+        "rel": 0.13237315715497686
+      },
+      {
+        "path": "rows/4/tilt",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/beta/extrapolated",
+        "old": 0.3241670332066784,
+        "new": 0.3241670332066784,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/beta/gci_fine",
+        "old": 0.00034043117558568887,
+        "new": 0.00034043117558568887,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/beta/order",
+        "old": 2.8244065280350306,
+        "new": 2.8244065280350306,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/beta/order_observed",
+        "old": 2.8244065280350306,
+        "new": 2.8244065280350306,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/dp/extrapolated",
+        "old": 86.42491711433476,
+        "new": 86.42491711433476,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/dp/gci_fine",
+        "old": 0.0035366110895175885,
+        "new": 0.0035366110895175885,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/dp/order",
+        "old": 1.9483986732789074,
+        "new": 1.9483986732789074,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/gci/dp/order_observed",
+        "old": 1.9483986732789074,
+        "new": 1.9483986732789074,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/cells",
+        "old": 32.0,
+        "new": 32.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/cells_in_layer",
+        "old": 4.0,
+        "new": 4.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/dW_dw_rel_2h",
+        "old": -6.2795540864170296e-06,
+        "new": -6.2795540864170296e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/dW_dw_rel_h",
+        "old": -1.4843041335058493e-06,
+        "new": -1.4843041335058493e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/dW_dw_rel_richardson",
+        "old": 1.1411251746454408e-07,
+        "new": 1.1411251746454408e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/dW_dw_rel_small",
+        "old": 1.0434414351311001e-07,
+        "new": 1.0434414351311001e-07,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/0/wall_s",
+        "old": 16.83580105600049,
+        "new": 15.463764722982887,
+        "rel": 0.08149516191441293
+      },
+      {
+        "path": "rows/5/meshes/1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/cells_in_layer",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/dW_dw_rel_2h",
+        "old": -5.595375774566988e-06,
+        "new": -5.595375774566988e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/dW_dw_rel_h",
+        "old": -1.3594079638653336e-06,
+        "new": -1.3594079638653336e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/dW_dw_rel_richardson",
+        "old": 5.258130636855125e-08,
+        "new": 5.258130636855125e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/dW_dw_rel_small",
+        "old": 2.940928035069916e-08,
+        "new": 2.940928035069916e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/1/wall_s",
+        "old": 18.668987349999952,
+        "new": 19.13033459300641,
+        "rel": 0.02411600491165037
+      },
+      {
+        "path": "rows/5/meshes/2/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/cells_in_layer",
+        "old": 9.0,
+        "new": 9.0,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/dW_dw_rel_2h",
+        "old": -5.124567996398045e-06,
+        "new": -5.124567996398045e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/dW_dw_rel_h",
+        "old": -1.2796740384071815e-06,
+        "new": -1.2796740384071815e-06,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/dW_dw_rel_richardson",
+        "old": 1.9572809231062965e-09,
+        "new": 1.9572809231062965e-09,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/dW_dw_rel_small",
+        "old": -6.168254411036912e-08,
+        "new": -6.168254411036912e-08,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/delta",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/h",
+        "old": 0.01,
+        "new": 0.01,
+        "rel": 0.0
+      },
+      {
+        "path": "rows/5/meshes/2/wall_s",
+        "old": 19.775862970000162,
+        "new": 17.571001102012815,
+        "rel": 0.11149257412089203
+      },
+      {
+        "path": "rows/5/tilt",
+        "old": 0.3,
+        "new": 0.3,
+        "rel": 0.0
+      }
+    ]
+  },
+  "ramp_200_square": {
+    "graded": 11,
+    "misses": [],
+    "worst_graded": {
+      "path": "0/excess_percent",
+      "old": 0.006655482531048307,
+      "new": 0.006655482561712667,
+      "rel": 4.607383409965079e-09,
+      "rtol": 0.001,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "9/iterations",
+      "old": 735.0,
+      "new": 257.0,
+      "rel": 0.6503401360544218
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "0/excess_percent",
+        "old": 0.006655482531048307,
+        "new": 0.006655482561712667,
+        "rel": 4.607383409965079e-09,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "1/excess_percent",
+        "old": 0.038391630631950946,
+        "new": 0.038391630765111096,
+        "rel": 3.4684681770421778e-09,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "10/excess_percent",
+        "old": 7.113653068247516,
+        "new": 7.113653068206105,
+        "rel": 5.821385780445464e-12,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "2/excess_percent",
+        "old": 0.1368906442862361,
+        "new": 0.13689064426276598,
+        "rel": 1.7145156166772204e-10,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "3/excess_percent",
+        "old": 0.44844902172089807,
+        "new": 0.44844902170992906,
+        "rel": 2.4459867124257756e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "4/excess_percent",
+        "old": 1.7604171512571654,
+        "new": 1.7604171512341615,
+        "rel": 1.3067255709140043e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "5/excess_percent",
+        "old": 3.9869351635111183,
+        "new": 3.9869351634169936,
+        "rel": 2.3608286608009266e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "6/excess_percent",
+        "old": 3.973448498661236,
+        "new": 3.9734484987364427,
+        "rel": 1.892726373879611e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "7/excess_percent",
+        "old": 3.9949702409141308,
+        "new": 3.9949702407845677,
+        "rel": 3.243153744847649e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "8/excess_percent",
+        "old": 7.092520403609948,
+        "new": 7.092520403424052,
+        "rel": 2.6210110463498854e-11,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "9/excess_percent",
+        "old": 7.069080043696796,
+        "new": 7.069080043705567,
+        "rel": 1.240721825232178e-12,
+        "rtol": 0.001,
+        "ok": true
+      },
+      {
+        "path": "0/axial_cells",
+        "old": 88.0,
+        "new": 88.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/charge_balance",
+        "old": 5.54971996205034e-14,
+        "new": 5.362937430645752e-14,
+        "rel": 0.033656208363994924
+      },
+      {
+        "path": "0/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "0/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/dp",
+        "old": 12422.27676608636,
+        "new": 12422.276766090166,
+        "rel": 3.0647721776849066e-13
+      },
+      {
+        "path": "0/dp_fd",
+        "old": 12421.450058647602,
+        "new": 12421.450058647602,
+        "rel": 0.0
+      },
+      {
+        "path": "0/elapsed_s",
+        "old": 30.064464091003174,
+        "new": 21.713127560011344,
+        "rel": 0.2777809877373127
+      },
+      {
+        "path": "0/gamma_sqrt_ha",
+        "old": 0.02,
+        "new": 0.02,
+        "rel": 0.0
+      },
+      {
+        "path": "0/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/iterations",
+        "old": 429.0,
+        "new": 251.0,
+        "rel": 0.4149184149184149
+      },
+      {
+        "path": "0/mass_balance",
+        "old": 9.671141689307971e-17,
+        "new": 1.1838499973468419e-16,
+        "rel": 0.18307710343521333
+      },
+      {
+        "path": "0/residual",
+        "old": 9.362349458619995e-10,
+        "new": 8.874639099232188e-10,
+        "rel": 0.05209273180235416
+      },
+      {
+        "path": "0/spacing",
+        "old": 2.776801836348979,
+        "new": 2.776801836348979,
+        "rel": 0.0
+      },
+      {
+        "path": "0/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "0/x0",
+        "old": 111.07207345395915,
+        "new": 111.07207345395915,
+        "rel": 0.0
+      },
+      {
+        "path": "1/axial_cells",
+        "old": 96.0,
+        "new": 96.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/charge_balance",
+        "old": 3.6620838652954207e-14,
+        "new": 3.607130068558469e-14,
+        "rel": 0.015006154626259075
+      },
+      {
+        "path": "1/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "1/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/dp",
+        "old": 5352.579454862795,
+        "new": 5352.57945486992,
+        "rel": 1.3311304491158223e-12
+      },
+      {
+        "path": "1/dp_fd",
+        "old": 5350.525300952384,
+        "new": 5350.525300952384,
+        "rel": 0.0
+      },
+      {
+        "path": "1/elapsed_s",
+        "old": 38.19786945699889,
+        "new": 23.65661059701233,
+        "rel": 0.38068245864749933
+      },
+      {
+        "path": "1/gamma_sqrt_ha",
+        "old": 0.05,
+        "new": 0.05,
+        "rel": 0.0
+      },
+      {
+        "path": "1/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/iterations",
+        "old": 466.0,
+        "new": 252.0,
+        "rel": 0.4592274678111588
+      },
+      {
+        "path": "1/mass_balance",
+        "old": 1.2276835209920092e-16,
+        "new": 1.2996979903791503e-16,
+        "rel": 0.05540861794064397
+      },
+      {
+        "path": "1/residual",
+        "old": 9.917143860902994e-10,
+        "new": 9.150638144178951e-10,
+        "rel": 0.07729097484870505
+      },
+      {
+        "path": "1/spacing",
+        "old": 1.1107207345395915,
+        "new": 1.1107207345395915,
+        "rel": 0.0
+      },
+      {
+        "path": "1/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "1/x0",
+        "old": 44.42882938158366,
+        "new": 44.42882938158366,
+        "rel": 0.0
+      },
+      {
+        "path": "10/axial_cells",
+        "old": 88.0,
+        "new": 88.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/charge_balance",
+        "old": 4.231022473997253e-14,
+        "new": 4.2150624382205725e-14,
+        "rel": 0.0037721463014593914
+      },
+      {
+        "path": "10/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "10/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/dp",
+        "old": 808.0913293025324,
+        "new": 808.09132930222,
+        "rel": 3.866041111078926e-13
+      },
+      {
+        "path": "10/dp_fd",
+        "old": 754.424208450492,
+        "new": 754.424208450492,
+        "rel": 0.0
+      },
+      {
+        "path": "10/elapsed_s",
+        "old": 25.915987464002683,
+        "new": 19.40957444300875,
+        "rel": 0.2510578857946795
+      },
+      {
+        "path": "10/gamma_sqrt_ha",
+        "old": 2.0,
+        "new": 2.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/iterations",
+        "old": 456.0,
+        "new": 254.0,
+        "rel": 0.44298245614035087
+      },
+      {
+        "path": "10/mass_balance",
+        "old": 1.2453975319160916e-16,
+        "new": 1.265403918122499e-16,
+        "rel": 0.015810276797697233
+      },
+      {
+        "path": "10/residual",
+        "old": 9.66869434124162e-10,
+        "new": 9.66761611876327e-10,
+        "rel": 0.00011151686466598484
+      },
+      {
+        "path": "10/spacing",
+        "old": 0.11107207345395916,
+        "new": 0.11107207345395916,
+        "rel": 0.0
+      },
+      {
+        "path": "10/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "10/x0",
+        "old": 1.1107207345395915,
+        "new": 1.1107207345395915,
+        "rel": 0.0
+      },
+      {
+        "path": "2/axial_cells",
+        "old": 107.0,
+        "new": 107.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/charge_balance",
+        "old": 3.635305690274994e-14,
+        "new": 4.601500029085406e-14,
+        "rel": 0.2099737765300966
+      },
+      {
+        "path": "2/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "2/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/dp",
+        "old": 2997.648272125215,
+        "new": 2997.6482721245125,
+        "rel": 2.3437861728236785e-13
+      },
+      {
+        "path": "2/dp_fd",
+        "old": 2993.5503817206445,
+        "new": 2993.5503817206445,
+        "rel": 0.0
+      },
+      {
+        "path": "2/elapsed_s",
+        "old": 35.997105329995975,
+        "new": 25.08784423698671,
+        "rel": 0.30305939860999603
+      },
+      {
+        "path": "2/gamma_sqrt_ha",
+        "old": 0.1,
+        "new": 0.1,
+        "rel": 0.0
+      },
+      {
+        "path": "2/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/iterations",
+        "old": 424.0,
+        "new": 252.0,
+        "rel": 0.4056603773584906
+      },
+      {
+        "path": "2/mass_balance",
+        "old": 1.1835149517314959e-16,
+        "new": 1.3566747616529683e-16,
+        "rel": 0.12763546195146658
+      },
+      {
+        "path": "2/residual",
+        "old": 8.840707787754017e-10,
+        "new": 8.996026304276859e-10,
+        "rel": 0.01726523592411029
+      },
+      {
+        "path": "2/spacing",
+        "old": 0.5553603672697958,
+        "new": 0.5553603672697958,
+        "rel": 0.0
+      },
+      {
+        "path": "2/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "2/x0",
+        "old": 22.21441469079183,
+        "new": 22.21441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "3/axial_cells",
+        "old": 119.0,
+        "new": 119.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/charge_balance",
+        "old": 3.351008844011637e-14,
+        "new": 3.396641827751062e-14,
+        "rel": 0.01343473526310513
+      },
+      {
+        "path": "3/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "3/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/dp",
+        "old": 1823.202554022572,
+        "new": 1823.202554022373,
+        "rel": 1.0912225060999171e-13
+      },
+      {
+        "path": "3/dp_fd",
+        "old": 1815.0629221047745,
+        "new": 1815.0629221047745,
+        "rel": 0.0
+      },
+      {
+        "path": "3/elapsed_s",
+        "old": 40.54716993299371,
+        "new": 29.851266864978243,
+        "rel": 0.26378913955501704
+      },
+      {
+        "path": "3/gamma_sqrt_ha",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "3/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/iterations",
+        "old": 368.0,
+        "new": 250.0,
+        "rel": 0.32065217391304346
+      },
+      {
+        "path": "3/mass_balance",
+        "old": 1.2110307857622499e-16,
+        "new": 1.1775981144714433e-16,
+        "rel": 0.027606788930442685
+      },
+      {
+        "path": "3/residual",
+        "old": 9.004570532303005e-10,
+        "new": 9.205639306154916e-10,
+        "rel": 0.021841913110529527
+      },
+      {
+        "path": "3/spacing",
+        "old": 0.2776801836348979,
+        "new": 0.2776801836348979,
+        "rel": 0.0
+      },
+      {
+        "path": "3/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "3/x0",
+        "old": 11.107207345395915,
+        "new": 11.107207345395915,
+        "rel": 0.0
+      },
+      {
+        "path": "4/axial_cells",
+        "old": 78.0,
+        "new": 78.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/charge_balance",
+        "old": 4.094382437168821e-14,
+        "new": 4.1120786777359013e-14,
+        "rel": 0.004303478107773885
+      },
+      {
+        "path": "4/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "4/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/dp",
+        "old": 1127.475348103399,
+        "new": 1127.4753481031441,
+        "rel": 2.2606781656079983e-13
+      },
+      {
+        "path": "4/dp_fd",
+        "old": 1107.9704463352527,
+        "new": 1107.9704463352527,
+        "rel": 0.0
+      },
+      {
+        "path": "4/elapsed_s",
+        "old": 31.533282057003817,
+        "new": 20.291091827995842,
+        "rel": 0.3565182402734062
+      },
+      {
+        "path": "4/gamma_sqrt_ha",
+        "old": 0.5,
+        "new": 0.5,
+        "rel": 0.0
+      },
+      {
+        "path": "4/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/iterations",
+        "old": 464.0,
+        "new": 245.0,
+        "rel": 0.47198275862068967
+      },
+      {
+        "path": "4/mass_balance",
+        "old": 1.319228321644351e-16,
+        "new": 1.2648481813386017e-16,
+        "rel": 0.04122117408604996
+      },
+      {
+        "path": "4/residual",
+        "old": 9.93510819647529e-10,
+        "new": 9.976102934843537e-10,
+        "rel": 0.004109293843096228
+      },
+      {
+        "path": "4/spacing",
+        "old": 0.25,
+        "new": 0.25,
+        "rel": 0.0
+      },
+      {
+        "path": "4/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "4/x0",
+        "old": 4.442882938158366,
+        "new": 4.442882938158366,
+        "rel": 0.0
+      },
+      {
+        "path": "5/axial_cells",
+        "old": 60.0,
+        "new": 60.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/charge_balance",
+        "old": 4.309220248428431e-14,
+        "new": 3.3486220776977943e-14,
+        "rel": 0.2229169351650025
+      },
+      {
+        "path": "5/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "5/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/dp",
+        "old": 907.0499115533314,
+        "new": 907.0499115525104,
+        "rel": 9.051832005798463e-13
+      },
+      {
+        "path": "5/dp_fd",
+        "old": 872.2729544120789,
+        "new": 872.2729544120789,
+        "rel": 0.0
+      },
+      {
+        "path": "5/elapsed_s",
+        "old": 26.4076093800104,
+        "new": 18.074291551019996,
+        "rel": 0.31556502177355067
+      },
+      {
+        "path": "5/gamma_sqrt_ha",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/iterations",
+        "old": 540.0,
+        "new": 251.0,
+        "rel": 0.5351851851851852
+      },
+      {
+        "path": "5/mass_balance",
+        "old": 1.1603703622435174e-16,
+        "new": 1.2633578423832826e-16,
+        "rel": 0.08151885133786226
+      },
+      {
+        "path": "5/residual",
+        "old": 9.93767397463631e-10,
+        "new": 9.589272437996329e-10,
+        "rel": 0.035058660359476246
+      },
+      {
+        "path": "5/spacing",
+        "old": 0.25,
+        "new": 0.25,
+        "rel": 0.0
+      },
+      {
+        "path": "5/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "5/x0",
+        "old": 2.221441469079183,
+        "new": 2.221441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "6/axial_cells",
+        "old": 60.0,
+        "new": 60.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/charge_balance",
+        "old": 5.63076150179646e-14,
+        "new": 6.521613153544758e-14,
+        "rel": 0.13659989189393795
+      },
+      {
+        "path": "6/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "6/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/dp",
+        "old": 910.9410189858364,
+        "new": 910.9410189864954,
+        "rel": 7.23349698499256e-13
+      },
+      {
+        "path": "6/dp_fd",
+        "old": 876.1285040935867,
+        "new": 876.1285040935867,
+        "rel": 0.0
+      },
+      {
+        "path": "6/elapsed_s",
+        "old": 69.42962042699219,
+        "new": 32.13295145300799,
+        "rel": 0.5371867042425074
+      },
+      {
+        "path": "6/gamma_sqrt_ha",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/iterations",
+        "old": 695.0,
+        "new": 257.0,
+        "rel": 0.6302158273381295
+      },
+      {
+        "path": "6/mass_balance",
+        "old": 1.2776354352533417e-16,
+        "new": 1.2484714099955056e-16,
+        "rel": 0.022826562611777585
+      },
+      {
+        "path": "6/residual",
+        "old": 9.926768310827965e-10,
+        "new": 9.51190272718128e-10,
+        "rel": 0.041792612727160755
+      },
+      {
+        "path": "6/spacing",
+        "old": 0.25,
+        "new": 0.25,
+        "rel": 0.0
+      },
+      {
+        "path": "6/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "6/x0",
+        "old": 2.221441469079183,
+        "new": 2.221441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "7/axial_cells",
+        "old": 99.0,
+        "new": 99.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/charge_balance",
+        "old": 3.5239515978227775e-14,
+        "new": 3.535898079484284e-14,
+        "rel": 0.0033786272661028498
+      },
+      {
+        "path": "7/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "7/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/dp",
+        "old": 907.1199993603839,
+        "new": 907.1199993592538,
+        "rel": 1.2457526763269103e-12
+      },
+      {
+        "path": "7/dp_fd",
+        "old": 872.2729544120789,
+        "new": 872.2729544120789,
+        "rel": 0.0
+      },
+      {
+        "path": "7/elapsed_s",
+        "old": 32.82718274599756,
+        "new": 24.79391109899734,
+        "rel": 0.24471401366234125
+      },
+      {
+        "path": "7/gamma_sqrt_ha",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/iterations",
+        "old": 397.0,
+        "new": 249.0,
+        "rel": 0.37279596977329976
+      },
+      {
+        "path": "7/mass_balance",
+        "old": 1.178937517249501e-16,
+        "new": 1.2359500734806935e-16,
+        "rel": 0.046128526915843175
+      },
+      {
+        "path": "7/residual",
+        "old": 9.499584965784071e-10,
+        "new": 9.762006296858274e-10,
+        "rel": 0.026881905531925165
+      },
+      {
+        "path": "7/spacing",
+        "old": 0.125,
+        "new": 0.125,
+        "rel": 0.0
+      },
+      {
+        "path": "7/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "7/x0",
+        "old": 2.221441469079183,
+        "new": 2.221441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "8/axial_cells",
+        "old": 55.0,
+        "new": 55.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/cells",
+        "old": 48.0,
+        "new": 48.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/charge_balance",
+        "old": 3.5703348044045624e-14,
+        "new": 3.5926350262275885e-14,
+        "rel": 0.0062072049234687095
+      },
+      {
+        "path": "8/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "8/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/dp",
+        "old": 807.9318993646159,
+        "new": 807.9318993632135,
+        "rel": 1.7358403984751447e-12
+      },
+      {
+        "path": "8/dp_fd",
+        "old": 754.424208450492,
+        "new": 754.424208450492,
+        "rel": 0.0
+      },
+      {
+        "path": "8/elapsed_s",
+        "old": 26.553505613992456,
+        "new": 16.93819338598405,
+        "rel": 0.36211084019511103
+      },
+      {
+        "path": "8/gamma_sqrt_ha",
+        "old": 2.0,
+        "new": 2.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/iterations",
+        "old": 578.0,
+        "new": 250.0,
+        "rel": 0.5674740484429066
+      },
+      {
+        "path": "8/mass_balance",
+        "old": 1.3359818493571772e-16,
+        "new": 1.219178560581265e-16,
+        "rel": 0.08742879915031285
+      },
+      {
+        "path": "8/residual",
+        "old": 9.064604567359491e-10,
+        "new": 9.18541717291369e-10,
+        "rel": 0.013152653089122146
+      },
+      {
+        "path": "8/spacing",
+        "old": 0.2221441469079183,
+        "new": 0.2221441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "8/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "8/x0",
+        "old": 1.1107207345395915,
+        "new": 1.1107207345395915,
+        "rel": 0.0
+      },
+      {
+        "path": "9/axial_cells",
+        "old": 55.0,
+        "new": 55.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/cells",
+        "old": 72.0,
+        "new": 72.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/charge_balance",
+        "old": 6.804957257257789e-14,
+        "new": 6.570198573696603e-14,
+        "rel": 0.03449818634948889
+      },
+      {
+        "path": "9/delta",
+        "old": 0.2,
+        "new": 0.2,
+        "rel": 0.0
+      },
+      {
+        "path": "9/downstream",
+        "old": 10.0,
+        "new": 10.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/dp",
+        "old": 811.3262297540798,
+        "new": 811.3262297541462,
+        "rel": 8.183281988743624e-14
+      },
+      {
+        "path": "9/dp_fd",
+        "old": 757.7595972833269,
+        "new": 757.7595972833269,
+        "rel": 0.0
+      },
+      {
+        "path": "9/elapsed_s",
+        "old": 72.82290160600678,
+        "new": 29.68971780798165,
+        "rel": 0.5923024604455929
+      },
+      {
+        "path": "9/gamma_sqrt_ha",
+        "old": 2.0,
+        "new": 2.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/ha_mid",
+        "old": 200.0,
+        "new": 200.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/iterations",
+        "old": 735.0,
+        "new": 257.0,
+        "rel": 0.6503401360544218
+      },
+      {
+        "path": "9/mass_balance",
+        "old": 1.3596852922191798e-16,
+        "new": 1.2870124575629051e-16,
+        "rel": 0.05344827591512983
+      },
+      {
+        "path": "9/residual",
+        "old": 8.51182317206126e-10,
+        "new": 9.737601242847152e-10,
+        "rel": 0.12588090641792293
+      },
+      {
+        "path": "9/spacing",
+        "old": 0.2221441469079183,
+        "new": 0.2221441469079183,
+        "rel": 0.0
+      },
+      {
+        "path": "9/upstream",
+        "old": 15.0,
+        "new": 15.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/window",
+        "old": 6.0,
+        "new": 6.0,
+        "rel": 0.0
+      },
+      {
+        "path": "9/x0",
+        "old": 1.1107207345395915,
+        "new": 1.1107207345395915,
+        "rel": 0.0
+      }
+    ]
+  },
+  "case_p_correction": {
+    "graded": 8,
+    "misses": [],
+    "worst_graded": {
+      "path": "square/flow_centroid_fraction",
+      "old": 0.00035558506879127135,
+      "new": 0.00035558506897194155,
+      "rel": 5.080927714789464e-10,
+      "rtol": 1e-06,
+      "ok": true
+    },
+    "worst_other": {
+      "path": "time_s",
+      "old": 12.771595931000775,
+      "new": 10.487470232998021,
+      "rel": 0.1788441875504725
+    },
+    "only_old": [],
+    "only_new": [],
+    "rows": [
+      {
+        "path": "at_optimum/flow_centroid_fraction",
+        "old": -0.00027747419231979235,
+        "new": -0.00027747419222968377,
+        "rel": 3.2474582195559753e-10,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "at_optimum/flow_ratio",
+        "old": 0.9999975796345072,
+        "new": 0.9999975796344868,
+        "rel": 2.0428153096699717e-14,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "at_optimum/q_exact",
+        "old": 0.001825265407281311,
+        "new": 0.0018252654072812738,
+        "rel": 2.0433496731334908e-14,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "at_optimum/q_uniform",
+        "old": 0.0018252698251014108,
+        "new": 0.0018252698251014108,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "square/flow_centroid_fraction",
+        "old": 0.00035558506879127135,
+        "new": 0.00035558506897194155,
+        "rel": 5.080927714789464e-10,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "square/flow_ratio",
+        "old": 1.0000004775954943,
+        "new": 1.000000477595523,
+        "rel": 2.864374035520689e-14,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "square/q_exact",
+        "old": 0.019310140133150102,
+        "new": 0.019310140133150654,
+        "rel": 2.856748120711947e-14,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "square/q_uniform",
+        "old": 0.019310130910718586,
+        "new": 0.019310130910718586,
+        "rel": 0.0,
+        "rtol": 1e-06,
+        "ok": true
+      },
+      {
+        "path": "at_optimum/Ha",
+        "old": 195.05168029247213,
+        "new": 195.05168029247213,
+        "rel": 0.0
+      },
+      {
+        "path": "at_optimum/Rc_over_a",
+        "old": 628.9448730707562,
+        "new": 628.9448730707562,
+        "rel": 0.0
+      },
+      {
+        "path": "at_optimum/a_m",
+        "old": 0.020019242606312673,
+        "new": 0.020019242606312673,
+        "rel": 0.0
+      },
+      {
+        "path": "at_optimum/beta",
+        "old": 0.14971177693420332,
+        "new": 0.14971177693420332,
+        "rel": 0.0
+      },
+      {
+        "path": "at_optimum/centroid_uniform_fraction",
+        "old": -1.1778794933797663e-15,
+        "new": -1.1778794933797663e-15,
+        "rel": 0.0
+      },
+      {
+        "path": "square/Ha",
+        "old": 195.05168029247213,
+        "new": 195.05168029247213,
+        "rel": 0.0
+      },
+      {
+        "path": "square/Rc_over_a",
+        "old": 628.9448730707562,
+        "new": 628.9448730707562,
+        "rel": 0.0
+      },
+      {
+        "path": "square/a_m",
+        "old": 0.020019242606312673,
+        "new": 0.020019242606312673,
+        "rel": 0.0
+      },
+      {
+        "path": "square/beta",
+        "old": 1.0,
+        "new": 1.0,
+        "rel": 0.0
+      },
+      {
+        "path": "square/centroid_uniform_fraction",
+        "old": -1.5047343985888202e-15,
+        "new": -1.5047343985888202e-15,
+        "rel": 0.0
+      },
+      {
+        "path": "time_s",
+        "old": 12.771595931000775,
+        "new": 10.487470232998021,
+        "rel": 0.1788441875504725
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+lmhdx 1.10.0, JAX 0.6.2, SOLVAX 0.19.0
+host: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43, python 3.10.21
+design law H=100...
+WARNING:2026-10-06 14:34:19,448:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  32/4: beta*=0.12417 Ha*=283.8 s*=2.0918 reduction=45.7% (29 s)
+  48/6: beta*=0.12336 Ha*=284.7 s*=2.0815 reduction=45.9% (27 s)
+  72/9: beta*=0.12300 Ha*=285.1 s*=2.0770 reduction=46.0% (29 s)
+  spectral: beta*=0.12271 s*=2.0733

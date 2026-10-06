@@ -1,0 +1,10 @@
+lmhdx 1.10.0, JAX 0.6.2, SOLVAX 0.19.0
+host: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43, python 3.10.21
+tilt law H=100...
+WARNING:2026-10-06 14:47:39,697:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  tilt 0.0: kappa=0.00 beta*=0.12300 (x0.997) dp*/dp*_0=1.0000 reduction=46.1% retune gain=0.0%
+  tilt 0.02: kappa=0.34 beta*=0.12442 (x1.009) dp*/dp*_0=1.0049 reduction=45.9% retune gain=0.0%
+  tilt 0.05: kappa=0.84 beta*=0.13180 (x1.068) dp*/dp*_0=1.0291 reduction=44.6% retune gain=0.1%
+  tilt 0.1: kappa=1.69 beta*=0.15663 (x1.270) dp*/dp*_0=1.1017 reduction=40.8% retune gain=1.4%
+  tilt 0.2: kappa=3.37 beta*=0.23372 (x1.895) dp*/dp*_0=1.2858 reduction=31.2% retune gain=9.6%
+  tilt 0.3: kappa=5.06 beta*=0.32426 (x2.629) dp*/dp*_0=1.4527 reduction=22.5% retune gain=19.2%

@@ -1,0 +1,6 @@
+lmhdx 1.10.0, JAX 0.6.2, SOLVAX 0.19.0
+host: Linux-6.18.33.2-microsoft-standard-WSL2-x86_64-with-glibc2.43, python 3.10.21
+Case P exact 1/R field correction...
+WARNING:2026-10-06 14:55:17,067:jax._src.xla_bridge:794: An NVIDIA GPU may be present on this machine, but a CUDA-enabled jaxlib is not installed. Falling back to cpu.
+  square: flow_ratio=1.000000 centroid=+0.0004
+  optimum: flow_ratio=0.999998 centroid=-0.0003 (10 s)

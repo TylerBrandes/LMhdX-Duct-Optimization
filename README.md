@@ -11,6 +11,7 @@ actual runs: each results commit states what ran, against which tolerances, and 
 | Study | Question | Headline | Write-up |
 |:--|:--|:--|:--|
 | Stage 2 (LMhdX plan step 3b.3) | The fixed-flow, minimum-pumping-power shape of one straight, insulated PbLi duct in a tokamak field | The optimum aspect ratio follows β\*√<i>Ha</i>\* → 2.08 from <i>Ha</i>\* 14 to 6,109, saving 9–73% over an equal-area square duct; a tilted field moves it along κ = √<i>Ha</i>\*<sub>0</sub> · <i>B</i><sub>p</sub>/<i>B</i><sub>T</sub> | [results/stage2](results/stage2/README.md) |
+| Stage 2 reproduction | Do the Stage 2 results still come out the same on LMhdX 1.10.0? | Yes: a six-stage subset is bit-identical on the fully developed path and within 5e-9 on the open axis | [results/stage2-repro-1.10.0](results/stage2-repro-1.10.0/README.md) |
 
 ## Layout
 
