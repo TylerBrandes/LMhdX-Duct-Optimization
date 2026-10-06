@@ -420,6 +420,21 @@ def figure_f2(results: dict) -> None:
     save_figure(fig, "F2_design_law", rows_csv, caption)
 
 
+def _demo_path(results: dict) -> tuple[np.ndarray, np.ndarray]:
+    """The demonstration optimizer's path as (beta, V), starting where the run started.
+
+    The run starts at the square duct at sqrt(V_min V_max); its first step, the exact
+    bisection in area, lands on V_min before the first path record, so that point is
+    prepended from the inputs.
+    """
+    path = results["case_r_outboard"]["demo_optimizer"]["path"]
+    inputs = results["inputs"]
+    v_start = float(np.sqrt(inputs["V_min_default_ms"] * inputs["V_max_default_ms"]))
+    ws = [path[0]["w_center"], path[0]["w_center"]] + [p["w_next"] for p in path]
+    us = [p["u"] for p in path] + [path[-1]["u"]]
+    return np.exp(ws), np.array([v_start] + [inputs["Q_m3s"] / np.exp(u) for u in us])
+
+
 def figure_f3(results: dict) -> None:
     cases_ = [("case_r_outboard", "R_outboard"), ("case_r_inboard", "R_inboard"), ("case_p", "P")]
     fig, axes = plt.subplots(1, 3, figsize=(DOUBLE_COL, DOUBLE_COL * 0.36), sharex=True, sharey=True)
@@ -437,17 +452,10 @@ def figure_f3(results: dict) -> None:
         cs = ax.contourf(betas, vs, W / W.max(axis=1, keepdims=True), levels=8, cmap=SEQ_BLUE)
         ax.set_xscale("log")
         ax.set_yscale("log")
-        v_min_default = [row["V_min"] for row in case["pareto"]]
         for row in case["pareto"]:
             ax.axhline(row["V_min"], color=INK, lw=0.4, alpha=0.5)
-        _value_ticks(ax, "y", v_min_default, fmt="{:g}")
         if "demo_optimizer" in case:
-            path = case["demo_optimizer"]["path"]
-            Q = results["inputs"]["Q_m3s"]
-            ws_path = [path[0]["w_center"]] + [p["w_next"] for p in path]
-            us_path = [p["u"] for p in path] + [path[-1]["u"]]
-            betas_path = np.exp(ws_path)
-            v_path = [Q / np.exp(u) for u in us_path]
+            betas_path, v_path = _demo_path(results)
             ax.plot(betas_path, v_path, color=COLOR[tag], lw=1.0, marker="o", markersize=3, markeredgecolor="white")
             ax.plot(betas_path[0], v_path[0], marker="s", color=COLOR[tag], markeredgecolor="white", markersize=6)
             ax.plot(betas_path[-1], v_path[-1], marker="*", color=COLOR[tag], markeredgecolor="white", markersize=9)
@@ -456,6 +464,8 @@ def figure_f3(results: dict) -> None:
         for row in landscape:
             csv_rows.append({"case": tag, "beta": row["beta"], "V": row["V"], "W": row["W"]})
     axes[0].set_ylabel(axis_label("Mean Velocity", "V=Q/A", "m/s"))
+    # the panels share one y axis, so the ticks are set once, for every case's V_min
+    _value_ticks(axes[0], "y", [row["V_min"] for key, _ in cases_ for row in results[key]["pareto"]], fmt="{:g}")
     fig.colorbar(cs, ax=axes, shrink=0.6, label="$W(\\beta)\\,/\\,\\max_\\beta W$ (Per Row)", location="right")
     # the demo-optimizer path markers (square/star) had no legend entry in the first version
     # -- readable only from the caption, which a reader glancing at the figure alone would
@@ -469,10 +479,14 @@ def figure_f3(results: dict) -> None:
     axes[0].legend(handles=marker_handles, frameon=False, loc="upper left", fontsize=5.5)
     caption = (
         "Pumping-power landscapes over aspect ratio and mean velocity, for the "
-        "three cases at their default $V_\\mathrm{min}$. Horizontal lines mark "
-        "the $V_\\mathrm{min}$ values of the Pareto sweep (Fig. F5); the square and "
-        "star mark the start and converged end of the demonstration optimizer's "
-        "path (Case R outboard only, plan step 0.4; see also Fig. F4)."
+        "three cases. Each row is normalized by its own maximum over aspect, so "
+        "colours compare aspects at one velocity, not velocities: across rows $W$ "
+        "rises with $V$ (Fig. F10). Horizontal lines mark the $V_\\mathrm{min}$ "
+        "values of the Pareto sweep (Fig. F5). The demonstration optimizer (Case R "
+        "outboard, plan step 0.4; see also Fig. F4) starts from a square duct at "
+        "$\\sqrt{V_\\mathrm{min}V_\\mathrm{max}}=0.1$ m/s (square), steps in area "
+        "straight to $V_\\mathrm{min}=10$ mm/s, and then searches in aspect to the "
+        "optimum (star)."
     )
     save_figure(fig, "F3_landscape", csv_rows, caption)
 
@@ -706,6 +720,73 @@ def figure_f9(results: dict) -> None:
         "the square above the crossing."
     )
     save_figure(fig, "F9_tilt_law", rows_csv, caption)
+
+
+def figure_f10(results: dict) -> None:
+    """F3's Case R outboard landscape, two quantities at a time and in absolute W."""
+    case = results["case_r_outboard"]
+    landscape = case["landscape"]
+    betas = sorted({r["beta"] for r in landscape})
+    vs = sorted({r["V"] for r in landscape})
+    W = {(r["beta"], r["V"]): r["W"] for r in landscape}
+    opt = sorted(case["pareto"], key=lambda r: r["V_min"])
+    opt_beta, opt_v, opt_W = ([r[k] for r in opt] for k in ("beta", "V_min", "W"))
+    betas_path, v_path = _demo_path(results)
+    opt_style = dict(color=INK, ls="--", lw=1.0, marker="o", markersize=5, markerfacecolor="white",
+                     markeredgecolor=INK, zorder=5, label="Optimum at Each $V_\\mathrm{min}$")
+
+    fig, axes = plt.subplots(1, 2, figsize=(DOUBLE_COL, DOUBLE_COL * 0.42), sharex=True)
+    ax = axes[0]
+    norm = plt.cm.colors.LogNorm(vmin=vs[0], vmax=vs[-1])
+    ramp = lambda v: SEQ_BLUE(0.3 + 0.7 * norm(v))  # noqa: E731 (skip the ramp's faintest steps)
+    for v in vs:
+        ax.plot(betas, [W[(b, v)] for b in betas], color=ramp(v), lw=1.0, marker="o", markersize=2.5,
+                markeredgewidth=0)
+    ax.plot(opt_beta, opt_W, **opt_style)
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlabel(axis_label("Aspect Ratio", "\\beta=b/a"))
+    ax.set_ylabel(axis_label("Pumping Power", "W", "W"))
+    ax.legend(frameon=False, loc="lower right", fontsize=6)
+    sm = plt.cm.ScalarMappable(norm=norm, cmap=plt.cm.colors.LinearSegmentedColormap.from_list(
+        "seq_blue_cut", [SEQ_BLUE(0.3), SEQ_BLUE(1.0)]))
+    fig.colorbar(sm, ax=ax, label=axis_label("Mean Velocity of the Curve", "V", "m/s"), pad=0.02)
+    _panel_letter(ax, "a")
+
+    ax = axes[1]
+    ax.plot(opt_beta, opt_v, **opt_style)
+    ax.axhline(results["inputs"]["V_min_default_ms"], color=INK_MUTED, lw=0.8)
+    ax.annotate("$V_\\mathrm{min}$ of the run, 10 mm/s", (0.022, 0.0108), fontsize=6, color=INK_SECONDARY)
+    ax.plot(betas_path, v_path, color=COLOR["R_outboard"], lw=1.2, marker="o", markersize=3.5,
+            markeredgecolor="white", label="Demonstration Optimizer")
+    ax.plot(betas_path[0], v_path[0], marker="s", color=COLOR["R_outboard"], markeredgecolor="white",
+            markersize=7, ls="none", label="Start")
+    ax.plot(betas_path[-1], v_path[-1], marker="*", color=COLOR["R_outboard"], markeredgecolor="white",
+            markersize=10, ls="none", label="End (Optimum)")
+    ax.annotate("Step 1: area\nto the bound", (1.08, 0.03), fontsize=6, color=INK_SECONDARY)
+    ax.set_xscale("log")
+    ax.set_yscale("log")
+    ax.set_xlabel(axis_label("Aspect Ratio", "\\beta=b/a"))
+    ax.set_ylabel(axis_label("Mean Velocity", "V=Q/A", "m/s"))
+    _value_ticks(ax, "y", opt_v + [v_path[0]], fmt="{:g}")
+    ax.legend(frameon=False, loc="lower right", fontsize=6)
+    _panel_letter(ax, "b")
+
+    rows_csv = (
+        [{"panel": "a", "series": "landscape", "beta": b, "V": v, "W": W[(b, v)]} for v in vs for b in betas]
+        + [{"panel": "a,b", "series": "optimum", "beta": b, "V": v, "W": w} for b, v, w in zip(opt_beta, opt_v, opt_W)]
+        + [{"panel": "b", "series": "optimizer path", "beta": b, "V": v, "W": ""} for b, v in zip(betas_path, v_path)]
+    )
+    caption = (
+        "The Case R outboard landscape of Fig. F3, two quantities at a time and in absolute pumping power. "
+        "(a) $W$ against aspect ratio, one curve per sampled mean velocity (the landscape's 9 aspects; the "
+        "minima between samples are not resolved): at every aspect $W$ rises with $V$, and each curve has its "
+        "own interior minimum. Open circles: the optimum at each $V_\\mathrm{min}$ of the Pareto sweep. "
+        "(b) The same optima in aspect ratio and velocity, and the demonstration optimizer: it starts from a "
+        "square duct at 0.1 m/s, its first step in area goes straight to $V_\\mathrm{min}$ because $W$ falls "
+        "with area at every aspect, and the rest of the search is in aspect at that bound."
+    )
+    save_figure(fig, "F10_landscape_views", rows_csv, caption)
 
 
 def figure_f8(results: dict) -> None:
@@ -976,6 +1057,7 @@ def main():
     figure_f7(results)
     figure_f8(results)
     figure_f9(results)
+    figure_f10(results)
     print("tables:")
     table_t1(results)
     table_t2(results)
