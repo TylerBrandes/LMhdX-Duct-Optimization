@@ -902,7 +902,10 @@ def main():
     if args.stage is None:
         parser.error("pass --stage NAME, --list, --status or --finalize")
 
-    print(f"lmhdx {lmhdx.__file__}, JAX {jax.__version__}, SOLVAX {solvax.__version__}", flush=True)
+    print(
+        f"lmhdx {importlib.metadata.version('lmhdx')}, JAX {jax.__version__}, SOLVAX {solvax.__version__}",
+        flush=True,
+    )
     print(f"host: {platform.platform()}, python {platform.python_version()}", flush=True)
     before, t0 = cache_stats(), time.perf_counter()
     run_stage(args.stage)

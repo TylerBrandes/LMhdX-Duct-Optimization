@@ -10,7 +10,9 @@ import os
 from pathlib import Path
 
 # DUCTOPT_RESULTS points a run at another results folder (a reproduction, say); the default is Stage 2's.
-RESULTS_DIR = Path(os.environ.get("DUCTOPT_RESULTS", Path(__file__).resolve().parents[1] / "results" / "stage2")).resolve()
+RESULTS_DIR = Path(
+    os.environ.get("DUCTOPT_RESULTS", Path(__file__).resolve().parents[1] / "results" / "stage2")
+).resolve()
 CHECKPOINT_PATH = RESULTS_DIR / "checkpoint.json"
 
 
