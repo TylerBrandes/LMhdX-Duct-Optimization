@@ -6,9 +6,12 @@ call and persist its result to disk immediately)."""
 from __future__ import annotations
 
 import json
+import os
 from pathlib import Path
 
-CHECKPOINT_PATH = Path(__file__).resolve().parents[1] / "results" / "stage2" / "checkpoint.json"
+# DUCTOPT_RESULTS points a run at another results folder (a reproduction, say); the default is Stage 2's.
+RESULTS_DIR = Path(os.environ.get("DUCTOPT_RESULTS", Path(__file__).resolve().parents[1] / "results" / "stage2")).resolve()
+CHECKPOINT_PATH = RESULTS_DIR / "checkpoint.json"
 
 
 def load() -> dict:

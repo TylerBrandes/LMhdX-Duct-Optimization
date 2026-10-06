@@ -14,7 +14,8 @@ foreground call and its result merged into results/stage2/checkpoint.json
 immediately -- interrupting the whole run costs at most the one stage in
 flight. List stages with ``--list``; run one with ``--stage NAME``; once
 every stage is done, ``--finalize`` assembles results/stage2/results.json
-for duct_opt_figures.py.
+for duct_opt_figures.py. DUCTOPT_RESULTS=<dir> sends the checkpoint and results.json to
+another folder instead.
 
     export PYTHONPATH=.:/path/to/LMhdX     # this repo and the LMhdX checkout (validation/)
     python -u duct_optimization_poc.py --list
@@ -62,7 +63,7 @@ from ductopt.physics import (  # noqa: E402
 )
 
 REPO_ROOT = Path(__file__).resolve().parent
-OUT_DIR = REPO_ROOT / "results" / "stage2"
+OUT_DIR = checkpoint.RESULTS_DIR  # results/stage2 unless DUCTOPT_RESULTS says otherwise
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
 CELLS_EXPLORE = 48
@@ -740,7 +741,7 @@ def run_stage(name: str) -> None:
 
 
 def finalize() -> None:
-    """Assemble artifacts/duct_opt/results.json from the checkpoint, for duct_opt_figures.py."""
+    """Assemble OUT_DIR/results.json from the checkpoint, for duct_opt_figures.py."""
     ckpt = checkpoint.load()
     missing = [s for s in STAGES if not _stage_done(ckpt, s)]
     if missing:
