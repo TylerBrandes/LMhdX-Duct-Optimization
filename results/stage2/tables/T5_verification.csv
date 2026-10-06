@@ -1,0 +1,14 @@
+Case,$V_\mathrm{min}$ (mm/s),Taylor Slope (0th),Taylor Slope (1st),Finer-Mesh $|\Delta W|/W$
+R Outboard,2.0,1.00,2.00,5.71e-03
+R Outboard,5.0,1.00,2.00,4.96e-03
+R Outboard,10.0,1.00,2.00,4.45e-03
+R Outboard,20.0,1.00,2.00,3.97e-03
+R Outboard,50.0,1.00,2.00,3.42e-03
+R Inboard,2.0,1.00,2.00,5.91e-03
+R Inboard,5.0,1.00,2.00,5.15e-03
+R Inboard,10.0,1.00,2.00,4.61e-03
+R Inboard,20.0,1.00,2.00,4.12e-03
+R Inboard,50.0,1.00,2.00,3.54e-03
+P,5.0,1.00,2.00,4.94e-03
+P,10.0,1.00,2.00,4.43e-03
+P,20.0,1.00,2.00,3.96e-03

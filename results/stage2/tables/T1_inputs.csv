@@ -1,0 +1,16 @@
+Quantity,Value,Unit,Source
+PbLi Temperature,573,K,"Martelli, Venturini & Utili 2019, Fusion Eng. Des. 138:183 (D3)"
+Conductivity $\sigma$,8.840e+05,S/m,"Martelli, Venturini & Utili 2019, Fusion Eng. Des. 138:183 (D3)"
+Density $\rho$,9838,kg/m$^3$,"Martelli, Venturini & Utili 2019, Fusion Eng. Des. 138:183 (D3)"
+Dynamic Viscosity $\mu$,2.150e-03,Pa s,"Martelli, Venturini & Utili 2019, Fusion Eng. Des. 138:183 (D3)"
+Specific Heat $c_p$,189.8,J/(kg K),"Martelli, Venturini & Utili 2019, Fusion Eng. Des. 138:183 (D3)"
+First-Wall Field $B_\mathrm{fw}$,0.50,T,"Plan 4.4, Lab-Scale"
+$R_0$,9.0,m,"Federici et al. 2019, Nucl. Fusion 59:066013 (M1)"
+Outboard First Wall,12.1,m,"Federici et al. 2019, Nucl. Fusion 59:066013 (M1)"
+Inboard First Wall,5.9,m,"Federici et al. 2019, Nucl. Fusion 59:066013 (M1)"
+Outboard Blanket Depth,0.982,m,"Federici et al. 2019, Nucl. Fusion 59:066013 (M1)"
+Inboard Blanket Depth,0.755,m,"Federici et al. 2019, Nucl. Fusion 59:066013 (M1)"
+Target Flow Rate $Q$,2.40e-06,m$^3$/s,Plan 4.4 (Worked Example)
+Default $V_\mathrm{min}$,10.0,mm/s,Plan 2.4
+$V_\mathrm{max}$,1.0,m/s,Plan 2.4
+Aspect Bounds $\beta$,"[0.02, 5.0]",$-$,"No Blanket-Space Box (User Decision, 2026-09-24)"

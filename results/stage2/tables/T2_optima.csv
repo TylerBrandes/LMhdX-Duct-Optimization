@@ -1,0 +1,4 @@
+Case,$a^*$ (mm),$b^*$ (mm),$\beta^*$,$W^*$ (W),Active Bound,Multiplier,$dW/dw$
+R Outboard,20.02,3.00,0.1497,4.1495e-05,$V_\mathrm{min}$,6.93e-05,2.48e-07
+R Inboard,20.74,2.89,0.1395,3.4226e-05,$V_\mathrm{min}$,5.72e-05,1.33e-07
+P,20.02,3.00,0.1497,4.2242e-05,$V_\mathrm{min}$,7.06e-05,1.58e-07
