@@ -14,10 +14,15 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from lmx.bc import PERIODIC, BoundaryCondition  # noqa: E402
-from lmx.core3d import ChannelProblem  # noqa: E402
-from lmx.design import channel_flow_response  # noqa: E402
-from lmx.grid import Grid, uniform_faces, wall_resolving_faces  # noqa: E402
+from lmhdx.core3d import ChannelProblem  # noqa: E402
+from lmhdx.fully_developed import channel_flow_response  # noqa: E402
+from lmhdx.grid import (  # noqa: E402  # noqa: E402
+    PERIODIC,
+    BoundaryCondition,
+    Grid,
+    uniform_faces,
+    wall_resolving_faces,
+)
 
 HA_UNIT = 100.0
 CELLS = 48
@@ -25,7 +30,9 @@ CELLS = 48
 
 def problem(beta, ha, c):
     y = wall_resolving_faces(CELLS, -1.0, 1.0, layer_thickness=1.0 / ha, cells_in_layer=6, max_ratio=None)
-    z = wall_resolving_faces(CELLS, -beta, beta, layer_thickness=1.0 / np.sqrt(ha), cells_in_layer=6, max_ratio=None)
+    z = wall_resolving_faces(
+        CELLS, -beta, beta, layer_thickness=1.0 / np.sqrt(ha), cells_in_layer=6, max_ratio=None
+    )
     wall = BoundaryCondition("neumann")
     return ChannelProblem(
         grid=Grid(uniform_faces(1, 0.0, 1.0), y, z),
@@ -39,10 +46,14 @@ def problem(beta, ha, c):
 
 
 c0 = float(sys.argv[1]) if len(sys.argv) > 1 else 0.0
-print(f"walls: {'insulating' if c0 == 0 else f'thin, c = {c0}/a'}   (fixed area 4, fixed V = 1, Ha = {HA_UNIT:.0f} a)")
+print(
+    f"walls: {'insulating' if c0 == 0 else f'thin, c = {c0}/a'}   (fixed area 4, fixed V = 1, Ha = {HA_UNIT:.0f} a)"
+)
 for beta in (0.1, 0.2, 0.35, 0.5, 0.7, 1.0, 1.4, 2.0, 3.0):
     a = 1.0 / np.sqrt(beta)
     ha, c = HA_UNIT * a, c0 / a
     q = float(channel_flow_response(problem(beta, ha, c)).flow_per_unit_drive)
     gradient = (4.0 * beta / q) / a**2
-    print(f"  beta {beta:4.2f}  a {a:5.3f}  b {beta * a:5.3f}  Ha {ha:6.1f}  c {c:6.4f}  dp/dx {gradient:9.4f}")
+    print(
+        f"  beta {beta:4.2f}  a {a:5.3f}  b {beta * a:5.3f}  Ha {ha:6.1f}  c {c:6.4f}  dp/dx {gradient:9.4f}"
+    )

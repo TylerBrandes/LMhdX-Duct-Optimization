@@ -5,7 +5,7 @@ major radius (half-width b = beta), duct centre at major radius Rc (in units of 
 the exact vacuum toroidal field on the flat cross-section, B = B0 Rc (x_R, -y) / (x_R^2 + y^2)
 with x_R = Rc + z: curl and divergence free, from the flux function A = B0 Rc ln|r|
 (B_y = dA/dz, B_z = -dA/dy). Faces hold differences of A, so the discrete divergence is
-round-off, as lmx.core3d.fringe_field does for the ANL fringe.
+round-off, as lmhdx.core3d.fringe_field does for the ANL fringe.
 Compares the flow per unit drive and the flow centroid against the uniform field B0.
 """
 
@@ -16,19 +16,20 @@ import numpy as np
 
 jax.config.update("jax_enable_x64", True)
 
-from lmx.bc import PERIODIC, BoundaryCondition  # noqa: E402
-from lmx.core3d import ChannelProblem, ImposedField  # noqa: E402
-from lmx.design import channel_cross_section_weights, channel_flow_rate  # noqa: E402
-from lmx.grid import (  # noqa: E402  # noqa: E402
+from lmhdx.core3d import ChannelProblem, ImposedField  # noqa: E402
+from lmhdx.fully_developed import channel_cross_section_weights, channel_flow_rate  # noqa: E402
+from lmhdx.grid import (  # noqa: E402  # noqa: E402  # noqa: E402
     CENTER,
     FACE,
+    PERIODIC,
+    BoundaryCondition,
     Field,
     Grid,
     uniform_faces,
     wall_resolving_faces,
 )
-from lmx.ops import divergence  # noqa: E402
-from lmx.steady import solve_steady_state  # noqa: E402
+from lmhdx.ops import divergence  # noqa: E402
+from lmhdx.steady import solve_steady_state  # noqa: E402
 
 HA = 100.0
 BETA = 1.0
@@ -50,7 +51,11 @@ def toroidal_field(g, rc):
     b_z = -np.diff(corners, axis=0) / g.widths[1][:, None]  # on z faces: (ny, nz+1)
     nx = g.shape[0]
     faces = (np.zeros(g.face_shape(0)), np.repeat(b_y[None], nx, axis=0), np.repeat(b_z[None], nx, axis=0))
-    centres = (np.zeros(g.shape), 0.5 * (faces[1][:, :-1] + faces[1][:, 1:]), 0.5 * (faces[2][:, :, :-1] + faces[2][:, :, 1:]))
+    centres = (
+        np.zeros(g.shape),
+        0.5 * (faces[1][:, :-1] + faces[1][:, 1:]),
+        0.5 * (faces[2][:, :, :-1] + faces[2][:, :, 1:]),
+    )
     return ImposedField(g, centres, faces)
 
 
@@ -82,7 +87,10 @@ for rc in (500.0, 50.0, 10.0):
     q, c, r, t, problem = solve(lambda g, rc=rc: toroidal_field(g, rc))
     field = problem.magnetic_field
     div = divergence(
-        tuple(Field(np.asarray(f), tuple(FACE if i == ax else CENTER for i in range(3)), problem.grid) for ax, f in enumerate(field.faces))
+        tuple(
+            Field(np.asarray(f), tuple(FACE if i == ax else CENTER for i in range(3)), problem.grid)
+            for ax, f in enumerate(field.faces)
+        )
     )
     spread = 2.0 * BETA / rc
     print(

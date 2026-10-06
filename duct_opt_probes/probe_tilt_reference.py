@@ -7,7 +7,6 @@ domain, so limited to Ha of about 100, as validation/shercliff.duct_flow is.
 """
 
 import numpy as np
-
 from validation.shercliff import _differentiation_matrix, chebyshev_weights
 
 
@@ -47,9 +46,18 @@ if __name__ == "__main__":
     jax.config.update("jax_enable_x64", True)
     from ductopt.physics import tilted_flow
 
-    for ha, beta, tilt in ((30.0, 0.5, 0.0), (30.0, 0.5, 0.3), (60.0, 0.3, 0.1), (60.0, 0.3, 0.3), (100.0, 0.15, 0.2)):
+    for ha, beta, tilt in (
+        (30.0, 0.5, 0.0),
+        (30.0, 0.5, 0.3),
+        (60.0, 0.3, 0.1),
+        (60.0, 0.3, 0.3),
+        (100.0, 0.15, 0.2),
+    ):
         spectral = {p: tilted_spectral_flow(ha, beta, tilt, p) for p in (48, 64)}
         core = {c: tilted_flow(beta, ha, tilt, c, layer) for c, layer in ((48, 6), (72, 9), (96, 12))}
-        print(f"Ha {ha:5.0f} beta {beta:.2f} tilt {tilt:.2f}: spectral 48/64 pts {spectral[48]:.8e} {spectral[64]:.8e} "
-              f"(diff {spectral[48] / spectral[64] - 1:+.1e}); core/spectral-1: "
-              + " ".join(f"{c}: {core[c] / spectral[64] - 1:+.2e}" for c in core), flush=True)
+        print(
+            f"Ha {ha:5.0f} beta {beta:.2f} tilt {tilt:.2f}: spectral 48/64 pts {spectral[48]:.8e} {spectral[64]:.8e} "
+            f"(diff {spectral[48] / spectral[64] - 1:+.1e}); core/spectral-1: "
+            + " ".join(f"{c}: {core[c] / spectral[64] - 1:+.2e}" for c in core),
+            flush=True,
+        )

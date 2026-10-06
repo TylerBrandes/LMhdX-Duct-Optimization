@@ -24,18 +24,18 @@ results/<study>/           results.json, checkpoint.json, figures/, tables/, cap
 
 ## Running
 
-The driver needs LMhdX installed and its checkout on `PYTHONPATH`, because the spectral
-reference lives in the checkout's `validation/shercliff.py` rather than in the installed package.
-The aspect keyword this study uses there is on LMhdX's `stage2/port-fix` branch (commit 81f972c)
-until it reaches main.
+The code needs LMhdX 1.9.0 or later (the module layout of `lmhdx.grid`,
+`lmhdx.fully_developed` and `lmhdx.cases`), installed, with its checkout on `PYTHONPATH`, because
+the spectral reference lives in the checkout's `validation/shercliff.py` rather than in the
+installed package.
 
 ```bash
 git clone https://github.com/uwplasma/LMhdX.git
-cd LMhdX && git checkout stage2/port-fix
-uv pip install -e '.[dev]' 'solvax==0.19.0'
+cd LMhdX && uv pip install -e '.[dev]' 'solvax==0.19.0'
 ```
 
-Stage 2 ran on Python 3.10.21, JAX 0.6.2 and SOLVAX 0.19.0, on a CPU. From this repository:
+Stage 2 ran on LMhdX 1.6.0 with Python 3.10.21, JAX 0.6.2 and SOLVAX 0.19.0, on a CPU. From this
+repository:
 
 ```bash
 export PYTHONPATH=.:/path/to/LMhdX
@@ -49,8 +49,10 @@ Each stage runs as its own process and writes its result to `results/stage2/chec
 it finishes, so an interrupted run loses at most the stage in flight. The figure script measures
 nothing; it reads only `results.json`.
 
-Some probes in `duct_opt_probes/` predate LMhdX's rename and still import `lmx`; they are kept
-as the record of what was measured, and the ones the study re-ran import `lmhdx`.
+The code was ported from LMhdX's pre-1.9.0 module names (`lmx`, `lmhdx.bc`, `lmhdx.design`,
+`lmhdx.specs`) with the same import changes LMhdX made to its own copy (LMhdX ea93172). The
+probes in `duct_opt_probes/` are kept as the record of what was measured; their imports were
+ported, but they have not been run again since.
 
 ## Provenance
 
