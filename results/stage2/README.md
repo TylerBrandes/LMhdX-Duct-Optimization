@@ -277,7 +277,7 @@ At <i>R</i><sub>c</sub>/<i>a</i> = 629, the exact 1/<i>R</i> field changes the f
 
 The area gradient is exact (JAX autodiff through the traced `field_scale`). A Taylor remainder test [<a href="#ref-o10">O10</a>] confirms it at all 13 Pareto points: the zeroth-order remainder falls as <i>O</i>(<i>h</i>) and the gradient-corrected one as <i>O</i>(<i>h</i>²), with slopes of 1.00 and 2.00.
 
-Re-optimized on 32/4, 48/6 and 72/9 cells (Table 5), every point converges at the observed order 2.00–2.01 for <i>β</i>\* and 1.93–1.97 for <i>W</i>\*, with a GCI on <i>β</i>\* of 0.19–0.36%. From 48/6 to 72/9, <i>β</i>\* moves at most 0.37% and <i>W</i>\* at most 0.44%, inside the registered limits of 3% and 1%. A separate check at each 48/6 optimum on 96/9 cells moves <i>W</i> by 0.34–0.59%.
+Re-optimized on 32/4, 48/6 and 72/9 cells (Table 5), every point converges at the observed order 2.00–2.01 for <i>β</i>\* and 1.93–1.97 for <i>W</i>\*, with a GCI on <i>β</i>\* of 0.19–0.36%. From 48/6 to 72/9, <i>β</i>\* moves at most 0.36% and <i>W</i>\* at most 0.44%, inside the registered limits of 3% and 1%. A separate check at each 48/6 optimum on 96/9 cells moves <i>W</i> by 0.34–0.59%.
 
 Against the spectral reference, the core's <i>W</i> at its own <i>β</i>\* is 0.48–0.79% low at all 11 verified points (limit 1%), worst at 2 mm/s; the reference's own <i>β</i>\* lies 0.15–0.3% below the 72/9 core's, consistent with the Richardson limit. For the design law, the reference is converged to 10⁻⁸ between 48 and 80 collocation points up to <i>Ha</i>\* 1,229, and between 64 and 80 points to 5×10⁻⁷ and 8×10⁻⁵ at 2,427 and 6,109.
 
@@ -285,7 +285,7 @@ The tilt-aware law meets its own registered exits: from 48/6 to 72/9 cells <i>β
 
 ![Taylor remainder test and the change on re-optimizing on a finer mesh](figures/F8_verification.png)
 
-<b>Figure 9.</b> (a) Taylor test at Case R outboard's default optimum. (b) The change of <i>W</i>\* (solid) and <i>β</i>\* (dashed) when each Case R Pareto point is re-optimized from 48/6 to 72/9 cells; the limits are 1% and 3%.
+<b>Figure 9.</b> (a) Taylor test at Case R outboard's optimum for <i>V</i><sub>min</sub> = 2 mm/s. (b) The change of <i>W</i>\* (solid) and <i>β</i>\* (dashed) when each Case R Pareto point is re-optimized from 48/6 to 72/9 cells; the limits are 1% and 3%.
 
 > [!WARNING]
 > **Two exits met only in part**

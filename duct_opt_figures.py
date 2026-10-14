@@ -305,22 +305,22 @@ def figure_f1(results: dict) -> None:
     ax.add_patch(plt.Rectangle((-half_a, -half_b), 2 * half_a, 2 * half_b, fill=False, ec=INK, lw=1.0))
     # b (height, across B): dimension line to the right of the duct
     ax.annotate("", xy=(1.35, -half_b), xytext=(1.35, half_b), arrowprops=dict(arrowstyle="<->", lw=0.7))
-    ax.text(1.45, 0, "$b$", va="center", ha="left", fontsize=7)
+    ax.text(1.45, 0, "$2b$", va="center", ha="left", fontsize=7)
     # a (width, along B): dimension line below the duct
     ax.annotate("", xy=(half_a, -0.85), xytext=(-half_a, -0.85), arrowprops=dict(arrowstyle="<->", lw=0.7))
-    ax.text(0, -1.02, "$a$", ha="center", va="top", fontsize=7)
-    # B direction: vertical arrow through the centre, label directly to its right at mid-height
+    ax.text(0, -1.02, "$2a$", ha="center", va="top", fontsize=7)
+    # B direction: along a (horizontal here), so the long side of the to-scale optimum below lies along B
     ax.annotate(
         "",
-        xy=(0, half_b * 0.75),
-        xytext=(0, -half_b * 0.75),
+        xy=(half_a * 0.6, 0),
+        xytext=(-half_a * 0.6, 0),
         arrowprops=dict(arrowstyle="->", lw=1.2, color=INK),
     )
-    ax.text(0.12, 0, "$B$", fontsize=7, va="center", ha="left")
-    # Hartmann walls (top, normal to B): callout above, with an arrowhead so it reads as
+    ax.text(0, 0.1, "$B$", fontsize=7, va="bottom", ha="center")
+    # side walls (top and bottom, parallel to B): callout above, with an arrowhead so it reads as
     # "pointing at the wall", not a stray line
     ax.annotate(
-        "Hartmann Wall\n(Thickness $\\sim a/Ha$)",
+        "Side Wall\n($\\sim a/\\sqrt{Ha}$)",
         xy=(0.35, half_b),
         xytext=(0.35, 1.05),
         ha="center",
@@ -329,9 +329,9 @@ def figure_f1(results: dict) -> None:
         color=INK_SECONDARY,
         arrowprops=dict(arrowstyle="->", lw=0.6, color=INK_SECONDARY),
     )
-    # side walls: callout to the LEFT (the b-dimension arrow already occupies the right side)
+    # Hartmann walls (left and right, normal to B): callout to the LEFT (the b-dimension arrow occupies the right)
     ax.annotate(
-        "Side Wall\n($\\sim a/\\sqrt{Ha}$)",
+        "Hartmann Wall\n(Thickness $\\sim a/Ha$)",
         xy=(-half_a, 0.25),
         xytext=(-1.95, 0.55),
         ha="right",
@@ -1177,7 +1177,7 @@ def figure_f8(results: dict) -> None:
     ]
     caption = (
         "Verification. (a) Taylor remainder test (Farrell et al. 2013 [O10]) "
-        "at Case R outboard's default optimum: the zeroth-order remainder falls "
+        "at Case R outboard's optimum for $V_\\mathrm{min}$ = 2 mm/s: the zeroth-order remainder falls "
         "as $O(h)$ and the gradient-corrected remainder as $O(h^2)$ (dotted "
         "guides), confirming the exact gradient in the area. (b) The change of $W^*$ (solid) and $\\beta^*$ "
         "(dashed) when each Pareto point is re-optimized on the finer mesh (48/6 to 72/9 cells, a ratio of 1.5); "
