@@ -481,18 +481,18 @@ def finalize() -> None:
     import lmhdx
 
     lmhdx_repo = Path(lmhdx.__file__).resolve().parents[2]
-    lmhdx_status = subprocess.run(
-        ["git", "status", "--porcelain", "--untracked-files=no"],
-        cwd=lmhdx_repo,
-        capture_output=True,
-        text=True,
-    ).stdout.strip()
+
+    def lmhdx_status(*paths: str) -> str:
+        command = ["git", "status", "--porcelain", "--untracked-files=no", "--", *paths]
+        return subprocess.run(command, cwd=lmhdx_repo, capture_output=True, text=True).stdout.strip()
+
     meta = {
         "study": "stage3-thermal",
         "duct_opt_sha": _git_sha(REPO_ROOT),
         # The package metadata of an editable install keeps its install-time version; the SHA is the code that ran.
         "lmhdx_sha": _git_sha(lmhdx_repo),
-        "lmhdx_tracked_tree_clean": not lmhdx_status,
+        "lmhdx_src_clean": not lmhdx_status("src"),  # the package that ran
+        "lmhdx_tracked_tree_clean": not lmhdx_status(),  # its docs and scripts too
         "lmhdx_installed_version": importlib.metadata.version("lmhdx"),
         "note": "The stages ran on the working tree that duct_opt_sha records, except the size of the compiled-film "
         "cache (ductopt.thermal._compiled_film): 48 for reduction and landscape, 16 for the optimum stages, 8 after. "

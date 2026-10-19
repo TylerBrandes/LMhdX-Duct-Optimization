@@ -1,0 +1,8 @@
+== reduction
+duty b/a 0.15: G1 1.31e-14, G2 1.68e-16
+duty b/a 0.5: G1 1.31e-13, G2 0.00e+00
+flux b/a 0.15: G1 1.75e-14, G2 1.68e-16
+flux b/a 0.5: G1 1.20e-13, G2 0.00e+00
+flux b/a 2.0: G1 4.37e-13, G2 0.00e+00
+== reduction: 39 s
+peak resident memory: 1365 MB

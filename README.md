@@ -12,6 +12,7 @@ actual runs: each results commit states what ran, against which tolerances, and 
 |:--|:--|:--|:--|
 | Stage 2 (LMhdX plan step 3b.3) | The fixed-flow, minimum-pumping-power shape of one straight, insulated PbLi duct in a tokamak field | The optimum aspect ratio follows β\*√<i>Ha</i>\* → 2.08 from <i>Ha</i>\* 14 to 6,109, saving 9–73% over an equal-area square duct; a tilted field moves it along κ = √<i>Ha</i>\*<sub>0</sub> · <i>B</i><sub>p</sub>/<i>B</i><sub>T</sub> | [results/stage2](results/stage2/README.md) |
 | Stage 2 reproduction | Do the Stage 2 results still come out the same on LMhdX 1.10.0? | Yes: a six-stage subset is bit-identical on the fully developed path and within 5e-9 on the open axis | [results/stage2-repro-1.10.0](results/stage2-repro-1.10.0/README.md) |
+| Stage 3 (LMhdX plan step 5.5) | Case P's thermal design: which shape removes a first-wall heat load within 625 K at the least pumping power, with the flow set by the heat? | At a fixed 1.5 kW duty, Stage 2's design is the thermal optimum to 0.1 %, at 7.2 times its velocity bound; at a fixed first-wall flux the optimum is squarer (b/a 0.28 against 0.15), and Stage 2's design costs 21 % more per metre of first wall | [results/stage3-thermal](results/stage3-thermal/README.md) |
 
 ## Layout
 
@@ -19,13 +20,16 @@ actual runs: each results commit states what ran, against which tolerances, and 
 ductopt/                   the study package: evaluator, optimizer, design law, validity checks
 duct_optimization_poc.py   the checkpointed driver: one stage per process, --list / --stage / --status / --finalize
 duct_opt_figures.py        figures and tables from results.json alone (NumPy and Matplotlib only)
+duct_thermal_design.py     Stage 3's driver: one stage per process (python duct_thermal_design.py <stage> | all | finalize)
+duct_thermal_figures.py    Stage 3's figures from its results.json alone
 duct_opt_probes/           exploratory probes behind the study's plan (P1-P11, cost and tilt probes)
 results/<study>/           results.json, checkpoint.json, figures/, tables/, captions.md, the write-up
 ```
 
 ## Running
 
-The code needs LMhdX 1.9.0 or later (the module layout of `lmhdx.grid`,
+Stage 3 needs LMhdX with its thermal module (`lmhdx.thermal`, merged as 47319aa) and ran on that
+commit. The rest of the code needs LMhdX 1.9.0 or later (the module layout of `lmhdx.grid`,
 `lmhdx.fully_developed` and `lmhdx.cases`), installed, with its checkout on `PYTHONPATH`, because
 the spectral reference lives in the checkout's `validation/shercliff.py` rather than in the
 installed package.

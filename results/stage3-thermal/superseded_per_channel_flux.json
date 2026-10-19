@@ -1,0 +1,1969 @@
+{
+  "why": "The first run (code 348aafd) compared the fixed-flux designs by pumping power per channel, as the set-up (11ea591) specified. Under a fixed first-wall flux a channel's duty grows with its wall width 2a, so that cost rewards a narrow channel for taking less heat, which only moves the heat to more channels. The rerun compares them per metre of first wall, pumping power / (2a). These are the first run's fixed-flux records, kept for the record; its fixed-duty records were unchanged by the correction and are not repeated here.",
+  "meta": {
+    "study": "stage3-thermal",
+    "duct_opt_sha": "348aafd8e196bdca0a604132001ff353f81e02be",
+    "lmhdx_sha": "47319aab4abd0eaf02b8191d2b385bf1ecb18c61",
+    "lmhdx_tracked_tree_clean": true,
+    "lmhdx_installed_version": "1.10.0",
+    "note": "The stages ran on the working tree that duct_opt_sha records, except the size of the compiled-film cache (ductopt.thermal._compiled_film): 48 for reduction and landscape, 16 for the optimum stages, 8 after. The cache holds compiled programs only and changes no number.",
+    "python": "3.10.21",
+    "jax": "0.6.2",
+    "numpy": "2.2.6",
+    "solvax": "0.19.0"
+  },
+  "landscape_flux": [
+    [
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 30.772250590890923,
+        "Q": 1.164922500936417e-05,
+        "Re_over_Ha": 178.7894599153875,
+        "film": 3.2385960997740573,
+        "theta_wall": 0.12457780954389495
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 21.640975991887995,
+        "Q": 1.4336835300217618e-05,
+        "Re_over_Ha": 149.91031200045757,
+        "film": 3.9986698552955104,
+        "theta_wall": 0.12695976714570698
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 15.368567580670957,
+        "Q": 1.772962148502204e-05,
+        "Re_over_Ha": 126.30222723337778,
+        "film": 4.97374031474889,
+        "theta_wall": 0.1303467903689553
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 11.067899112458782,
+        "Q": 2.2077123548513087e-05,
+        "Re_over_Ha": 107.148813579629,
+        "film": 6.245823112548886,
+        "theta_wall": 0.135105672118298
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 8.13726190586678,
+        "Q": 2.7772891473475085e-05,
+        "Re_over_Ha": 91.83311353008028,
+        "film": 7.935842473962946,
+        "theta_wall": 0.1416914377228258
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 6.174690890657775,
+        "Q": 3.548860678104289e-05,
+        "Re_over_Ha": 79.946691425818,
+        "film": 10.22168197445932,
+        "theta_wall": 0.15063975472971877
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 4.926688976898939,
+        "Q": 4.6490553170662966e-05,
+        "Re_over_Ha": 71.35256539270952,
+        "film": 13.362544203267499,
+        "theta_wall": 0.1625447911182343
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 4.276185444670449,
+        "Q": 6.35043413728358e-05,
+        "Re_over_Ha": 66.40207151184127,
+        "film": 17.730864233985013,
+        "theta_wall": 0.17802478622657358
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 4.33100009997805,
+        "Q": 9.367243219037178e-05,
+        "Re_over_Ha": 66.73034066748895,
+        "film": 23.853259780676794,
+        "theta_wall": 0.19768101996593254
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 6.146352991892163,
+        "Q": 0.00016349020387064874,
+        "Re_over_Ha": 79.34811497583676,
+        "film": 32.46193727549138,
+        "theta_wall": 0.22205386466625548
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 28.98678569776715,
+        "Q": 0.0005199167567820262,
+        "Re_over_Ha": 171.91430930897167,
+        "film": 44.5565760864163,
+        "theta_wall": 0.2515720443444138
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": Infinity,
+        "Q": null,
+        "Re_over_Ha": null,
+        "film": 61.47252913352387,
+        "theta_wall": 0.2864826442930018
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": Infinity,
+        "Q": null,
+        "Re_over_Ha": null,
+        "film": 84.9423887928948,
+        "theta_wall": 0.3267445648434823
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 9.168423889581928e-06,
+        "Re_over_Ha": 220.40467921610673,
+        "film": 2.777418834301726,
+        "theta_wall": 0.13447434733137179
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 8.504221068694537,
+        "Q": 1.1261436305103442e-05,
+        "Re_over_Ha": 184.43920620708744,
+        "film": 3.44895115064016,
+        "theta_wall": 0.1378325461412131
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 6.014247116155631,
+        "Q": 1.3892971607564412e-05,
+        "Re_over_Ha": 155.02007445113026,
+        "film": 4.320621430356078,
+        "theta_wall": 0.14252059199885664
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 4.309118832791837,
+        "Q": 1.7247785952892428e-05,
+        "Re_over_Ha": 131.11714380330213,
+        "film": 5.4707862398446805,
+        "theta_wall": 0.14895250619032596
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 3.1470174686507395,
+        "Q": 2.1612275102368765e-05,
+        "Re_over_Ha": 111.93346467039946,
+        "film": 7.012494352167027,
+        "theta_wall": 0.1575931223060664
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 2.365152414998627,
+        "Q": 2.7462152262423822e-05,
+        "Re_over_Ha": 96.90080025915165,
+        "film": 9.106531723328306,
+        "theta_wall": 0.16892129689195023
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.8577017892388954,
+        "Q": 3.565734163133667e-05,
+        "Re_over_Ha": 85.71860374915826,
+        "film": 11.976956964167993,
+        "theta_wall": 0.18337687097585872
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.5656953351882712,
+        "Q": 4.79320318819029e-05,
+        "Re_over_Ha": 78.50282746069126,
+        "film": 15.928304043895729,
+        "theta_wall": 0.20129559563558552
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.487888935231307,
+        "Q": 6.837066446461241e-05,
+        "Re_over_Ha": 76.28911794368489,
+        "film": 21.362315900596712,
+        "theta_wall": 0.22283311699574868
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.7802122094317292,
+        "Q": 0.00010933755897523688,
+        "Re_over_Ha": 83.1180795170643,
+        "film": 28.78922219683959,
+        "theta_wall": 0.24787230224190188
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 3.801040360618534,
+        "Q": 0.000233341348828865,
+        "Re_over_Ha": 120.8512546761745,
+        "film": 38.82348085919482,
+        "theta_wall": 0.27590476855192875
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": Infinity,
+        "Q": null,
+        "Re_over_Ha": null,
+        "film": 52.146935595111856,
+        "theta_wall": 0.30588641847989945
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": Infinity,
+        "Q": null,
+        "Re_over_Ha": null,
+        "film": 69.41724408557788,
+        "theta_wall": 0.3360976197274727
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 7.235605204804726e-06,
+        "Re_over_Ha": 270.7106752281051,
+        "film": 2.4469901853827105,
+        "theta_wall": 0.149122942073393
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 8.874247795078515e-06,
+        "Re_over_Ha": 226.2014602939625,
+        "film": 3.0506777614523717,
+        "theta_wall": 0.15345294893697925
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 2.3889237975669384,
+        "Q": 1.0926922532982945e-05,
+        "Re_over_Ha": 189.7557961460747,
+        "film": 3.836980841918171,
+        "theta_wall": 0.15930712499890157
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.7060474176658849,
+        "Q": 1.3529457802607394e-05,
+        "Re_over_Ha": 160.07035646237014,
+        "film": 4.873573603341232,
+        "theta_wall": 0.1670166488128761
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.2393921567334025,
+        "Q": 1.688532372367616e-05,
+        "Re_over_Ha": 136.1047381186566,
+        "film": 6.252344408723445,
+        "theta_wall": 0.17685681337721842
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.9225533052338206,
+        "Q": 2.131494212833781e-05,
+        "Re_over_Ha": 117.05267528871879,
+        "film": 8.093642456412912,
+        "theta_wall": 0.18896857339412454
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.7110159016041967,
+        "Q": 2.7352332247480472e-05,
+        "Re_over_Ha": 102.3351623283978,
+        "film": 10.547518163293336,
+        "theta_wall": 0.20326495952169454
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5761712497161003,
+        "Q": 3.594879165940096e-05,
+        "Re_over_Ha": 91.63220767476881,
+        "film": 13.788513131830893,
+        "theta_wall": 0.2193291419769369
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5025436321750196,
+        "Q": 4.8946386682626906e-05,
+        "Re_over_Ha": 84.99978420639543,
+        "film": 17.99905946618279,
+        "theta_wall": 0.23631722655142598
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.4900775132706949,
+        "Q": 7.034256481472339e-05,
+        "Re_over_Ha": 83.22402559399076,
+        "film": 23.336666191020466,
+        "theta_wall": 0.25290129314542686
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5731062865344793,
+        "Q": 0.00011045873026836288,
+        "Re_over_Ha": 89.0356430360565,
+        "film": 29.885445875160197,
+        "theta_wall": 0.26732442555353125
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.9467511829841254,
+        "Q": 0.00020559605250584882,
+        "Re_over_Ha": 112.90468362386405,
+        "film": 37.60549298557363,
+        "theta_wall": 0.27764947438291415
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 0.0006298515161081886,
+        "Re_over_Ha": 235.65068075559176,
+        "film": 46.307451731738034,
+        "theta_wall": 0.28220396973428785
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.721626675725372e-06,
+        "Re_over_Ha": 329.92561264720416,
+        "film": 2.2135435762572215,
+        "theta_wall": 0.16979092681290275
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 7.007981256997541e-06,
+        "Re_over_Ha": 275.3105025651373,
+        "film": 2.753980181799146,
+        "theta_wall": 0.1743628183762283
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 8.61153327048456e-06,
+        "Re_over_Ha": 230.48552966707985,
+        "film": 3.446905268141743,
+        "theta_wall": 0.1801312588362854
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.6893109060801734,
+        "Q": 1.0627869989769102e-05,
+        "Re_over_Ha": 193.79508007455,
+        "film": 4.336656864086908,
+        "theta_wall": 0.18706022961975388
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.49831005057007466,
+        "Q": 1.3190593265262094e-05,
+        "Re_over_Ha": 163.86800881281795,
+        "film": 5.473569139613759,
+        "theta_wall": 0.19487838769528937
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.36666328239165785,
+        "Q": 1.648910088263899e-05,
+        "Re_over_Ha": 139.5597413859042,
+        "film": 6.907903743611168,
+        "theta_wall": 0.2030046629635985
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.2757096231526341,
+        "Q": 2.0793924587719303e-05,
+        "Re_over_Ha": 119.90380879006422,
+        "film": 8.67941933646143,
+        "theta_wall": 0.2105314949259436
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.21268635520907964,
+        "Q": 2.6491908199717052e-05,
+        "Re_over_Ha": 104.0742018693467,
+        "film": 10.804400653127542,
+        "theta_wall": 0.21631854350073434
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.16888352611548316,
+        "Q": 3.4135075939365166e-05,
+        "Re_over_Ha": 91.3616752207923,
+        "film": 13.265627287161879,
+        "theta_wall": 0.21922371213383907
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.13839899576307216,
+        "Q": 4.45122711748175e-05,
+        "Re_over_Ha": 81.16639707606414,
+        "film": 16.012557852660155,
+        "theta_wall": 0.2184173405308945
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.11730612346782208,
+        "Q": 5.876574853691044e-05,
+        "Re_over_Ha": 73.00525461958398,
+        "film": 18.975230526066294,
+        "theta_wall": 0.21363880023508922
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.10311103676890475,
+        "Q": 7.860366070943601e-05,
+        "Re_over_Ha": 66.52822757694587,
+        "film": 22.08736799807782,
+        "theta_wall": 0.2052597063749506
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.09443772932154382,
+        "Q": 0.00010672434545122126,
+        "Re_over_Ha": 61.54035740701681,
+        "film": 25.30885319937415,
+        "theta_wall": 0.19413277820170136
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.529901941426068e-06,
+        "Re_over_Ha": 396.7453469962985,
+        "film": 2.0393861427349447,
+        "theta_wall": 0.19689742385535716
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.539406417858603e-06,
+        "Re_over_Ha": 330.53663714061446,
+        "film": 2.5021118123876263,
+        "theta_wall": 0.19939485585175626
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.788703813048568e-06,
+        "Re_over_Ha": 275.97933820030056,
+        "film": 3.067616321470233,
+        "theta_wall": 0.20177852504202717
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 8.340837324124802e-06,
+        "Re_over_Ha": 231.0110170343547,
+        "film": 3.748933639599959,
+        "theta_wall": 0.20353932173465514
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.20840215523327213,
+        "Q": 1.0276530802276034e-05,
+        "Re_over_Ha": 193.91120392923688,
+        "film": 4.553588425562834,
+        "theta_wall": 0.20406147013571566
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.15259607487466614,
+        "Q": 1.269881820354697e-05,
+        "Re_over_Ha": 163.24993373271442,
+        "film": 5.482118546944854,
+        "theta_wall": 0.20277869599949674
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.11338265119548671,
+        "Q": 1.5739422445311977e-05,
+        "Re_over_Ha": 137.8516069515795,
+        "film": 6.529704684417032,
+        "theta_wall": 0.19935820290198852
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.08561644677926722,
+        "Q": 1.956855167009247e-05,
+        "Re_over_Ha": 116.76563831626483,
+        "film": 7.69107466875301,
+        "theta_wall": 0.1938180698768204
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0658051357716188,
+        "Q": 2.4410710332607027e-05,
+        "Re_over_Ha": 99.23619984190833,
+        "film": 8.96688181713048,
+        "theta_wall": 0.18651568051108222
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.051576151046592356,
+        "Q": 3.057037166105775e-05,
+        "Re_over_Ha": 84.66886925264656,
+        "film": 10.369095372877029,
+        "theta_wall": 0.17802518224395397
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.041315782076053555,
+        "Q": 3.8473869251262735e-05,
+        "Re_over_Ha": 72.59759591900472,
+        "film": 11.924030688090953,
+        "theta_wall": 0.16897806076156383
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.03392898907085527,
+        "Q": 4.873951309184917e-05,
+        "Re_over_Ha": 62.65718710885018,
+        "film": 13.673245293857038,
+        "theta_wall": 0.15993573417890616
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.028683629848315607,
+        "Q": 6.230048408757686e-05,
+        "Re_over_Ha": 54.56503804491129,
+        "film": 15.673367065860086,
+        "theta_wall": 0.15132227947124668
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.5893721524549834e-06,
+        "Re_over_Ha": 467.4841608597009,
+        "film": 1.9062077090486582,
+        "theta_wall": 0.23164608174696522
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.3819348768236474e-06,
+        "Re_over_Ha": 388.8191656384561,
+        "film": 2.287018066756121,
+        "theta_wall": 0.22939872464585181
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.3566521784358915e-06,
+        "Re_over_Ha": 323.82362178774554,
+        "film": 2.730787693008104,
+        "theta_wall": 0.22608721663056808
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.557970759784055e-06,
+        "Re_over_Ha": 270.09583528954374,
+        "film": 3.24345489964222,
+        "theta_wall": 0.2216473791730907
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 8.042376220900715e-06,
+        "Re_over_Ha": 225.66599978018985,
+        "film": 3.832805933642623,
+        "theta_wall": 0.2161913103704559
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.07227074042766946,
+        "Q": 9.882560134218196e-06,
+        "Re_over_Ha": 188.9228741684374,
+        "film": 4.510280896874508,
+        "theta_wall": 0.20998663813226157
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.05505124186868061,
+        "Q": 1.2173516832362535e-05,
+        "Re_over_Ha": 158.54935234832325,
+        "film": 5.29253046713832,
+        "theta_wall": 0.20338461785289677
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.04271084071363219,
+        "Q": 1.504158406284703e-05,
+        "Re_over_Ha": 133.46743686515697,
+        "film": 6.202459233120691,
+        "theta_wall": 0.1967366727051436
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.033791968997999695,
+        "Q": 1.865816272423595e-05,
+        "Re_over_Ha": 112.79346927900426,
+        "film": 7.269866943541623,
+        "theta_wall": 0.19033319269054902
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.027304172398854864,
+        "Q": 2.3261217913415448e-05,
+        "Re_over_Ha": 95.80338663149105,
+        "film": 8.531970818669755,
+        "theta_wall": 0.18437587670741834
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.022576148184740324,
+        "Q": 2.919030477882398e-05,
+        "Re_over_Ha": 81.90687840097121,
+        "film": 10.03404567857449,
+        "theta_wall": 0.17897710436289582
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.019157952279773946,
+        "Q": 3.694626332062698e-05,
+        "Re_over_Ha": 70.6294134467106,
+        "film": 11.830303980947644,
+        "theta_wall": 0.1741742601186594
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.016759646034074815,
+        "Q": 4.7298613928183966e-05,
+        "Re_over_Ha": 61.60228558891786,
+        "film": 13.985088329858296,
+        "theta_wall": 0.16994952329269963
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.85080303823811e-06,
+        "Re_over_Ha": 536.106681115472,
+        "film": 1.8903903347352595,
+        "theta_wall": 0.2891481328216784
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.478888969182851e-06,
+        "Re_over_Ha": 445.71567544141107,
+        "film": 2.251384614089001,
+        "theta_wall": 0.2842400458299086
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.2511580510794166e-06,
+        "Re_over_Ha": 371.07177774286805,
+        "film": 2.6772085460738846,
+        "theta_wall": 0.2789873039665458
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.203559223845509e-06,
+        "Re_over_Ha": 309.4457400456623,
+        "film": 3.181129071971513,
+        "theta_wall": 0.2736214844366889
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.382536771681851e-06,
+        "Re_over_Ha": 258.5893684612652,
+        "film": 3.779885144142603,
+        "theta_wall": 0.2683577699494332
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 7.848889368711318e-06,
+        "Re_over_Ha": 216.65009356721998,
+        "film": 4.494193907352758,
+        "theta_wall": 0.26336256541027553
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.032691839051144374,
+        "Q": 9.683446493566648e-06,
+        "Re_over_Ha": 182.10168474612348,
+        "film": 5.349288099825792,
+        "theta_wall": 0.2587407857069911
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.026404446690650975,
+        "Q": 1.1995658529965458e-05,
+        "Re_over_Ha": 153.68852215205808,
+        "film": 6.375567922861383,
+        "theta_wall": 0.254539066837539
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.02173710100221633,
+        "Q": 1.4937027767673951e-05,
+        "Re_over_Ha": 130.38116629274708,
+        "film": 7.609431081585252,
+        "theta_wall": 0.2507577852321057
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.018270052565758452,
+        "Q": 1.8722924214855385e-05,
+        "Re_over_Ha": 111.34165847358466,
+        "film": 9.094343318691463,
+        "theta_wall": 0.24736613826840773
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.015721234706339054,
+        "Q": 2.366966080710433e-05,
+        "Re_over_Ha": 95.89796124572285,
+        "film": 10.882232010653652,
+        "theta_wall": 0.24431692382891088
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.013910389911208522,
+        "Q": 3.026102005754315e-05,
+        "Re_over_Ha": 83.52841426254761,
+        "film": 13.03530007474767,
+        "theta_wall": 0.2415590263970817
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.012743171298933084,
+        "Q": 3.927580772381987e-05,
+        "Re_over_Ha": 73.85997083811107,
+        "film": 15.628341272272408,
+        "theta_wall": 0.23904617025088612
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.2737517122239097e-06,
+        "Re_over_Ha": 594.0306727408415,
+        "film": 2.0850056143199316,
+        "theta_wall": 0.4014119523564172
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.777710512788654e-06,
+        "Re_over_Ha": 494.4087486259587,
+        "film": 2.4982654962532345,
+        "theta_wall": 0.3969980080332243
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.3993078454651043e-06,
+        "Re_over_Ha": 412.2142438161809,
+        "film": 2.9938894062061356,
+        "theta_wall": 0.3926920941315493
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.169008979437699e-06,
+        "Re_over_Ha": 344.4281680626854,
+        "film": 3.589314183161074,
+        "theta_wall": 0.38859261797296263
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.126718443296415e-06,
+        "Re_over_Ha": 288.56166249238555,
+        "film": 4.3055404240477575,
+        "theta_wall": 0.38474891947615386
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.32551462991642e-06,
+        "Re_over_Ha": 242.56512636225756,
+        "film": 5.167766778511007,
+        "theta_wall": 0.38117052480986147
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 7.837317433747175e-06,
+        "Re_over_Ha": 204.75441195374898,
+        "film": 6.206205762151685,
+        "theta_wall": 0.3778411385752296
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.018831520100420426,
+        "Q": 9.761784500370709e-06,
+        "Re_over_Ha": 173.7514271902744,
+        "film": 7.457131349629986,
+        "theta_wall": 0.3747326467566837
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.016030402789588123,
+        "Q": 1.2240831482477249e-05,
+        "Re_over_Ha": 148.437426753277,
+        "film": 8.964206667865415,
+        "theta_wall": 0.37181616311650334
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.01395185754345499,
+        "Q": 1.548343982883416e-05,
+        "Re_over_Ha": 127.91847755323043,
+        "film": 10.780130261497774,
+        "theta_wall": 0.36906858497646833
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.012474163725770843,
+        "Q": 1.9810417287209654e-05,
+        "Re_over_Ha": 111.50460104825774,
+        "film": 12.968631784263213,
+        "theta_wall": 0.366474615047435
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011541784050717542,
+        "Q": 2.5740749399805016e-05,
+        "Re_over_Ha": 98.70830274098054,
+        "film": 15.60685851469737,
+        "theta_wall": 0.3640255759365664
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011180192674599826,
+        "Q": 3.417291148936841e-05,
+        "Re_over_Ha": 89.27869077529142,
+        "film": 18.788225233487584,
+        "theta_wall": 0.3617169239492087
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.8206595054198937e-06,
+        "Re_over_Ha": 630.5949959974914,
+        "film": 2.4742380533677397,
+        "theta_wall": 0.5995683787524677
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.2284606094692233e-06,
+        "Re_over_Ha": 525.8478256263963,
+        "film": 2.9783110278799274,
+        "theta_wall": 0.5957087158459751
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.7336758631151816e-06,
+        "Re_over_Ha": 439.47631280941243,
+        "film": 3.5850433701210083,
+        "theta_wall": 0.591868170830475
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.3626673954275683e-06,
+        "Re_over_Ha": 368.3033763975809,
+        "film": 4.3156369660261795,
+        "theta_wall": 0.5880877628374919
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.150561513524662e-06,
+        "Re_over_Ha": 309.7148116396176,
+        "film": 5.195632865933111,
+        "theta_wall": 0.5843894407179278
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.145066576016633e-06,
+        "Re_over_Ha": 261.56489287503047,
+        "film": 6.255849533567104,
+        "theta_wall": 0.580786972042363
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.412499385585738e-06,
+        "Re_over_Ha": 222.10028906282352,
+        "film": 7.5335394080838585,
+        "theta_wall": 0.5772930146719253
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.014660502636024069,
+        "Q": 8.047679063546253e-06,
+        "Re_over_Ha": 189.9003517909535,
+        "film": 9.07378629362775,
+        "theta_wall": 0.5739214430068738
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.012863435359176585,
+        "Q": 1.0190941859038934e-05,
+        "Re_over_Ha": 163.83352586512657,
+        "film": 10.931178420421697,
+        "theta_wall": 0.5706864412423339
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011596789653888967,
+        "Q": 1.305908646049864e-05,
+        "Re_over_Ha": 143.03245223151262,
+        "film": 13.171813992373457,
+        "theta_wall": 0.5676005756285557
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010827331471499516,
+        "Q": 1.7005680438495337e-05,
+        "Re_over_Ha": 126.89635117199961,
+        "film": 15.87571847088257,
+        "theta_wall": 0.5646733526946596
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010600153890197736,
+        "Q": 2.2649361976667576e-05,
+        "Re_over_Ha": 115.14482566135204,
+        "film": 19.13977046575367,
+        "theta_wall": 0.5619106929134032
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011109832037907478,
+        "Q": 3.1180305534120725e-05,
+        "Re_over_Ha": 107.99462823750133,
+        "film": 23.081248978581716,
+        "theta_wall": 0.5593150994842241
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.4626259357703866e-06,
+        "Re_over_Ha": 637.7028749750418,
+        "film": 3.02071269417291,
+        "theta_wall": 0.9213419078116288
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.7947674290233307e-06,
+        "Re_over_Ha": 533.1220158128348,
+        "film": 3.641715548343189,
+        "theta_wall": 0.9168200284907603
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.208569385498201e-06,
+        "Re_over_Ha": 446.95399060605456,
+        "film": 4.389652590164201,
+        "theta_wall": 0.9121681179409362
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.7273683425877948e-06,
+        "Re_over_Ha": 376.03554594804984,
+        "film": 5.290852983067396,
+        "theta_wall": 0.9074800766920422
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.3829628959548202e-06,
+        "Re_over_Ha": 317.7720330814795,
+        "film": 6.377211046669514,
+        "theta_wall": 0.902835986567372
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.2197309646626115e-06,
+        "Re_over_Ha": 270.04524473549844,
+        "film": 7.6873588821453,
+        "theta_wall": 0.8983010243329369
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.3014333948968414e-06,
+        "Re_over_Ha": 231.14175912884582,
+        "film": 9.268078473030924,
+        "theta_wall": 0.8939250499481042
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.012160558669783203,
+        "Q": 6.723007468860205e-06,
+        "Re_over_Ha": 199.70182410062637,
+        "film": 11.17600790207719,
+        "theta_wall": 0.8897433934726201
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011032234124376376,
+        "Q": 8.63222680639379e-06,
+        "Re_over_Ha": 174.69264240769797,
+        "film": 13.479709323189795,
+        "theta_wall": 0.8857787670248554
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010380979261356288,
+        "Q": 1.127243259426999e-05,
+        "Re_over_Ha": 155.4185138310654,
+        "film": 16.262177735349432,
+        "theta_wall": 0.8820437123353315
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010268336545544429,
+        "Q": 1.5074895588074414e-05,
+        "Re_over_Ha": 141.60309665948552,
+        "film": 19.623883644496875,
+        "theta_wall": 0.8785430185788953
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010920851502302036,
+        "Q": 2.088421957451528e-05,
+        "Re_over_Ha": 133.6503258937218,
+        "film": 23.686461585665672,
+        "theta_wall": 0.8752758113664146
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0130227072381704,
+        "Q": 3.061100219398399e-05,
+        "Re_over_Ha": 133.4635440789519,
+        "film": 28.597180492466503,
+        "theta_wall": 0.8722372334114612
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.178895471784395e-06,
+        "Re_over_Ha": 614.3645116966768,
+        "film": 3.7212224350340244,
+        "theta_wall": 1.4286018321940654
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.451350902550194e-06,
+        "Re_over_Ha": 515.2957756593617,
+        "film": 4.489186065444849,
+        "theta_wall": 1.422524794977488
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.7932974834369482e-06,
+        "Re_over_Ha": 433.78030242684616,
+        "film": 5.415022264195343,
+        "theta_wall": 1.416312708509019
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.225993950676931e-06,
+        "Re_over_Ha": 366.8384090492565,
+        "film": 6.531818508775815,
+        "theta_wall": 1.410131717805066
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.779240354707684e-06,
+        "Re_over_Ha": 312.03999478102986,
+        "film": 7.8796660653132,
+        "theta_wall": 1.4041065057431248
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.4960846405223576e-06,
+        "Re_over_Ha": 267.4234126108771,
+        "film": 9.507107667637817,
+        "theta_wall": 1.3983224097554077
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.441054245383501e-06,
+        "Re_over_Ha": 231.43918932470754,
+        "film": 11.472903853797558,
+        "theta_wall": 1.3928326099721016
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 5.715439797665307e-06,
+        "Re_over_Ha": 202.92418453713546,
+        "film": 13.848181496509092,
+        "theta_wall": 1.387666121831174
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.01013244625270891,
+        "Q": 7.4878624947098894e-06,
+        "Re_over_Ha": 181.12372807554314,
+        "film": 16.719041873736852,
+        "theta_wall": 1.3828347701963688
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010120525145015064,
+        "Q": 1.0061532049634638e-05,
+        "Re_over_Ha": 165.81161007035294,
+        "film": 20.189723087674004,
+        "theta_wall": 1.3783386505849973
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.010928557896707346,
+        "Q": 1.404243372595862e-05,
+        "Re_over_Ha": 157.66182076116112,
+        "film": 24.386432710154747,
+        "theta_wall": 1.374170162480107
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.013372487650522362,
+        "Q": 2.0844078448050037e-05,
+        "Re_over_Ha": 159.4410652046893,
+        "film": 29.461991813537225,
+        "theta_wall": 1.370316887711496
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.02062021390599912,
+        "Q": 3.4707747866401e-05,
+        "Re_over_Ha": 180.8744632614265,
+        "film": 35.60146199237495,
+        "theta_wall": 1.3667636030639279
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 9.540380426805266e-07,
+        "Re_over_Ha": 567.0786908595975,
+        "film": 4.602907119020419,
+        "theta_wall": 2.2241903421547287
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.1795925388080437e-06,
+        "Re_over_Ha": 477.6865195809627,
+        "film": 5.557165894306695,
+        "theta_wall": 2.2164593336558926
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.4654451220160155e-06,
+        "Re_over_Ha": 404.30942146555833,
+        "film": 6.70872938870109,
+        "theta_wall": 2.208581075382762
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.8316597893220833e-06,
+        "Re_over_Ha": 344.2884446716092,
+        "film": 8.099184656643203,
+        "theta_wall": 2.2008023438857456
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.307392009147251e-06,
+        "Re_over_Ha": 295.4829001588526,
+        "film": 9.778919177910304,
+        "theta_wall": 2.193296080730547
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.9366656242646004e-06,
+        "Re_over_Ha": 256.21160766427903,
+        "film": 11.808930348042441,
+        "theta_wall": 2.18616850594694
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.7892266869433106e-06,
+        "Re_over_Ha": 225.23102988269588,
+        "film": 14.263048794995308,
+        "theta_wall": 2.1794760809570306
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.9825781462428745e-06,
+        "Re_over_Ha": 201.77394608005795,
+        "film": 17.230646774218723,
+        "theta_wall": 2.1732414785106715
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.01014411164007046,
+        "Q": 6.7314232670514745e-06,
+        "Re_over_Ha": 185.71680412005486,
+        "film": 20.819924337366203,
+        "theta_wall": 2.167465629501095
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.01112555087477078,
+        "Q": 9.474700677902207e-06,
+        "Re_over_Ha": 178.09147632876227,
+        "film": 25.161891837007165,
+        "theta_wall": 2.162136111364411
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.014007017026410754,
+        "Q": 1.4272583755338034e-05,
+        "Re_over_Ha": 182.77364331975878,
+        "film": 30.415194942536452,
+        "theta_wall": 2.1572327763511
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.4509816537059052e-05,
+        "Re_over_Ha": 213.83774327691788,
+        "film": 36.771960178773305,
+        "theta_wall": 2.1527314402026674
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 6.001047448706401e-05,
+        "Re_over_Ha": 356.70130317207094,
+        "film": 44.46487715562651,
+        "theta_wall": 2.1486062563801704
+      }
+    ],
+    [
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 7.761332172168958e-07,
+        "Re_over_Ha": 506.2558789297033,
+        "film": 5.712155252462245,
+        "theta_wall": 3.474192744370349
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 9.651319673374627e-07,
+        "Re_over_Ha": 428.89782374612196,
+        "film": 6.9027704005965616,
+        "theta_wall": 3.4653252337862317
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.207792939488651e-06,
+        "Re_over_Ha": 365.6730564146024,
+        "film": 8.340635412377503,
+        "theta_wall": 3.456100614010038
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.5239153097649015e-06,
+        "Re_over_Ha": 314.33637519983563,
+        "film": 10.077960926053963,
+        "theta_wall": 3.446883272236749
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.9436332703498438e-06,
+        "Re_over_Ha": 273.1375858096116,
+        "film": 12.178075982331338,
+        "theta_wall": 3.4379475939924156
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 2.515167342987407e-06,
+        "Re_over_Ha": 240.80603162377767,
+        "film": 14.717672961823894,
+        "theta_wall": 3.4294651020333116
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 3.320816440920713e-06,
+        "Re_over_Ha": 216.61008816128376,
+        "film": 17.789583621265756,
+        "theta_wall": 3.421524777958345
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.513617712242254e-06,
+        "Re_over_Ha": 200.58198044597228,
+        "film": 21.506182917997982,
+        "theta_wall": 3.4141603011387196
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.011540672464669421,
+        "Q": 6.4143916178246776e-06,
+        "Re_over_Ha": 194.20300543594934,
+        "film": 26.003527263319565,
+        "theta_wall": 3.407371618291309
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 9.829121244121343e-06,
+        "Re_over_Ha": 202.74422886094976,
+        "film": 31.446369804240256,
+        "theta_wall": 3.4011393306562985
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 1.7525557509178257e-05,
+        "Re_over_Ha": 246.28557974637093,
+        "film": 38.034235268123936,
+        "theta_wall": 3.39543375231433
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": Infinity,
+        "Q": 4.9494224594492775e-05,
+        "Re_over_Ha": 473.86540088976744,
+        "film": 46.00877854929868,
+        "theta_wall": 3.390220481031404
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": Infinity,
+        "Q": null,
+        "Re_over_Ha": null,
+        "film": 55.66269930694263,
+        "theta_wall": 3.3854637613515535
+      }
+    ]
+  ],
+  "landscape_axes": {
+    "beta": [
+      0.02,
+      0.031685336937980715,
+      0.05019802884366821,
+      0.07952707287670507,
+      0.12599210498948732,
+      0.19960511490586724,
+      0.31622776601683794,
+      0.5009891657694215,
+      0.7937005259840996,
+      1.2574334296829353,
+      1.9921100948292227,
+      3.1560339786108296,
+      5.0
+    ],
+    "A": [
+      2.4e-06,
+      3.5227182422929722e-06,
+      5.170643256076521e-06,
+      7.589466384404116e-06,
+      1.1139813200670662e-05,
+      1.6351009657391074e-05,
+      2.4000000000000018e-05,
+      3.522718242292965e-05,
+      5.170643256076522e-05,
+      7.589466384404117e-05,
+      0.00011139813200670662,
+      0.00016351009657391072,
+      0.00024
+    ]
+  },
+  "optimum_flux": {
+    "cells": [
+      48,
+      6
+    ],
+    "start_w": 0.6891944261237255,
+    "w": 1.0004991650910051,
+    "beta": 2.719639038563097,
+    "u": -9.960519086653546,
+    "A": 4.7228214144793744e-05,
+    "W": 0.01000775177318019,
+    "converged": true,
+    "active_u_bound": "interior",
+    "u_multiplier": 0.0,
+    "u_range": [
+      -10.210618072108973,
+      -8.620215640398843
+    ],
+    "rounds": [
+      {
+        "w_center": 0.6891944261237255,
+        "w_next": 1.0017754788060826,
+        "W": 0.010007979565692281,
+        "interior": true,
+        "evaluations": [
+          {
+            "w": 0.17836880235773478,
+            "W": 0.010267558990008346
+          },
+          {
+            "w": 0.4660508748095158,
+            "W": 0.010119360746612871
+          },
+          {
+            "w": 0.6891944261237255,
+            "W": 0.01004669986945829
+          },
+          {
+            "w": 0.9123379774379352,
+            "W": 0.010011149518322231
+          },
+          {
+            "w": 1.1591980553694612,
+            "W": 0.010017800379774578
+          }
+        ]
+      },
+      {
+        "w_center": 1.0017754788060826,
+        "w_next": 1.0004935447638599,
+        "W": 0.010007747850664548,
+        "interior": true,
+        "evaluations": [
+          {
+            "w": 0.4909498550400919,
+            "W": 0.010109439193023689
+          },
+          {
+            "w": 0.7786319274918729,
+            "W": 0.010027914809753125
+          },
+          {
+            "w": 1.0017754788060826,
+            "W": 0.010007748523962709
+          },
+          {
+            "w": 1.2249190301202924,
+            "W": 0.010028383608109915
+          },
+          {
+            "w": 1.4717791080518183,
+            "W": 0.010166457285797497
+          }
+        ]
+      },
+      {
+        "w_center": 1.0004935447638599,
+        "w_next": 1.0004991650910051,
+        "W": 0.0100077517831467,
+        "interior": true,
+        "evaluations": [
+          {
+            "w": 0.48966792099786915,
+            "W": 0.010109938888316114
+          },
+          {
+            "w": 0.7773499934496502,
+            "W": 0.010028141725101403
+          },
+          {
+            "w": 1.0004935447638599,
+            "W": 0.010007751783159637
+          },
+          {
+            "w": 1.2236370960780696,
+            "W": 0.010028139670955163
+          },
+          {
+            "w": 1.4704971740095956,
+            "W": 0.010164985941749414
+          }
+        ]
+      }
+    ],
+    "profiles_evaluated": 16,
+    "time_s": 332.3896118319999,
+    "design": {
+      "u": -9.960519086653546,
+      "w": 1.0004991650910051,
+      "beta": 2.719639038563097,
+      "a": 0.002083603762278691,
+      "b": 0.005666650132790071,
+      "A": 4.7228214144793744e-05,
+      "Ha": 20.300988548289126,
+      "q": 0.47540441548982915,
+      "theta_wall": 1.8748026072914452,
+      "theta_fluid": 1.866228035924676,
+      "power": 403.48813357002433,
+      "wall_flux": 96824.58365518542,
+      "film": 18.540701098731386,
+      "allowance": 33.45929890126861,
+      "Q": 6.458191279921639e-06,
+      "V": 0.1367443465069823,
+      "W": 0.01000775177318019,
+      "dW_du": 7.23954325555485e-14,
+      "dp": 1549.6214558237148,
+      "D_h": 0.006093763479780132,
+      "Re": 3812.969506942866,
+      "Re_over_Ha": 187.82186384042885,
+      "T_bulk_out": 606.4592989012687,
+      "T_wall_peak": 625.0,
+      "T_fluid_peak": 624.915202504977,
+      "feasible": true,
+      "limit": "temperature"
+    },
+    "taylor_test": {
+      "h": [
+        0.01,
+        0.003,
+        0.001,
+        0.0003,
+        0.0001,
+        3e-05,
+        1e-05
+      ],
+      "remainder_zeroth": [
+        2.1993810928912227e-07,
+        1.9749026032578332e-08,
+        2.192904120443262e-09,
+        1.9731640280018503e-10,
+        2.1922689358300218e-11,
+        1.9730762162994964e-12,
+        2.1926037374608853e-13
+      ],
+      "remainder_first": [
+        2.1993810856516795e-07,
+        1.9749025815392033e-08,
+        2.1929040480478296e-09,
+        1.9731638108155527e-10,
+        2.192268211875696e-11,
+        1.97307404443652e-12,
+        2.1925964979176298e-13
+      ],
+      "slope_zeroth": 2.0003549700467795,
+      "slope_first": 2.0003553525578237,
+      "gradient": 7.23954325555485e-14
+    },
+    "fd_step_study": {
+      "h": [
+        0.03,
+        0.01,
+        0.003,
+        0.001,
+        0.0003,
+        0.0001
+      ],
+      "dW_dw": [
+        -2.4697563613731528e-06,
+        -2.992174790578117e-06,
+        -3.0514842363008055e-06,
+        -3.0374673999980506e-06,
+        -3.057164952325701e-06,
+        -2.8776714951911364e-06
+      ],
+      "W": 0.01000775177318019,
+      "noise_floor_h": null,
+      "plateau_relative_spread": 0.20156171434492895
+    },
+    "polish": {
+      "interior": true,
+      "w_star": 1.0167144651752535,
+      "beta_star": 2.764098287569317,
+      "value_star": 0.010007645629727889,
+      "dW_dw_rel_h": 6.638723157189797e-07,
+      "dW_dw_rel_2h": 2.618706952094967e-06,
+      "dW_dw_rel_small": 1.478389310082623e-08,
+      "dW_dw_rel_richardson": 1.2260770260317297e-08,
+      "delta": 0.05,
+      "h": 0.01
+    }
+  },
+  "verify_flux": {
+    "cells": [
+      72,
+      9
+    ],
+    "start_w": 1.0004991650910051,
+    "w": 1.0136579605033995,
+    "beta": 2.7556627065036206,
+    "u": -9.972776234085748,
+    "A": 4.665286423862468e-05,
+    "W": 0.010024509098469928,
+    "converged": true,
+    "active_u_bound": "interior",
+    "u_multiplier": 0.0,
+    "u_range": [
+      -10.211968823306716,
+      -8.637105758016512
+    ],
+    "rounds": [
+      {
+        "w_center": 1.0004991650910051,
+        "w_next": 1.0137589502911015,
+        "W": 0.010024549053234943,
+        "interior": true,
+        "evaluations": [
+          {
+            "w": 0.4896735413250144,
+            "W": 0.01013281182335949
+          },
+          {
+            "w": 0.7773556137767954,
+            "W": 0.01004751043160326
+          },
+          {
+            "w": 1.0004991650910051,
+            "W": 0.010024621290904912
+          },
+          {
+            "w": 1.2236427164052148,
+            "W": 0.01004264779771499
+          },
+          {
+            "w": 1.4705027943367408,
+            "W": 0.010174961161114944
+          }
+        ]
+      },
+      {
+        "w_center": 1.0137589502911015,
+        "w_next": 1.0136579605033995,
+        "W": 0.01002450879143594,
+        "interior": true,
+        "evaluations": [
+          {
+            "w": 0.5029333265251108,
+            "W": 0.010127531446251725
+          },
+          {
+            "w": 0.7906153989768918,
+            "W": 0.010045070636431203
+          },
+          {
+            "w": 1.0137589502911015,
+            "W": 0.010024508795651373
+          },
+          {
+            "w": 1.2369025016053112,
+            "W": 0.010045107893474273
+          },
+          {
+            "w": 1.4837625795368372,
+            "W": 0.010190279300358646
+          }
+        ]
+      }
+    ],
+    "profiles_evaluated": 11,
+    "time_s": 401.2647859870003,
+    "design": {
+      "u": -9.972776234085748,
+      "w": 1.0136579605033995,
+      "beta": 2.7556627065036206,
+      "a": 0.002057292918023504,
+      "b": 0.0056692053705513805,
+      "A": 4.665286423862468e-05,
+      "Ha": 20.04463647329756,
+      "q": 0.48672107228027645,
+      "theta_wall": 1.898406839963837,
+      "theta_fluid": 1.8928097184975432,
+      "power": 398.39306048877455,
+      "wall_flux": 96824.58365518542,
+      "film": 18.5370615447553,
+      "allowance": 33.4629384552447,
+      "Q": 6.375946495432762e-06,
+      "V": 0.13666784664753787,
+      "W": 0.010024509098469928,
+      "dW_du": -1.2993510853234919e-13,
+      "dp": 1572.2385853850428,
+      "D_h": 0.0060380346304625375,
+      "Re": 3775.985427142019,
+      "Re_over_Ha": 188.37884299733713,
+      "T_bulk_out": 606.4629384552447,
+      "T_wall_peak": 625.0,
+      "T_fluid_peak": 624.9453467070862,
+      "feasible": true,
+      "limit": "temperature"
+    },
+    "W_rel": 0.001671635501063565,
+    "beta_rel": 0.013072596967511394
+  },
+  "open_duct_flux": {
+    "nx": 12,
+    "dt": 0.2693986224325971,
+    "steps": 163,
+    "delivered": 0.9998270123197203,
+    "imposed": 403.48813357002325,
+    "conducted": 0.06979847510618503,
+    "stored": -8.089442712835022e-14,
+    "residual": 1.1405562197168422e-09,
+    "peak_K": 624.8560268832526,
+    "peak_last_K": 624.8560268832524,
+    "time_s": 3.378376264000508,
+    "developed_fluid_peak_K": 624.915202504977,
+    "developed_wall_peak_K": 625.0
+  },
+  "neglected_flux": {
+    "Re_over_Ha": 187.82186384042885,
+    "viscous_W": 0.005463050142817858,
+    "joule_W": 0.004544701630350489,
+    "W": 0.01000775177318019,
+    "dissipation_sum_over_W": 0.9999999999988166,
+    "viscous_over_duty": 1.3539555908327003e-05,
+    "joule_over_duty": 1.1263532312931744e-05,
+    "Ri_over_N": 0.004137898686551764
+  },
+  "stage2_design_flux": {
+    "u": -8.334871634622283,
+    "w": -1.899043320415736,
+    "beta": 0.14971177693420332,
+    "a": 0.020019242606312673,
+    "b": 0.002997116383467982,
+    "A": 0.00023999999999999987,
+    "Ha": 195.05168029247213,
+    "q": 0.0018252667193800784,
+    "theta_wall": 0.1517996645407222,
+    "theta_fluid": 0.1486806645407222,
+    "power": 3876.709660896747,
+    "wall_flux": 96824.58365518542,
+    "film": 14.423608481517235,
+    "allowance": 37.576391518482765,
+    "Q": 5.525164057845181e-05,
+    "V": 0.23021516907688266,
+    "W": 0.02238782533453728,
+    "dW_du": -0.008281794631772314,
+    "dp": 405.1974764939116,
+    "D_h": 0.010427366035894763,
+    "Re": 10984.414521178509,
+    "Re_over_Ha": 56.315405766860465,
+    "T_bulk_out": 610.5763915184828,
+    "T_wall_peak": 625.0,
+    "T_fluid_peak": 624.7036407492075,
+    "feasible": true,
+    "limit": "temperature",
+    "W_over_optimum": 2.2370484242559345,
+    "optimum_W": 0.01000775177318019
+  },
+  "gates_flux": {
+    "G3_flux": true,
+    "G4_flux": true,
+    "G5_flux": true,
+    "G6_flux": true
+  }
+}
