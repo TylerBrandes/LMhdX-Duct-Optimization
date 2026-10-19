@@ -209,7 +209,19 @@ def stage_landscape() -> None:
             for area in areas:
                 r = thermal_objective(box, float(np.log(area)), float(np.log(beta)), CELLS, LAYER)
                 row.append(
-                    {k: r.get(k) for k in ("feasible", "limit", "W", "Q", "Re_over_Ha", "film", "theta_wall")}
+                    {
+                        k: r.get(k)
+                        for k in (
+                            "feasible",
+                            "limit",
+                            "W",
+                            "pumping_power",
+                            "Q",
+                            "Re_over_Ha",
+                            "film",
+                            "theta_wall",
+                        )
+                    }
                 )
             grid.append(row)
         out[framing] = grid
@@ -351,8 +363,8 @@ def stage_neglected(framing: str) -> None:
             "Re_over_Ha": design["Re_over_Ha"],
             "viscous_W": viscous,
             "joule_W": joule,
-            "W": design["W"],
-            "dissipation_sum_over_W": (viscous + joule) / design["W"],
+            "pumping_power": design["pumping_power"],
+            "dissipation_sum_over_pumping": (viscous + joule) / design["pumping_power"],
             "viscous_over_duty": viscous / design["power"],
             "joule_over_duty": joule / design["power"],
             "Ri_over_N": ri_over_n,
@@ -368,7 +380,12 @@ def stage_stage2_design() -> None:
     for framing in FRAMINGS:
         design = thermal_objective(_box(framing), u, w, CELLS, LAYER)
         optimum = ckpt["optimum"][framing]
-        out[framing] = {**design, "W_over_optimum": design["W"] / optimum["W"], "optimum_W": optimum["W"]}
+        out[framing] = {
+            **design,
+            "W_over_optimum": design["W"] / optimum["W"],
+            "optimum_W": optimum["W"],
+            "pumping_over_optimum": design["pumping_power"] / optimum["design"]["pumping_power"],
+        }
     checkpoint.set_key(("stage2_design",), out)
 
 
@@ -376,7 +393,7 @@ def stage_capacity() -> None:
     """At the Stage 2 design's pumping power for 1.5 kW: the largest duty each aspect removes at the area cap."""
     box = _box("duty")
     reference = checkpoint.load()["stage2_design"]["duty"]
-    power0 = reference["W"]
+    power0 = reference["pumping_power"]
     rows = []
     for beta in np.geomspace(0.02, 5.0, 25):
         u, w = box.u_hi, float(np.log(beta))

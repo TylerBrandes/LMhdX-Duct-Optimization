@@ -141,7 +141,10 @@ def thermal_box(case: CaseP, framing: str) -> ThermalBox:
 def thermal_objective(
     box: ThermalBox, u: float, w: float, cells: int, cells_in_layer: int, centre: float = 0.0
 ):
-    """Return the shape's cheapest feasible flow, its pumping power ``W`` and ``dW/du`` at fixed ``w``.
+    """Return the shape's cheapest feasible flow, its cost ``W`` and ``dW/du`` at fixed ``w``.
+
+    The cost is the pumping power per channel for a fixed duty, and per metre of first wall,
+    ``pumping_power / (2 a)``, for a fixed flux.
 
     ``W`` is infinite where the temperature allowance is used up or ``Q_min`` breaks ``Re/Ha <= laminar``;
     ``feasible`` and ``limit`` say which.
@@ -168,13 +171,20 @@ def thermal_objective(
         return {**record, "W": np.inf, "dW_du": np.inf, "feasible": False, "limit": "temperature"}
     Q = power / (box.rho * box.cp * allowance)
     dlnQ_dlna = (1.0 if box.framing == "flux" else 0.0) + dfilm_dlna / allowance
-    W = box.mu * box.L * Q**2 / (a**4 * q)
+    pumping = box.mu * box.L * Q**2 / (a**4 * q)
     dlnq_dlna = float(d_dha[0]) * ha / q
-    dW_du = W * 0.5 * (2.0 * dlnQ_dlna - 4.0 - dlnq_dlna)  # d ln a / du = 1/2 at fixed w
+    dlnP_du = 0.5 * (2.0 * dlnQ_dlna - 4.0 - dlnq_dlna)  # d ln a / du = 1/2 at fixed w
+    # The cost: per channel for a fixed duty; per metre of first wall for a fixed flux, since the plasma sets the
+    # flux and a narrower channel only moves its heat to more channels (corrected after the run; see the README).
+    W, dW_du = (pumping, pumping * dlnP_du) if box.framing == "duty" else (
+        pumping / (2.0 * a), pumping / (2.0 * a) * (dlnP_du - 0.5)
+    )  # fmt: skip
     hydraulic = 4.0 * a * b / (a + b)
     reynolds = box.rho * (Q / area) * hydraulic / box.mu
     record |= {
-        "Q": Q, "V": Q / area, "W": W, "dW_du": dW_du, "dp": W / Q, "D_h": hydraulic, "Re": reynolds,
+        "Q": Q, "V": Q / area, "W": W, "dW_du": dW_du, "pumping_power": pumping, "dp": pumping / Q,
+        "cost_unit": "W per channel" if box.framing == "duty" else "W per metre of first wall",
+        "D_h": hydraulic, "Re": reynolds,
         "Re_over_Ha": reynolds / ha, "T_bulk_out": box.t_in + power / (box.rho * box.cp * Q),
         "T_wall_peak": box.t_in + power / (box.rho * box.cp * Q) + scale * theta_wall,
         "T_fluid_peak": box.t_in + power / (box.rho * box.cp * Q) + scale * theta_fluid,
