@@ -36,21 +36,23 @@ from dataclasses import dataclass, field
 
 import numpy as np
 
-from .physics import DesignBox, objective, objective_value
+from .physics import DesignBox, objective
 
 
 def _clip(x: float, lo: float, hi: float) -> float:
     return float(min(max(x, lo), hi))
 
 
-def _bisect_u(box: DesignBox, w: float, cells: int, cells_in_layer: int, u_lo: float, u_hi: float) -> float:
+def _bisect_u(
+    box: DesignBox, w: float, cells: int, cells_in_layer: int, u_lo: float, u_hi: float, evaluate=objective
+) -> float:
     """Find the interior root of dW/du in [u_lo, u_hi], or return the active bound.
 
     dW/du is evaluated warm (same mesh, only field_scale changes), so this
     costs no new mesh regardless of how many bisection steps it takes.
     """
-    g_lo = objective(box, u_lo, w, cells, cells_in_layer)["dW_du"]
-    g_hi = objective(box, u_hi, w, cells, cells_in_layer)["dW_du"]
+    g_lo = evaluate(box, u_lo, w, cells, cells_in_layer)["dW_du"]
+    g_hi = evaluate(box, u_hi, w, cells, cells_in_layer)["dW_du"]
     if g_lo >= 0.0:  # W already increasing at the smallest area: stay at the lower bound
         return u_lo
     if g_hi <= 0.0:  # W still decreasing at the largest area: the upper bound is optimal
@@ -58,7 +60,7 @@ def _bisect_u(box: DesignBox, w: float, cells: int, cells_in_layer: int, u_lo: f
     lo, hi = u_lo, u_hi
     for _ in range(40):
         mid = 0.5 * (lo + hi)
-        g = objective(box, mid, w, cells, cells_in_layer)["dW_du"]
+        g = evaluate(box, mid, w, cells, cells_in_layer)["dW_du"]
         if g > 0.0:
             hi = mid
         else:
@@ -77,14 +79,18 @@ def _quad_bracket(
     cells: int,
     cells_in_layer: int,
     factors: np.ndarray,
+    evaluate=objective,
 ) -> tuple[float, float, bool, list[dict], int]:
-    """One bracket of 5 log-spaced samples around ``w_center``; a parabola through the best 3."""
+    """One bracket of 5 log-spaced samples around ``w_center``; a parabola through the best 3.
+
+    A sample may be infeasible (``W`` infinite, Stage 3); the parabola then needs three finite values.
+    """
     ws = np.clip(w_center + np.log(factors), w_lo, w_hi)
     ws = np.unique(ws)  # bound-clipping can collapse samples near an edge
-    values = np.array([objective_value(box, u, w, cells, cells_in_layer) for w in ws])
+    values = np.array([evaluate(box, u, w, cells, cells_in_layer)["W"] for w in ws])
     evaluated = [{"w": float(w), "W": float(v)} for w, v in zip(ws, values)]
     i = int(np.argmin(values))
-    if i == 0 or i == len(ws) - 1 or len(ws) < 3:
+    if i == 0 or i == len(ws) - 1 or len(ws) < 3 or not np.all(np.isfinite(values[i - 1 : i + 2])):
         return float(ws[i]), float(values[i]), False, evaluated, len(ws)
     x, y = ws[i - 1 : i + 2], values[i - 1 : i + 2]
     c2, c1, c0 = np.polyfit(x, y, 2)
@@ -122,17 +128,29 @@ def optimize(
     w_tol: float = 1.0e-3,
     record_path: bool = True,
     progress=None,
+    evaluate=objective,
+    u_range=None,
 ) -> OptimizeResult:
-    """Minimize W(u, w) on [u_lo, u_hi] x [ln(beta_lo), ln(beta_hi)]."""
-    u_lo, u_hi = box.u_lo, box.u_hi
+    """Minimize W(u, w) on [u_lo, u_hi] x [ln(beta_lo), ln(beta_hi)].
+
+    ``evaluate`` is the objective, Stage 2's pumping power by default. ``u_range(w)``, if given, returns the
+    feasible ``(u_lo, u_hi, lower_name, upper_name)`` at an aspect, which then replaces the box's bounds and
+    names the active one (Stage 3: the temperature limit, ``Re/Ha`` or the area cap).
+    """
     w_lo, w_hi = float(np.log(box.beta_lo)), float(np.log(box.beta_hi))
+
+    def bounds(w):
+        return (box.u_lo, box.u_hi, "V_max", "V_min") if u_range is None else u_range(w)
+
+    u_lo, u_hi, _, _ = bounds(_clip(w0, w_lo, w_hi))
     u, w = _clip(u0, u_lo, u_hi), _clip(w0, w_lo, w_hi)
     path = []
     meshes_built = 0
     for round_index in range(max_rounds):
-        u = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi)
+        u_lo, u_hi, _, _ = bounds(w)
+        u = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi, evaluate)
         w_new, W_new, interior, evaluated, n_new = _quad_bracket(
-            box, u, w, w_lo, w_hi, cells, cells_in_layer, _BRACKET_FACTORS
+            box, u, w, w_lo, w_hi, cells, cells_in_layer, _BRACKET_FACTORS, evaluate
         )
         meshes_built += n_new
         if record_path:
@@ -152,32 +170,40 @@ def optimize(
         moved = abs(w_new - w)
         w = w_new
         if interior and moved < w_tol:
-            u_final = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi)
-            final = objective(box, u_final, w, cells, cells_in_layer)
-            dW_dw = _finite_diff_dw(box, u_final, w, cells, cells_in_layer, meshes_built_ref=[meshes_built])
-            return _finish(box, u_final, w, final, path, meshes_built + 2, True, dW_dw[0], u_lo, u_hi)
+            u_lo, u_hi, lower, upper = bounds(w)
+            u_final = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi, evaluate)
+            final = evaluate(box, u_final, w, cells, cells_in_layer)
+            dW_dw = _finite_diff_dw(
+                box, u_final, w, cells, cells_in_layer, meshes_built_ref=[meshes_built], evaluate=evaluate
+            )
+            return _finish(
+                box, u_final, w, final, path, meshes_built + 2, True, dW_dw[0], u_lo, u_hi, (lower, upper)
+            )
 
-    u_final = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi)
-    final = objective(box, u_final, w, cells, cells_in_layer)
+    u_lo, u_hi, lower, upper = bounds(w)
+    u_final = _bisect_u(box, w, cells, cells_in_layer, u_lo, u_hi, evaluate)
+    final = evaluate(box, u_final, w, cells, cells_in_layer)
     dW_dw, meshes_built = _finite_diff_dw(
-        box, u_final, w, cells, cells_in_layer, meshes_built_ref=[meshes_built]
+        box, u_final, w, cells, cells_in_layer, meshes_built_ref=[meshes_built], evaluate=evaluate
     )
     converged = abs(dW_dw) <= 1.0e-4 * max(abs(final["W"]), 1e-300)
-    return _finish(box, u_final, w, final, path, meshes_built, converged, dW_dw, u_lo, u_hi)
+    return _finish(box, u_final, w, final, path, meshes_built, converged, dW_dw, u_lo, u_hi, (lower, upper))
 
 
-def _finite_diff_dw(box, u, w, cells, cells_in_layer, meshes_built_ref, h=2.0e-3):
-    Wp = objective_value(box, u, w + h, cells, cells_in_layer)
-    Wm = objective_value(box, u, w - h, cells, cells_in_layer)
+def _finite_diff_dw(box, u, w, cells, cells_in_layer, meshes_built_ref, h=2.0e-3, evaluate=objective):
+    Wp = evaluate(box, u, w + h, cells, cells_in_layer)["W"]
+    Wm = evaluate(box, u, w - h, cells, cells_in_layer)["W"]
     meshes_built_ref[0] += 2
     return (Wp - Wm) / (2.0 * h), meshes_built_ref[0]
 
 
-def _finish(box, u, w, final, path, meshes_built, converged, dW_dw_final, u_lo, u_hi) -> OptimizeResult:
+def _finish(
+    box, u, w, final, path, meshes_built, converged, dW_dw_final, u_lo, u_hi, names=("V_max", "V_min")
+) -> OptimizeResult:
     if u >= u_hi - 1.0e-9:
-        bound, multiplier = "V_min", -final["dW_du"]  # active upper area bound; W would fall further past it
+        bound, multiplier = names[1], -final["dW_du"]  # active upper area bound; W would fall further past it
     elif u <= u_lo + 1.0e-9:
-        bound, multiplier = "V_max", final["dW_du"]
+        bound, multiplier = names[0], final["dW_du"]
     else:
         bound, multiplier = "interior", 0.0
     return OptimizeResult(
@@ -193,7 +219,9 @@ def _finish(box, u, w, final, path, meshes_built, converged, dW_dw_final, u_lo, 
     )
 
 
-def taylor_test(box: DesignBox, u: float, w: float, cells: int, cells_in_layer: int) -> dict:
+def taylor_test(
+    box: DesignBox, u: float, w: float, cells: int, cells_in_layer: int, evaluate=objective
+) -> dict:
     """Taylor remainder test (Farrell et al. 2013, SIAM J. Sci. Comput., [O10]), on the
     EXACT, mesh-free gradient in ``u`` alone: perturbing ``w`` changes the mesh
     (a fresh ``wall_resolving_faces`` build and a fresh CG solve, tolerance
@@ -208,12 +236,12 @@ def taylor_test(box: DesignBox, u: float, w: float, cells: int, cells_in_layer: 
     call, no mesh change) is unaffected and gives a clean second-order slope;
     see ``fd_step_study`` for the appropriate check on the ``w`` gradient.
     """
-    base = objective(box, u, w, cells, cells_in_layer)
+    base = evaluate(box, u, w, cells, cells_in_layer)
     W0, grad = base["W"], base["dW_du"]
     hs = [1.0e-2, 3.0e-3, 1.0e-3, 3.0e-4, 1.0e-4, 3.0e-5, 1.0e-5]
     zeroth, first = [], []
     for h in hs:
-        Wh = objective(box, u + h, w, cells, cells_in_layer)["W"]
+        Wh = evaluate(box, u + h, w, cells, cells_in_layer)["W"]
         zeroth.append(abs(Wh - W0))
         first.append(abs(Wh - W0 - h * grad))
     return {
@@ -234,6 +262,7 @@ def fd_step_study(
     cells_in_layer: int,
     hs: tuple[float, ...] = (3.0e-2, 1.0e-2, 3.0e-3, 1.0e-3, 3.0e-4, 1.0e-4),
     noise_jump_threshold: float = 0.5,
+    evaluate=objective,
 ) -> dict:
     """Step-size sensitivity of the central-difference ``dW/dw`` (Nocedal & Wright
     ch. 8 [O7]): the appropriate check for a finite-difference gradient across a
@@ -250,8 +279,11 @@ def fd_step_study(
     ``estimates[-3:-1]`` slice was tried first and picked up exactly this
     noise (a caught mistake, recorded in stage_2_plan.txt).
     """
-    estimates = [_finite_diff_dw(box, u, w, cells, cells_in_layer, meshes_built_ref=[0], h=h)[0] for h in hs]
-    W0 = objective(box, u, w, cells, cells_in_layer)["W"]
+    estimates = [
+        _finite_diff_dw(box, u, w, cells, cells_in_layer, meshes_built_ref=[0], h=h, evaluate=evaluate)[0]
+        for h in hs
+    ]
+    W0 = evaluate(box, u, w, cells, cells_in_layer)["W"]
     noise_floor_index = len(hs)
     for i in range(1, len(estimates)):
         denom = max(abs(estimates[i - 1]), 1.0e-300)
