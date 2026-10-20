@@ -49,6 +49,18 @@ iteration counts and timings.
 | `ramp_200_square` | 11 | 4.6e-9 (excess) | 1e-3 |
 | `case_p_correction` | 8 | 5.1e-10 (square-duct centroid) | 1e-6 |
 
+![Every graded value's relative difference from the 2026-09 record, by stage, against its tolerance](figures/R1_differences.png)
+
+*R1. Every graded value of the six re-run stages, as a relative difference from the 2026-09 record, against its
+stage's tolerance (black). The square on the dashed floor stands for all of a stage's exact repeats; the counts
+are under each stage. Four stages repeat every graded value exactly. The open-axis excess moves by at most 4.6e-9
+against its 1e-3 tolerance, and Case P's 3-D solve by at most 5.1e-10 against 1e-6.*
+
+![The re-run design-law optima on the 2026-09 design law](figures/R2_design_law.png)
+
+*R2. The re-run design-law optima at H = 100 (three meshes) and 1000 (two), inside the 2026-09 values they repeat
+bit for bit, on the 2026-09 design law at 48/6.*
+
 The four fully developed stages are identical to the last bit: every numeric field, graded or
 not, apart from timings. For example, at H = 100 β\* is 0.12417, 0.12336 and
 0.12300 on the three meshes against 0.12271 by the reference. At H = 1000, Ha\* is 6,109 and the
@@ -78,6 +90,8 @@ and don't enter any result. They are kept in `checkpoint.json` under `stage_cost
 | `compare.py` | The comparison and its tolerances (run from the repo root) |
 | `compare.json` | Every paired value: path, 2026-09, now, relative difference, and grade |
 | `logs/` | Each stage's output |
+| `figures/` | R1 and R2 as PNG, PDF and the CSV of their data, with `captions.md` |
+| `make_figures.py` | The figures, from `compare.json` and the two checkpoints alone |
 
 To repeat it from the repo root:
 
@@ -85,4 +99,5 @@ To repeat it from the repo root:
 export DUCTOPT_RESULTS=results/stage2-repro-1.10.0 PYTHONPATH=.:/path/to/LMhdX
 python -u duct_optimization_poc.py --stage dlaw_100   # then each stage above, dlaw_100 before tiltlaw_100
 python results/stage2-repro-1.10.0/compare.py
+python results/stage2-repro-1.10.0/make_figures.py
 ```

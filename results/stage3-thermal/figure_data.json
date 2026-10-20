@@ -1,0 +1,506 @@
+{
+  "study": "stage3-thermal figure data",
+  "results_sha": "3910a0756e6100dbb938ec27f3cc315dc62abd78",
+  "duct_opt_sha": "967d8a3c7c0c9bd845c95ed7d00ecc0fd67fcb82",
+  "cap": {
+    "beta": [
+      0.03,
+      0.03536305904380761,
+      0.041684864831194116,
+      0.04913681120862191,
+      0.05792093186649751,
+      0.06827537778224362,
+      0.08048087385839177,
+      0.09486832980505137,
+      0.11182781160944819,
+      0.1318191168228237,
+      0.15538424037693627,
+      0.18316206889755982,
+      0.21590570190034555,
+      0.25450286947322154,
+      0.29999999999999993,
+      0.3536305904380761,
+      0.4168486483119412,
+      0.49136811208621906,
+      0.5792093186649748,
+      0.6827537778224362,
+      0.8048087385839172,
+      0.9486832980505137,
+      1.118278116094482,
+      1.318191168228237,
+      1.5538424037693628,
+      1.8316206889755977,
+      2.159057019003455,
+      2.5450286947322147,
+      3.0
+    ],
+    "duty": [
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.006678834550951259,
+        "pumping_power": 0.006678834550951259,
+        "Q": 2.0295067747922e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0057190796960732955,
+        "pumping_power": 0.0057190796960732955,
+        "Q": 2.0145006730656432e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.004850862573641203,
+        "pumping_power": 0.004850862573641203,
+        "Q": 1.982642841178491e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.004093523652191566,
+        "pumping_power": 0.004093523652191566,
+        "Q": 1.9365954935786572e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.003468823745374911,
+        "pumping_power": 0.003468823745374911,
+        "Q": 1.883348636676298e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0029860834248000936,
+        "pumping_power": 0.0029860834248000936,
+        "Q": 1.8314891324006913e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0026372458157312064,
+        "pumping_power": 0.0026372458157312064,
+        "Q": 1.7878195412835402e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.002403656939556885,
+        "pumping_power": 0.002403656939556885,
+        "Q": 1.755891127695551e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.002264145402374814,
+        "pumping_power": 0.002264145402374814,
+        "Q": 1.7365015979248947e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.002201028089999249,
+        "pumping_power": 0.002201028089999249,
+        "Q": 1.7289729602329084e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0022016168908010627,
+        "pumping_power": 0.0022016168908010627,
+        "Q": 1.7321927235952288e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0022584787007162185,
+        "pumping_power": 0.0022584787007162185,
+        "Q": 1.745245160493235e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0023690387443088424,
+        "pumping_power": 0.0023690387443088424,
+        "Q": 1.767719508591135e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0025355448309319103,
+        "pumping_power": 0.0025355448309319103,
+        "Q": 1.7998693821930708e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0027656665033640145,
+        "pumping_power": 0.0027656665033640145,
+        "Q": 1.8427416468487912e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0030741897678604082,
+        "pumping_power": 0.0030741897678604082,
+        "Q": 1.8983539602755468e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0034876621449625527,
+        "pumping_power": 0.0034876621449625527,
+        "Q": 1.970079690006301e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.00404648494635946,
+        "pumping_power": 0.00404648494635946,
+        "Q": 2.0629918339063816e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.00482131991393518,
+        "pumping_power": 0.00482131991393518,
+        "Q": 2.1851120049229768e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.0059379949380489435,
+        "pumping_power": 0.0059379949380489435,
+        "Q": 2.349394784080782e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.00763771745563403,
+        "pumping_power": 0.00763771745563403,
+        "Q": 2.5779577364567578e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.01043298235846996,
+        "pumping_power": 0.01043298235846996,
+        "Q": 2.911727908248314e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.015584555561667414,
+        "pumping_power": 0.015584555561667414,
+        "Q": 3.4356518644211875e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.026969406450432137,
+        "pumping_power": 0.026969406450432137,
+        "Q": 4.359453167368145e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": null,
+        "pumping_power": 0.06217278957993221,
+        "Q": 6.379653373658196e-05,
+        "power": 1500.0
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": null,
+        "pumping_power": 0.3248253283262362,
+        "Q": 0.00014045213677869056,
+        "power": 1500.0
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 1500.0
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 1500.0
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 1500.0
+      }
+    ],
+    "flux": [
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 8660.254037844385
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 7976.5730340983755
+      },
+      {
+        "feasible": false,
+        "limit": "temperature",
+        "W": null,
+        "pumping_power": null,
+        "Q": null,
+        "power": 7346.865009994834
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": null,
+        "pumping_power": 6.935587932816723,
+        "Q": 0.0007971350510620586,
+        "power": 6766.8690858025275
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 9.765681150149206,
+        "pumping_power": 0.6286231797584475,
+        "Q": 0.0002535331783319076,
+        "power": 6232.660755586979
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 3.263448122662258,
+        "pumping_power": 0.19348632605825977,
+        "Q": 0.00014742750532166678,
+        "power": 5740.625332287933
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.6510014803504645,
+        "pumping_power": 0.09015851334777633,
+        "Q": 0.0001045325981464889,
+        "power": 5287.433489166747
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.0486898300514373,
+        "pumping_power": 0.052746305987007726,
+        "Q": 8.22540645530719e-05,
+        "power": 4870.018732126482
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.770641877600473,
+        "pumping_power": 0.035701241035166364,
+        "Q": 6.895482920090295e-05,
+        "power": 4485.556650472485
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.6255748053840816,
+        "pumping_power": 0.026692894596574816,
+        "Q": 6.021064013912191e-05,
+        "power": 4131.445805715101
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5446140422816887,
+        "pumping_power": 0.02140380429255441,
+        "Q": 5.4009582649317795e-05,
+        "power": 3805.2901290997997
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.49852374675368666,
+        "pumping_power": 0.018045698663936422,
+        "Q": 4.933274635584777e-05,
+        "power": 3504.882708758664
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.47340046650998324,
+        "pumping_power": 0.015783461181979586,
+        "Q": 4.5627680978138274e-05,
+        "power": 3228.190856780084
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.4621509463006145,
+        "pumping_power": 0.01419198442415882,
+        "Q": 4.2582083306464544e-05,
+        "power": 2973.34235515386
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.46108313915221505,
+        "pumping_power": 0.013041400575412468,
+        "Q": 4.0015354042175584e-05,
+        "power": 2738.61278752583
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.46842286027645336,
+        "pumping_power": 0.012203061202749853,
+        "Q": 3.782215333572981e-05,
+        "power": 2522.4138710430802
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.48384265058576037,
+        "pumping_power": 0.01160968859054768,
+        "Q": 3.5944038881726235e-05,
+        "power": 2323.2827093379397
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.507440605750657,
+        "pumping_power": 0.011214692065731106,
+        "Q": 3.434410639861429e-05,
+        "power": 2139.871893931736
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5404131821576037,
+        "pumping_power": 0.0110005344326399,
+        "Q": 3.300635911787524e-05,
+        "power": 1970.9403870800882
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.5849539966477582,
+        "pumping_power": 0.010967187729681973,
+        "Q": 3.192888314927028e-05,
+        "power": 1815.3451243690804
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.6446501359332312,
+        "pumping_power": 0.01113226043120762,
+        "Q": 3.112330279003267e-05,
+        "power": 1672.0332802418152
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.7252712211367957,
+        "pumping_power": 0.011535739451744563,
+        "Q": 3.0617467942998324e-05,
+        "power": 1540.0351441205112
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.8363019148254482,
+        "pumping_power": 0.012251627921775594,
+        "Q": 3.0462029815063135e-05,
+        "power": 1418.4575589208841
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 0.9940377009194552,
+        "pumping_power": 0.013412794733388323,
+        "Q": 3.07436878101487e-05,
+        "power": 1306.4778775609216
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.2283371111978392,
+        "pumping_power": 0.015265804964383055,
+        "Q": 3.161234847330632e-05,
+        "power": 1203.3383965711546
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 1.5989294161645262,
+        "pumping_power": 0.018302783523798383,
+        "Q": 3.3339722390471844e-05,
+        "power": 1108.3412291417962
+      },
+      {
+        "feasible": true,
+        "limit": "temperature",
+        "W": 2.2406859523501463,
+        "pumping_power": 0.02362406105387017,
+        "Q": 3.6460789687385944e-05,
+        "power": 1020.8435829155479
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": null,
+        "pumping_power": 0.034152353424028725,
+        "Q": 4.217659641356485e-05,
+        "power": 940.2534105735488
+      },
+      {
+        "feasible": false,
+        "limit": "Re/Ha",
+        "W": null,
+        "pumping_power": 0.060151535910211454,
+        "Q": 5.382540942009972e-05,
+        "power": 866.0254037844384
+      }
+    ]
+  }
+}

@@ -109,6 +109,10 @@ becomes the write-up. LMhdX's plan row 5.5 points here.
 source was clean) · Python 3.10.21 · JAX 0.6.2 · NumPy 2.2.6 · SOLVAX 0.19.0 · CPU, WSL2.
 - **Process:** each stage ran as its own process, with its output in [logs/](logs).
 - **Record:** [results.json](results.json) holds every input, value and gate.
+- **Figures:** `duct_thermal_figures.py` draws them from `results.json` and from ungraded figure data,
+  measured by `duct_thermal_figure_data.py` after the run (`figure_data.json`, `figure_data.npz`). That data is
+  the cost along the cap, the four outlet fields and the open-duct frames. Each figure is a PDF, a PNG and the
+  CSV of its data, with its caption in [figures/captions.md](figures/captions.md).
 
 | | Fixed duty, 1.5 kW per channel | Fixed flux, 96.82 kW/m² |
 |:--|--:|--:|
@@ -121,6 +125,21 @@ source was clean) · Python 3.10.21 · JAX 0.6.2 · NumPy 2.2.6 · SOLVAX 0.19.0
 | Bulk rise and film, of 52 K | 46.4 K and 5.6 K | 36.9 K and 15.1 K |
 | `Re/Ha`, `Ha` | 17, 199 | 71, 142 |
 | Stage 2's design (2.40 cm², b/a 0.150) | 2.196 mW, ×1.001 | 0.559 W/m, ×1.21 |
+
+![Cost along the area cap against the aspect ratio, for both framings, with the optimum and Stage 2's design](figures/F2_cap.png)
+
+*F2. The cost along the area cap, where both optima lie, against the aspect ratio (29 samples, 48/6 cells). The
+star is the thermal optimum and the ring Stage 2's design. At a fixed duty (a) Stage 2's design sits at the
+minimum. At a fixed flux (b) the minimum is squarer, and Stage 2's flatter design costs 21 % more per metre of
+first wall. Shaded aspect ratios are infeasible at the cap.*
+
+![The four designs' outlet temperature, drawn to scale](figures/F3_designs.png)
+
+*F3. Each design's outlet cross-section, to scale, from the developed duct at its cheapest feasible flow (48/6
+cells). The heated wall `z = -b` (black) faces the plasma, and the field runs along `y`, so the walls `y = ±a`
+are the Hartmann walls. Toward them the flow is up to about 20 % slower than at the centre over several
+millimetres, and runs hotter. Every design's wall peak is 625 K by construction. At a fixed duty the two designs nearly coincide (top). At a fixed flux the optimum is narrower
+along the field, so it collects less of the plasma's flux per channel (bottom).*
 
 **At a fixed duty, Stage 2's design is the thermal optimum, to 0.1 %.**
 - **Why:** both sit on the area cap. Near the optimum the shape barely moves the temperature: the
@@ -136,20 +155,36 @@ source was clean) · Python 3.10.21 · JAX 0.6.2 · NumPy 2.2.6 · SOLVAX 0.19.0
 - **The cost:** Stage 2's design costs 21 % more per metre of first wall.
 
 **At a fixed pumping power** (Stage 2's design's, 2.196 mW, at the area cap), the duty a shape
-removes within 625 K peaks near b/a 0.16, at 1.50 kW (figure F2). A square duct removes 0.90 kW,
-and b/a 5 removes 0.37 kW. Every sampled shape stays laminar.
+removes within 625 K peaks near b/a 0.16, at 1.50 kW (F4). A square duct removes 0.90 kW, and b/a 5
+removes 0.37 kW. Every sampled shape stays laminar.
 
-![F1](figures/F1_landscape.png)
+![The duty each aspect ratio removes at Stage 2's pumping power](figures/F4_capacity.png)
 
-*F1. The cost of each shape's cheapest feasible flow, over the area and the aspect, on the 13 × 13
-landscape (48/6 cells). Hatched shapes are infeasible: either no flow keeps the peaks within 625 K,
-or the flow that does breaks `Re/Ha ≤ 200`. The star is the thermal optimum and the ring Stage 2's
-design. They coincide at a fixed duty.*
+*F4. At the Stage 2 design's pumping power for 1.5 kW (2.20 mW), the duty each aspect ratio removes within 625 K
+at the area cap (25 samples).*
 
-![F2](figures/F2_capacity.png)
+**Over the whole design set** (F1), every shape's cheapest feasible flow is costlier away from the area cap.
+Small shapes run into the laminar limit, `Re/Ha ≤ 200`. The temperature limit itself rules out shapes whose film
+alone takes the whole 52 K allowance:
+- at a fixed duty, the tallest ones;
+- at a fixed flux, the flattest large ones, across whose wide heated wall the film grows with `a`.
 
-*F2. At the Stage 2 design's pumping power, the duty each aspect removes within 625 K at the area
-cap.*
+![Pumping-power landscape over area and aspect ratio for both framings](figures/F1_landscape.png)
+
+*F1. The cost of each shape's cheapest feasible flow, over the area and the aspect ratio, on the 13 × 13
+landscape (48/6 cells). Hatched shapes are infeasible: either no flow keeps the peaks within 625 K, or the flow
+that does breaks `Re/Ha ≤ 200`. The star is the thermal optimum and the ring Stage 2's design. They coincide at
+a fixed duty.*
+
+**In an open duct** (M1), each optimum's held flow, carried from a 573 K inlet, heats up to the developed
+screening's steady state within its first residence times. This is G5's check, shown on a finer 24-cell axial
+mesh; the movie is figure data and is not graded.
+
+![The open duct heating from the inlet temperature to steady state](figures/M1_open_duct.webp)
+
+*M1. Each optimum's open duct from a uniform 573 K start to steady state over six residence times (24 axial
+cells, 41 frames): the mean temperature along the duct (left, with the steady profile faint) and the outlet
+cross-section to scale (right). A still of the last frame is [M1_open_duct_final.png](figures/M1_open_duct_final.png).*
 
 ## Gates
 
@@ -162,9 +197,20 @@ cap.*
 | G3, the active bound | area cap, multiplier +3.7e-3 | area cap, multiplier +0.33 | pass (≥ 0) |
 | G4, 72/9 against 48/6 | W 0.24 %, b/a 0.37 % | W 0.36 %, b/a 0.30 % | pass (1 %, 2 %) |
 | G5, open duct, delivered | 99.97 % of 1500 W | 99.98 % of 2815 W | pass (≥ 95 %) |
-| G5, open duct, peak | 624.81 K | 624.53 K | pass (≤ 625 K) |
+| G5, open duct, hottest cell | 624.81 K (developed: 624.89 K) | 624.53 K (developed: 624.59 K) | pass (≤ 625 K) |
 | G6, `Re/Ha` | 17 | 71 | pass (≤ 200) |
 | G6, viscous and Joule heating over the duty | 9.9e-7, 4.7e-7 | 2.8e-6, 2.0e-6 | pass (≤ 1e-3) |
+
+![Taylor test of the area gradient and the change on a finer mesh](figures/F5_verification.png)
+
+*F5. (a) G3's Taylor test of `dW/du` at each optimum: the remainder falls at first order without the gradient
+and at second order with it (slopes 1.00 and 2.00). (b) G4: each optimum re-optimized on 72/9 cells against
+48/6, with the change in its cost and its aspect ratio against the gates (black).*
+
+**G5's peak is the hottest fluid cell.** The open duct reports cell temperatures, not the heated wall's
+face temperature. That face is the developed screening's binding peak, and it sits at 625 K by
+construction. In the open duct the hottest cell stays 0.06–0.08 K below the developed duct's
+hottest cell, as the entrance region should give. The wall face there is not measured.
 
 **G3 fails for the fixed flux.**
 - **The reading:** the polished stationarity on Stage 2's scaled-mesh family reads −1.8e-6
