@@ -137,7 +137,7 @@ first wall. Shaded aspect ratios are infeasible at the cap.*
 
 *F3. Each design's outlet cross-section, to scale, from the developed duct at its cheapest feasible flow (48/6
 cells). The heated wall `z = -b` (black) faces the plasma, and the field runs along `y`, so the walls `y = ±a`
-are the Hartmann walls. Toward them the flow is up to about 20 % slower than at the centre over several
+are the Hartmann walls. The flow runs along `x`, out of the page (⊙). Toward them the flow is up to about 20 % slower than at the centre over several
 millimetres, and runs hotter. Every design's wall peak is 625 K by construction. At a fixed duty the two designs nearly coincide (top). At a fixed flux the optimum is narrower
 along the field, so it collects less of the plasma's flux per channel (bottom).*
 
@@ -183,8 +183,8 @@ mesh; the movie is figure data and is not graded.
 ![The open duct heating from the inlet temperature to steady state](figures/M1_open_duct.webp)
 
 *M1. Each optimum's open duct from a uniform 573 K start to steady state over six residence times (24 axial
-cells, 41 frames): the mean temperature along the duct (left, with the steady profile faint) and the outlet
-cross-section to scale (right). A still of the last frame is [M1_open_duct_final.png](figures/M1_open_duct_final.png).*
+cells, 41 frames): the mean temperature along the duct (left, with the steady profile faint; the arrow marks
+the flow, inlet to outlet) and the outlet cross-section to scale (right; the flow runs out of the page, ⊙). A still of the last frame is [M1_open_duct_final.png](figures/M1_open_duct_final.png).*
 
 ## Gates
 

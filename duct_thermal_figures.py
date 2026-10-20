@@ -69,6 +69,16 @@ def _edges(values) -> np.ndarray:
     return np.exp(np.concatenate([logs - step / 2, [logs[-1] + step / 2]]))
 
 
+def _flow_out_of_page(ax, xy: tuple[float, float] = (0.985, 0.9)) -> None:
+    """Mark the flow on a cross-section as ⊙, a vector out of the page: with y to the right and z up, the axial
+    x = y × z points at the viewer, and the flow runs along +x, inlet to outlet."""
+    style = dict(transform=ax.transAxes, clip_on=False)
+    ax.plot(*xy, "o", markersize=8, mfc=SURFACE, mec=INK, mew=1.1, zorder=6, **style)
+    ax.plot(*xy, "o", markersize=2.2, color=INK, mec=INK, zorder=7, **style)
+    ax.annotate("flow", xy, xycoords="axes fraction", xytext=(-8, 0), textcoords="offset points", ha="right",
+                va="center", fontsize=6.5, color=INK)  # fmt: skip
+
+
 def _mark_designs(ax, star: tuple[float, float], ring: tuple[float, float]) -> None:
     """The thermal optimum (star) and Stage 2's design (ring), labelled once each, or together where they meet."""
     ax.plot(*ring, "o", mfc=SURFACE, mec=INK, markersize=10, mew=1.3, zorder=4)
@@ -208,6 +218,7 @@ def figure_designs(results: dict, arrays) -> None:
             )
             size = f"{2e3 * design['a']:.1f} × {2e3 * design['b']:.1f} mm"
             ax.set_title(f"{names[framing, kind]}: b/a {design['beta']:.3f}, {size}", loc="left")
+            _flow_out_of_page(ax)
             rows.append({"framing": framing, "design": kind, "beta": design["beta"], "a_mm": design["a"] * 1e3,
                          "b_mm": design["b"] * 1e3, "outlet_min_K": float(fields[kind].min()),
                          "outlet_max_K": float(fields[kind].max()), "power_W": design["power"]})  # fmt: skip
@@ -219,7 +230,8 @@ def figure_designs(results: dict, arrays) -> None:
         ax.set_xlabel(axis_label("y, along the field B", "", "mm"))
     save(fig, "F3_designs", rows,
          "Each design's outlet cross-section, drawn to scale, from the developed duct at its cheapest feasible flow "
-         "(48/6 cells). The heated wall z = -b (black) faces the plasma; the field B runs along y. Every design's "
+         "(48/6 cells). The heated wall z = -b (black) faces the plasma; the field B runs along y; the flow runs along x, "
+         "out of the page (⊙). Every design's "
          "wall peak is 625 K by construction. At a fixed duty the two designs nearly coincide; at a fixed flux the "
          "optimum is narrower along the field, with about twice Stage 2's aspect ratio.")  # fmt: skip
 
@@ -338,6 +350,10 @@ def movie_open_duct(arrays) -> None:
         ax_x.set_xlabel(axis_label("Distance from the inlet", "x", "m"))
         ax_x.set_ylabel(axis_label("Mean temperature", r"\bar{T}", "K"))
         ax_x.legend(loc="upper left", frameon=False)
+        ax_x.annotate("", xy=(0.95, 0.05), xytext=(0.55, 0.05), xycoords="axes fraction",
+                      arrowprops=dict(arrowstyle="-|>", color=INK, lw=1.3, mutation_scale=10))  # fmt: skip
+        ax_x.annotate("flow, inlet to outlet", (0.75, 0.07), xycoords="axes fraction", ha="center", va="bottom",
+                      fontsize=6.5, color=INK)  # fmt: skip
         residence = arrays["open_duty_residence_time"]
         ax_x.set_title(f"t = {times['duty'][k]:.0f} s, {times['duty'][k] / residence:.1f} duty residence times "
                        "(faint: steady)", loc="left")  # fmt: skip
@@ -353,6 +369,7 @@ def movie_open_duct(arrays) -> None:
             ax.set_title(
                 f"Outlet, {f} optimum: hottest {arrays[f'open_{f}_outlet'][k].max():.1f} K", loc="left"
             )
+            _flow_out_of_page(ax)
         ax_s[1].set_xlabel(axis_label("y, along B", "", "mm"))
         if k == 0:
             colorbar_axes = fig.add_axes([0.91, 0.17, 0.015, 0.68])
@@ -377,8 +394,8 @@ def movie_open_duct(arrays) -> None:
         writer.writerows(rows)
     CAPTIONS.append("**M1_open_duct.** Each optimum's held flow down an open duct from a 573 K inlet (24 axial cells; "
                     "ungraded figure data, G5's check on 24 cells instead of 12), from the uniform inlet temperature to "
-                    "steady state over six residence times: the mean temperature along the duct, and the outlet "
-                    "cross-section to scale.")  # fmt: skip
+                    "steady state over six residence times: the mean temperature along the duct, the arrow marking the flow "
+                    "from inlet to outlet, and the outlet cross-section to scale, the flow out of the page (⊙).")  # fmt: skip
     print("  wrote M1_open_duct")
 
 
