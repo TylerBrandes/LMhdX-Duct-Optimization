@@ -273,7 +273,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 65.07583920026796,
           "Q": 1.694054165841568e-05,
           "Re_over_Ha": 259.9992953477665,
@@ -405,7 +405,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 42.07135894257902,
           "Q": 1.7071527946809296e-05,
           "Re_over_Ha": 410.3916535884422,
@@ -415,7 +415,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 19.645980535266794,
           "Q": 1.7116437116833842e-05,
           "Re_over_Ha": 280.3320988009055,
@@ -537,7 +537,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 27.57126819318293,
           "Q": 1.7269171532420253e-05,
           "Re_over_Ha": 646.1033947881937,
@@ -547,7 +547,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 12.909855603989262,
           "Q": 1.7328472699111425e-05,
           "Re_over_Ha": 441.69668457724043,
@@ -557,7 +557,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 6.0641385287707985,
           "Q": 1.7409298534462232e-05,
           "Re_over_Ha": 302.32806115170143,
@@ -567,7 +567,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 2.859859515789974,
           "Q": 1.7516897695143907e-05,
           "Re_over_Ha": 207.24674255875806,
@@ -669,7 +669,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 18.454092783754824,
           "Q": 1.7555943484662308e-05,
           "Re_over_Ha": 1012.3266927481932,
@@ -679,7 +679,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 8.66816498617134,
           "Q": 1.7620670471153668e-05,
           "Re_over_Ha": 692.2329648219397,
@@ -689,7 +689,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 4.086346508063822,
           "Q": 1.7703021895190627e-05,
           "Re_over_Ha": 473.81694409819437,
@@ -699,7 +699,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.934226561299347,
           "Q": 1.7802964653057e-05,
           "Re_over_Ha": 324.63014355885247,
@@ -709,7 +709,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.919403726599769,
           "Q": 1.7917096613053778e-05,
           "Re_over_Ha": 222.5858145001083,
@@ -801,7 +801,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 12.764222422969336,
           "Q": 1.7946809294286646e-05,
           "Re_over_Ha": 1571.8470671125806,
@@ -811,7 +811,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 6.014181717092011,
           "Q": 1.79836987971671e-05,
           "Re_over_Ha": 1073.0881389387628,
@@ -821,7 +821,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 2.8438870590061343,
           "Q": 1.801904963799846e-05,
           "Re_over_Ha": 732.5235466209023,
@@ -831,7 +831,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.349799678801424,
           "Q": 1.8045252390781164e-05,
           "Re_over_Ha": 499.78820416251097,
@@ -841,7 +841,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.6431461960335371,
           "Q": 1.8053037237293183e-05,
           "Re_over_Ha": 340.64863450684527,
@@ -851,7 +851,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.307749405468959,
           "Q": 1.8033924029914167e-05,
           "Re_over_Ha": 231.83550277158716,
@@ -933,7 +933,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 9.366136091097978,
           "Q": 1.8474076654630055e-05,
           "Re_over_Ha": 2406.0860383732065,
@@ -943,7 +943,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 4.445259401909775,
           "Q": 1.843904053423104e-05,
           "Re_over_Ha": 1636.1384998241547,
@@ -953,7 +953,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 2.1230209879087267,
           "Q": 1.8387655889230327e-05,
           "Re_over_Ha": 1111.5818477458,
@@ -963,7 +963,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.0217131270212165,
           "Q": 1.8319210679430148e-05,
           "Re_over_Ha": 754.4929203784288,
@@ -973,7 +973,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.4962145205701137,
           "Q": 1.8235793763210123e-05,
           "Re_over_Ha": 511.6893960600213,
@@ -983,7 +983,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.24354920511369965,
           "Q": 1.814185000030752e-05,
           "Re_over_Ha": 346.814023718754,
@@ -993,7 +993,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.12093442770435611,
           "Q": 1.8042947159457664e-05,
           "Re_over_Ha": 234.99352126265157,
@@ -1065,7 +1065,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 7.853033818115919,
           "Q": 1.941812956432797e-05,
           "Re_over_Ha": 3651.668969960104,
@@ -1075,7 +1075,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 3.8176013703821643,
           "Q": 1.9333800024277006e-05,
           "Re_over_Ha": 2477.0487971893835,
@@ -1085,7 +1085,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.8777801173325064,
           "Q": 1.9244356369894607e-05,
           "Re_over_Ha": 1679.786412053273,
@@ -1095,7 +1095,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.9353248284695218,
           "Q": 1.9153837709312963e-05,
           "Re_over_Ha": 1139.0421881837767,
@@ -1105,7 +1105,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.47190473028101193,
           "Q": 1.906586509330159e-05,
           "Re_over_Ha": 772.4561863112278,
@@ -1115,7 +1115,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.24109482464977167,
           "Q": 1.8983124173679827e-05,
           "Re_over_Ha": 523.9844053377376,
@@ -1125,7 +1125,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.12463331272000623,
           "Q": 1.8907205756792098e-05,
           "Re_over_Ha": 355.55873876526107,
@@ -1135,7 +1135,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.06512253747924981,
           "Q": 1.8838712404765562e-05,
           "Re_over_Ha": 241.3618111505547,
@@ -1197,7 +1197,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 8.444850825852804,
           "Q": 2.157013263897718e-05,
           "Re_over_Ha": 5635.320837255513,
@@ -1207,7 +1207,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 4.248780584326769,
           "Q": 2.1476551768029327e-05,
           "Re_over_Ha": 3822.6427972049446,
@@ -1217,7 +1217,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 2.1655338737060905,
           "Q": 2.1386040397522314e-05,
           "Re_over_Ha": 2593.360434374185,
@@ -1227,7 +1227,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.1172815765171575,
           "Q": 2.1300574486209637e-05,
           "Re_over_Ha": 1759.7750173129837,
@@ -1237,7 +1237,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.5828659937958427,
           "Q": 2.122105921382032e-05,
           "Re_over_Ha": 1194.4451785910755,
@@ -1247,7 +1247,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.3070549675327116,
           "Q": 2.1147564093010068e-05,
           "Re_over_Ha": 810.9477025338421,
@@ -1257,7 +1257,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.16312686550953437,
           "Q": 2.1079638950109377e-05,
           "Re_over_Ha": 550.717654849837,
@@ -1267,7 +1267,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.08728757053726895,
           "Q": 2.101661313227456e-05,
           "Re_over_Ha": 374.0777648082575,
@@ -1277,7 +1277,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.046991022435942574,
           "Q": 2.0957822072789598e-05,
           "Re_over_Ha": 254.14328947271332,
@@ -1329,7 +1329,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 13.068612611612057,
           "Q": 2.6815707662298565e-05,
           "Re_over_Ha": 9287.761393955532,
@@ -1339,7 +1339,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 6.74381352960603,
           "Q": 2.6689286880523082e-05,
           "Re_over_Ha": 6297.846779972889,
@@ -1349,7 +1349,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 3.518106110090779,
           "Q": 2.6564669930684517e-05,
           "Re_over_Ha": 4270.639160135278,
@@ -1359,7 +1359,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.8528930093790492,
           "Q": 2.644313561711587e-05,
           "Re_over_Ha": 2896.2412826096834,
@@ -1369,7 +1369,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.9838920779164094,
           "Q": 2.6325311533711432e-05,
           "Re_over_Ha": 1964.3941853288818,
@@ -1379,7 +1379,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.5261047105098049,
           "Q": 2.621154638490248e-05,
           "Re_over_Ha": 1332.5425863709456,
@@ -1389,7 +1389,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.2829902793622577,
           "Q": 2.6102143372757976e-05,
           "Re_over_Ha": 904.0614649071451,
@@ -1399,7 +1399,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.15299194325774818,
           "Q": 2.5997434875128304e-05,
           "Re_over_Ha": 613.4591090755782,
@@ -1409,7 +1409,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.08307159275816792,
           "Q": 2.5897754424551706e-05,
           "Re_over_Ha": 416.34232419844454,
@@ -1419,7 +1419,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.04527571846475181,
           "Q": 2.5803379077152152e-05,
           "Re_over_Ha": 282.6170572059643,
@@ -1461,7 +1461,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 39.64956509117902,
           "Q": 4.431584613567765e-05,
           "Re_over_Ha": 19321.647317014173,
@@ -1471,7 +1471,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 20.555835531333486,
           "Q": 4.39131150779546e-05,
           "Re_over_Ha": 13044.056880238724,
@@ -1481,7 +1481,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 10.754258126475488,
           "Q": 4.350637092131273e-05,
           "Re_over_Ha": 8804.49861695494,
@@ -1491,7 +1491,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 5.671333057071021,
           "Q": 4.3104020072409744e-05,
           "Re_over_Ha": 5942.961010211454,
@@ -1501,7 +1501,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 3.0117657150275225,
           "Q": 4.2712712340248013e-05,
           "Re_over_Ha": 4012.1354730241997,
@@ -1511,7 +1511,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.6092414557956025,
           "Q": 4.233739569261671e-05,
           "Re_over_Ha": 2709.4173721073807,
@@ -1521,7 +1521,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.8645083944345329,
           "Q": 4.198143742977823e-05,
           "Re_over_Ha": 1830.3848366023526,
@@ -1531,7 +1531,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.46664898081066597,
           "Q": 4.164683390531237e-05,
           "Re_over_Ha": 1237.0875292686114,
@@ -1541,7 +1541,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.2529547572108822,
           "Q": 4.133448523509838e-05,
           "Re_over_Ha": 836.496840297677,
@@ -1551,7 +1551,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.13762981532438623,
           "Q": 4.1044479149899935e-05,
           "Re_over_Ha": 565.9002080606997,
@@ -1561,7 +1561,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.07512906009395075,
           "Q": 4.0776340155955714e-05,
           "Re_over_Ha": 383.02461219642873,
@@ -1571,7 +1571,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.041129803896386465,
           "Q": 4.0529226864686485e-05,
           "Re_over_Ha": 259.3702081784234,
@@ -1593,7 +1593,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1603,7 +1603,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1613,7 +1613,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1623,7 +1623,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 96181.791556299,
           "Q": 0.00511922257045352,
           "Re_over_Ha": 843635.4747249566,
@@ -1633,7 +1633,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 8973.567047540086,
           "Q": 0.0021227278127421458,
           "Re_over_Ha": 238329.863945601,
@@ -1643,7 +1643,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 2006.7693001052337,
           "Q": 0.0013590523341469065,
           "Re_over_Ha": 103956.98344993188,
@@ -1653,7 +1653,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 611.1427964542587,
           "Q": 0.0010131168639833724,
           "Re_over_Ha": 52797.13616091036,
@@ -1663,7 +1663,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 218.7910936184443,
           "Q": 0.0008173257322183087,
           "Re_over_Ha": 29018.79183109712,
@@ -1673,7 +1673,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 86.59542545341324,
           "Q": 0.0006922264366615497,
           "Re_over_Ha": 16744.248838592805,
@@ -1683,7 +1683,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 36.70330257693306,
           "Q": 0.0006059198256258313,
           "Re_over_Ha": 9985.411899991403,
@@ -1693,7 +1693,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 16.349173704692603,
           "Q": 0.0005431363360233825,
           "Re_over_Ha": 6098.078533259846,
@@ -1703,7 +1703,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 7.561650222255573,
           "Q": 0.0004956611594564915,
           "Re_over_Ha": 3791.4241899107565,
@@ -1713,7 +1713,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 3.6014447875683953,
           "Q": 0.00045868890081450926,
           "Re_over_Ha": 2390.3915937776196,
@@ -1725,7 +1725,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1735,7 +1735,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1745,7 +1745,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1755,7 +1755,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1765,7 +1765,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1775,7 +1775,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1785,7 +1785,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1795,7 +1795,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1805,7 +1805,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1815,7 +1815,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1825,7 +1825,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1835,7 +1835,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1845,7 +1845,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1857,7 +1857,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1867,7 +1867,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1877,7 +1877,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1887,7 +1887,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1897,7 +1897,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1907,7 +1907,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1917,7 +1917,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1927,7 +1927,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1937,7 +1937,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1947,7 +1947,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1957,7 +1957,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1967,7 +1967,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -1977,7 +1977,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -2101,7 +2101,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -2111,7 +2111,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -2123,7 +2123,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 12.134758058362081,
           "Q": 9.168423889581928e-06,
           "Re_over_Ha": 220.40467921610673,
@@ -2233,7 +2233,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -2243,7 +2243,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,
@@ -2255,7 +2255,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 4.840201714061194,
           "Q": 7.235605204804726e-06,
           "Re_over_Ha": 270.7106752281051,
@@ -2265,7 +2265,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 3.3858203777063953,
           "Q": 8.874247795078515e-06,
           "Re_over_Ha": 226.2014602939625,
@@ -2375,7 +2375,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 4.265389687411165,
           "Q": 0.0006298515161081886,
           "Re_over_Ha": 235.65068075559176,
@@ -2387,7 +2387,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.9601232801414246,
           "Q": 5.721626675725372e-06,
           "Re_over_Ha": 329.92561264720416,
@@ -2397,7 +2397,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 1.3710969771253605,
           "Q": 7.007981256997541e-06,
           "Re_over_Ha": 275.3105025651373,
@@ -2407,7 +2407,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.9669440495750208,
           "Q": 8.61153327048456e-06,
           "Re_over_Ha": 230.48552966707985,
@@ -2519,7 +2519,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.8132001861962471,
           "Q": 4.529901941426068e-06,
           "Re_over_Ha": 396.7453469962985,
@@ -2529,7 +2529,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.5706173408325546,
           "Q": 5.539406417858603e-06,
           "Re_over_Ha": 330.53663714061446,
@@ -2539,7 +2539,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.40366612333402363,
           "Q": 6.788703813048568e-06,
           "Re_over_Ha": 275.97933820030056,
@@ -2549,7 +2549,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.2883783821364189,
           "Q": 8.340837324124802e-06,
           "Re_over_Ha": 231.0110170343547,
@@ -2651,7 +2651,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.3535671919871568,
           "Q": 3.5893721524549834e-06,
           "Re_over_Ha": 467.4841608597009,
@@ -2661,7 +2661,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.2510454236437352,
           "Q": 4.3819348768236474e-06,
           "Re_over_Ha": 388.8191656384561,
@@ -2671,7 +2671,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.18017247608347214,
           "Q": 5.3566521784358915e-06,
           "Re_over_Ha": 323.82362178774554,
@@ -2681,7 +2681,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.13093459541317723,
           "Q": 6.557970759784055e-06,
           "Re_over_Ha": 270.09583528954374,
@@ -2691,7 +2691,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.09651368456138837,
           "Q": 8.042376220900715e-06,
           "Re_over_Ha": 225.66599978018985,
@@ -2783,7 +2783,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.1692610788141902,
           "Q": 2.85080303823811e-06,
           "Re_over_Ha": 536.106681115472,
@@ -2793,7 +2793,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.12360535032246693,
           "Q": 3.478888969182851e-06,
           "Re_over_Ha": 445.71567544141107,
@@ -2803,7 +2803,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.09163311666858234,
           "Q": 4.2511580510794166e-06,
           "Re_over_Ha": 371.07177774286805,
@@ -2813,7 +2813,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.06903222316512948,
           "Q": 5.203559223845509e-06,
           "Re_over_Ha": 309.4457400456623,
@@ -2823,7 +2823,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.05288444493007828,
           "Q": 6.382536771681851e-06,
           "Re_over_Ha": 258.5893684612652,
@@ -2833,7 +2833,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.04121629275376578,
           "Q": 7.848889368711318e-06,
           "Re_over_Ha": 216.65009356721998,
@@ -2915,7 +2915,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.09383663581091789,
           "Q": 2.2737517122239097e-06,
           "Re_over_Ha": 594.0306727408415,
@@ -2925,7 +2925,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.07107373889074878,
           "Q": 2.777710512788654e-06,
           "Re_over_Ha": 494.4087486259587,
@@ -2935,7 +2935,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.05471232983998851,
           "Q": 3.3993078454651043e-06,
           "Re_over_Ha": 412.2142438161809,
@@ -2945,7 +2945,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.04280018686436899,
           "Q": 4.169008979437699e-06,
           "Re_over_Ha": 344.4281680626854,
@@ -2955,7 +2955,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.03401837289036207,
           "Q": 5.126718443296415e-06,
           "Re_over_Ha": 288.56166249238555,
@@ -2965,7 +2965,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.0274718025944286,
           "Q": 6.32551462991642e-06,
           "Re_over_Ha": 242.56512636225756,
@@ -2975,7 +2975,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02254935011357266,
           "Q": 7.837317433747175e-06,
           "Re_over_Ha": 204.75441195374898,
@@ -3047,7 +3047,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.06024325447973517,
           "Q": 1.8206595054198937e-06,
           "Re_over_Ha": 630.5949959974914,
@@ -3057,7 +3057,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.0470155517581403,
           "Q": 2.2284606094692233e-06,
           "Re_over_Ha": 525.8478256263963,
@@ -3067,7 +3067,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.03725581962733904,
           "Q": 2.7336758631151816e-06,
           "Re_over_Ha": 439.47631280941243,
@@ -3077,7 +3077,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02996348086462096,
           "Q": 3.3626673954275683e-06,
           "Re_over_Ha": 368.3033763975809,
@@ -3087,7 +3087,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02445761670419348,
           "Q": 4.150561513524662e-06,
           "Re_over_Ha": 309.7148116396176,
@@ -3097,7 +3097,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.020270707219786153,
           "Q": 5.145066576016633e-06,
           "Re_over_Ha": 261.56489287503047,
@@ -3107,7 +3107,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.01707944874295109,
           "Q": 6.412499385585738e-06,
           "Re_over_Ha": 222.10028906282352,
@@ -3179,7 +3179,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.043190365245621,
           "Q": 1.4626259357703866e-06,
           "Re_over_Ha": 637.7028749750418,
@@ -3189,7 +3189,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.034337051622197225,
           "Q": 1.7947674290233307e-06,
           "Re_over_Ha": 533.1220158128348,
@@ -3199,7 +3199,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.027713848312024395,
           "Q": 2.208569385498201e-06,
           "Re_over_Ha": 446.95399060605456,
@@ -3209,7 +3209,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.022705819987680072,
           "Q": 2.7273683425877948e-06,
           "Re_over_Ha": 376.03554594804984,
@@ -3219,7 +3219,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.01889301861360703,
           "Q": 3.3829628959548202e-06,
           "Re_over_Ha": 317.7720330814795,
@@ -3229,7 +3229,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.01598609752377686,
           "Q": 4.2197309646626115e-06,
           "Re_over_Ha": 270.04524473549844,
@@ -3239,7 +3239,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.013786093651841936,
           "Q": 5.3014333948968414e-06,
           "Re_over_Ha": 231.14175912884582,
@@ -3311,7 +3311,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.03340958330140993,
           "Q": 1.178895471784395e-06,
           "Re_over_Ha": 614.3645116966768,
@@ -3321,7 +3321,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.0268180390158523,
           "Q": 1.451350902550194e-06,
           "Re_over_Ha": 515.2957756593617,
@@ -3331,7 +3331,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.021895465655178598,
           "Q": 1.7932974834369482e-06,
           "Re_over_Ha": 433.78030242684616,
@@ -3341,7 +3341,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.018185816220697253,
           "Q": 2.225993950676931e-06,
           "Re_over_Ha": 366.8384090492565,
@@ -3351,7 +3351,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.015382563121394167,
           "Q": 2.779240354707684e-06,
           "Re_over_Ha": 312.03999478102986,
@@ -3361,7 +3361,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.01327972139400696,
           "Q": 3.4960846405223576e-06,
           "Re_over_Ha": 267.4234126108771,
@@ -3371,7 +3371,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.011743451644735803,
           "Q": 4.441054245383501e-06,
           "Re_over_Ha": 231.43918932470754,
@@ -3381,7 +3381,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010698887078861569,
           "Q": 5.715439797665307e-06,
           "Re_over_Ha": 202.92418453713546,
@@ -3443,7 +3443,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02737314203283974,
           "Q": 9.540380426805266e-07,
           "Re_over_Ha": 567.0786908595975,
@@ -3453,7 +3453,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.022057283944218155,
           "Q": 1.1795925388080437e-06,
           "Re_over_Ha": 477.6865195809627,
@@ -3463,7 +3463,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.018149078403520234,
           "Q": 1.4654451220160155e-06,
           "Re_over_Ha": 404.30942146555833,
@@ -3473,7 +3473,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.015256174838857602,
           "Q": 1.8316597893220833e-06,
           "Re_over_Ha": 344.2884446716092,
@@ -3483,7 +3483,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.013124474700166026,
           "Q": 2.307392009147251e-06,
           "Re_over_Ha": 295.4829001588526,
@@ -3493,7 +3493,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.011594632226478567,
           "Q": 2.9366656242646004e-06,
           "Re_over_Ha": 256.21160766427903,
@@ -3503,7 +3503,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010580198566460773,
           "Q": 3.7892266869433106e-06,
           "Re_over_Ha": 225.23102988269588,
@@ -3513,7 +3513,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010066769426271637,
           "Q": 4.9825781462428745e-06,
           "Re_over_Ha": 201.77394608005795,
@@ -3553,7 +3553,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.022958933283628347,
           "Q": 2.4509816537059052e-05,
           "Re_over_Ha": 213.83774327691788,
@@ -3563,7 +3563,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.0766098192802782,
           "Q": 6.001047448706401e-05,
           "Re_over_Ha": 356.70130317207094,
@@ -3575,7 +3575,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02360924636605261,
           "Q": 7.761332172168958e-07,
           "Re_over_Ha": 506.2558789297033,
@@ -3585,7 +3585,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.019027187131342254,
           "Q": 9.651319673374627e-07,
           "Re_over_Ha": 428.89782374612196,
@@ -3595,7 +3595,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.015748444344533395,
           "Q": 1.207792939488651e-06,
           "Re_over_Ha": 365.6730564146024,
@@ -3605,7 +3605,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.013403946000143623,
           "Q": 1.5239153097649015e-06,
           "Re_over_Ha": 314.33637519983563,
@@ -3615,7 +3615,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.011765660974459463,
           "Q": 1.9436332703498438e-06,
           "Re_over_Ha": 273.1375858096116,
@@ -3625,7 +3625,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010710199120816978,
           "Q": 2.515167342987407e-06,
           "Re_over_Ha": 240.80603162377767,
@@ -3635,7 +3635,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010209039294889876,
           "Q": 3.320816440920713e-06,
           "Re_over_Ha": 216.61008816128376,
@@ -3645,7 +3645,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.010361645934916222,
           "Q": 4.513617712242254e-06,
           "Re_over_Ha": 200.58198044597228,
@@ -3665,7 +3665,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.014991026478401571,
           "Q": 9.829121244121343e-06,
           "Re_over_Ha": 202.74422886094976,
@@ -3675,7 +3675,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.02643090124359229,
           "Q": 1.7525557509178257e-05,
           "Re_over_Ha": 246.28557974637093,
@@ -3685,7 +3685,7 @@
         {
           "feasible": false,
           "limit": "Re/Ha",
-          "W": Infinity,
+          "W": null,
           "pumping_power": 0.11714296520537197,
           "Q": 4.9494224594492775e-05,
           "Re_over_Ha": 473.86540088976744,
@@ -3695,7 +3695,7 @@
         {
           "feasible": false,
           "limit": "temperature",
-          "W": Infinity,
+          "W": null,
           "pumping_power": null,
           "Q": null,
           "Re_over_Ha": null,

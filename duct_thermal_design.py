@@ -86,6 +86,24 @@ GATES = {
 }
 
 
+def strict(node):
+    """``node`` with every non-finite float as None, so the record is strict JSON (an infeasible shape's cost is
+    infinite; its ``feasible`` and ``limit`` already say why)."""
+    if isinstance(node, dict):
+        return {key: strict(value) for key, value in node.items()}
+    if isinstance(node, (list, tuple)):
+        return [strict(value) for value in node]
+    if isinstance(node, (float, np.floating)):
+        return float(node) if np.isfinite(node) else None
+    if isinstance(node, np.ndarray):
+        return strict(node.tolist())
+    return node
+
+
+def _save(path: tuple, value) -> None:
+    checkpoint.set_key(path, strict(value))
+
+
 def _git_sha(repo: Path) -> str:
     try:
         return subprocess.run(
@@ -193,7 +211,7 @@ def stage_reduction() -> None:
                 }  # fmt: skip
             )
             print(f"{framing} b/a {beta}: G1 {g1:.2e}, G2 {g2:.2e}", flush=True)
-    checkpoint.set_key(("reduction",), {"rows": rows})
+    _save(("reduction",), {"rows": rows})
 
 
 def stage_landscape() -> None:
@@ -226,7 +244,7 @@ def stage_landscape() -> None:
             grid.append(row)
         out[framing] = grid
     out["time_s"] = time.perf_counter() - t0
-    checkpoint.set_key(("landscape",), out)
+    _save(("landscape",), out)
 
 
 def _best_start(framing: str) -> tuple[float, float]:
@@ -279,7 +297,7 @@ def stage_optimum(framing: str) -> None:
         box, result["u"], result["w"], CELLS, LAYER, evaluate=thermal_objective
     )
     result["polish"] = _polish(framing, result["w"])
-    checkpoint.set_key(("optimum", framing), result)
+    _save(("optimum", framing), result)
 
 
 def stage_verify(framing: str) -> None:
@@ -288,7 +306,7 @@ def stage_verify(framing: str) -> None:
     fine = _optimum(framing, *FINE, coarse["w"])
     fine["W_rel"] = abs(fine["W"] - coarse["W"]) / abs(fine["W"])
     fine["beta_rel"] = abs(fine["beta"] - coarse["beta"]) / fine["beta"]
-    checkpoint.set_key(("verify", framing), fine)
+    _save(("verify", framing), fine)
 
 
 def stage_open_duct(framing: str) -> None:
@@ -337,7 +355,7 @@ def stage_open_duct(framing: str) -> None:
         "peak_last_K": float(history.temperature_max[-1]), "time_s": time.perf_counter() - t0,
         "developed_fluid_peak_K": design["T_fluid_peak"], "developed_wall_peak_K": design["T_wall_peak"],
     }  # fmt: skip
-    checkpoint.set_key(("open_duct", framing), result)
+    _save(("open_duct", framing), result)
 
 
 def stage_neglected(framing: str) -> None:
@@ -357,7 +375,7 @@ def stage_neglected(framing: str) -> None:
         / box.k
         / (box.sigma * u_mean * box.B**2)
     )
-    checkpoint.set_key(
+    _save(
         ("neglected", framing),
         {
             "Re_over_Ha": design["Re_over_Ha"],
@@ -386,7 +404,7 @@ def stage_stage2_design() -> None:
             "optimum_W": optimum["W"],
             "pumping_over_optimum": design["pumping_power"] / optimum["design"]["pumping_power"],
         }
-    checkpoint.set_key(("stage2_design",), out)
+    _save(("stage2_design",), out)
 
 
 def stage_capacity() -> None:
@@ -408,7 +426,7 @@ def stage_capacity() -> None:
         re_over_ha = box.rho * (Q / np.exp(u)) * hydraulic / box.mu / ha
         rows.append({"beta": float(beta), "Q": Q, "duty": duty, "duty_over_1500": duty / box.duty,
                      "Re_over_Ha": re_over_ha, "laminar": bool(re_over_ha <= box.laminar)})  # fmt: skip
-    checkpoint.set_key(("capacity",), {"power_W": power0, "A": float(np.exp(box.u_hi)), "rows": rows})
+    _save(("capacity",), {"power_W": power0, "A": float(np.exp(box.u_hi)), "rows": rows})
 
 
 STAGES = [
@@ -508,7 +526,7 @@ def finalize() -> None:
         "beta_lo", "beta_hi")}, "flux_W_m2": _box("flux").flux, "cells": [CELLS, LAYER], "fine": list(FINE)}  # fmt: skip
     results = {"meta": meta, "inputs": inputs, "gates_fixed": GATES, **ckpt, "gates": _gates(ckpt)}
     path = OUT_DIR / "results.json"
-    path.write_text(json.dumps(results, indent=2, default=float) + "\n")
+    path.write_text(json.dumps(strict(results), indent=2, default=float, allow_nan=False) + "\n")
     print(json.dumps(results["gates"], indent=2))
 
 

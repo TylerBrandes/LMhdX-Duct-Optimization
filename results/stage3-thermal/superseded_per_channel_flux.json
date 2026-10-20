@@ -116,7 +116,7 @@
       {
         "feasible": false,
         "limit": "temperature",
-        "W": Infinity,
+        "W": null,
         "Q": null,
         "Re_over_Ha": null,
         "film": 61.47252913352387,
@@ -125,7 +125,7 @@
       {
         "feasible": false,
         "limit": "temperature",
-        "W": Infinity,
+        "W": null,
         "Q": null,
         "Re_over_Ha": null,
         "film": 84.9423887928948,
@@ -136,7 +136,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 9.168423889581928e-06,
         "Re_over_Ha": 220.40467921610673,
         "film": 2.777418834301726,
@@ -235,7 +235,7 @@
       {
         "feasible": false,
         "limit": "temperature",
-        "W": Infinity,
+        "W": null,
         "Q": null,
         "Re_over_Ha": null,
         "film": 52.146935595111856,
@@ -244,7 +244,7 @@
       {
         "feasible": false,
         "limit": "temperature",
-        "W": Infinity,
+        "W": null,
         "Q": null,
         "Re_over_Ha": null,
         "film": 69.41724408557788,
@@ -255,7 +255,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 7.235605204804726e-06,
         "Re_over_Ha": 270.7106752281051,
         "film": 2.4469901853827105,
@@ -264,7 +264,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 8.874247795078515e-06,
         "Re_over_Ha": 226.2014602939625,
         "film": 3.0506777614523717,
@@ -363,7 +363,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 0.0006298515161081886,
         "Re_over_Ha": 235.65068075559176,
         "film": 46.307451731738034,
@@ -374,7 +374,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.721626675725372e-06,
         "Re_over_Ha": 329.92561264720416,
         "film": 2.2135435762572215,
@@ -383,7 +383,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 7.007981256997541e-06,
         "Re_over_Ha": 275.3105025651373,
         "film": 2.753980181799146,
@@ -392,7 +392,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 8.61153327048456e-06,
         "Re_over_Ha": 230.48552966707985,
         "film": 3.446905268141743,
@@ -493,7 +493,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.529901941426068e-06,
         "Re_over_Ha": 396.7453469962985,
         "film": 2.0393861427349447,
@@ -502,7 +502,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.539406417858603e-06,
         "Re_over_Ha": 330.53663714061446,
         "film": 2.5021118123876263,
@@ -511,7 +511,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.788703813048568e-06,
         "Re_over_Ha": 275.97933820030056,
         "film": 3.067616321470233,
@@ -520,7 +520,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 8.340837324124802e-06,
         "Re_over_Ha": 231.0110170343547,
         "film": 3.748933639599959,
@@ -612,7 +612,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.5893721524549834e-06,
         "Re_over_Ha": 467.4841608597009,
         "film": 1.9062077090486582,
@@ -621,7 +621,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.3819348768236474e-06,
         "Re_over_Ha": 388.8191656384561,
         "film": 2.287018066756121,
@@ -630,7 +630,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.3566521784358915e-06,
         "Re_over_Ha": 323.82362178774554,
         "film": 2.730787693008104,
@@ -639,7 +639,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.557970759784055e-06,
         "Re_over_Ha": 270.09583528954374,
         "film": 3.24345489964222,
@@ -648,7 +648,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 8.042376220900715e-06,
         "Re_over_Ha": 225.66599978018985,
         "film": 3.832805933642623,
@@ -731,7 +731,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.85080303823811e-06,
         "Re_over_Ha": 536.106681115472,
         "film": 1.8903903347352595,
@@ -740,7 +740,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.478888969182851e-06,
         "Re_over_Ha": 445.71567544141107,
         "film": 2.251384614089001,
@@ -749,7 +749,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.2511580510794166e-06,
         "Re_over_Ha": 371.07177774286805,
         "film": 2.6772085460738846,
@@ -758,7 +758,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.203559223845509e-06,
         "Re_over_Ha": 309.4457400456623,
         "film": 3.181129071971513,
@@ -767,7 +767,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.382536771681851e-06,
         "Re_over_Ha": 258.5893684612652,
         "film": 3.779885144142603,
@@ -776,7 +776,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 7.848889368711318e-06,
         "Re_over_Ha": 216.65009356721998,
         "film": 4.494193907352758,
@@ -850,7 +850,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.2737517122239097e-06,
         "Re_over_Ha": 594.0306727408415,
         "film": 2.0850056143199316,
@@ -859,7 +859,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.777710512788654e-06,
         "Re_over_Ha": 494.4087486259587,
         "film": 2.4982654962532345,
@@ -868,7 +868,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.3993078454651043e-06,
         "Re_over_Ha": 412.2142438161809,
         "film": 2.9938894062061356,
@@ -877,7 +877,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.169008979437699e-06,
         "Re_over_Ha": 344.4281680626854,
         "film": 3.589314183161074,
@@ -886,7 +886,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.126718443296415e-06,
         "Re_over_Ha": 288.56166249238555,
         "film": 4.3055404240477575,
@@ -895,7 +895,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.32551462991642e-06,
         "Re_over_Ha": 242.56512636225756,
         "film": 5.167766778511007,
@@ -904,7 +904,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 7.837317433747175e-06,
         "Re_over_Ha": 204.75441195374898,
         "film": 6.206205762151685,
@@ -969,7 +969,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.8206595054198937e-06,
         "Re_over_Ha": 630.5949959974914,
         "film": 2.4742380533677397,
@@ -978,7 +978,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.2284606094692233e-06,
         "Re_over_Ha": 525.8478256263963,
         "film": 2.9783110278799274,
@@ -987,7 +987,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.7336758631151816e-06,
         "Re_over_Ha": 439.47631280941243,
         "film": 3.5850433701210083,
@@ -996,7 +996,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.3626673954275683e-06,
         "Re_over_Ha": 368.3033763975809,
         "film": 4.3156369660261795,
@@ -1005,7 +1005,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.150561513524662e-06,
         "Re_over_Ha": 309.7148116396176,
         "film": 5.195632865933111,
@@ -1014,7 +1014,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.145066576016633e-06,
         "Re_over_Ha": 261.56489287503047,
         "film": 6.255849533567104,
@@ -1023,7 +1023,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.412499385585738e-06,
         "Re_over_Ha": 222.10028906282352,
         "film": 7.5335394080838585,
@@ -1088,7 +1088,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.4626259357703866e-06,
         "Re_over_Ha": 637.7028749750418,
         "film": 3.02071269417291,
@@ -1097,7 +1097,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.7947674290233307e-06,
         "Re_over_Ha": 533.1220158128348,
         "film": 3.641715548343189,
@@ -1106,7 +1106,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.208569385498201e-06,
         "Re_over_Ha": 446.95399060605456,
         "film": 4.389652590164201,
@@ -1115,7 +1115,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.7273683425877948e-06,
         "Re_over_Ha": 376.03554594804984,
         "film": 5.290852983067396,
@@ -1124,7 +1124,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.3829628959548202e-06,
         "Re_over_Ha": 317.7720330814795,
         "film": 6.377211046669514,
@@ -1133,7 +1133,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.2197309646626115e-06,
         "Re_over_Ha": 270.04524473549844,
         "film": 7.6873588821453,
@@ -1142,7 +1142,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.3014333948968414e-06,
         "Re_over_Ha": 231.14175912884582,
         "film": 9.268078473030924,
@@ -1207,7 +1207,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.178895471784395e-06,
         "Re_over_Ha": 614.3645116966768,
         "film": 3.7212224350340244,
@@ -1216,7 +1216,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.451350902550194e-06,
         "Re_over_Ha": 515.2957756593617,
         "film": 4.489186065444849,
@@ -1225,7 +1225,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.7932974834369482e-06,
         "Re_over_Ha": 433.78030242684616,
         "film": 5.415022264195343,
@@ -1234,7 +1234,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.225993950676931e-06,
         "Re_over_Ha": 366.8384090492565,
         "film": 6.531818508775815,
@@ -1243,7 +1243,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.779240354707684e-06,
         "Re_over_Ha": 312.03999478102986,
         "film": 7.8796660653132,
@@ -1252,7 +1252,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.4960846405223576e-06,
         "Re_over_Ha": 267.4234126108771,
         "film": 9.507107667637817,
@@ -1261,7 +1261,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.441054245383501e-06,
         "Re_over_Ha": 231.43918932470754,
         "film": 11.472903853797558,
@@ -1270,7 +1270,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 5.715439797665307e-06,
         "Re_over_Ha": 202.92418453713546,
         "film": 13.848181496509092,
@@ -1326,7 +1326,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 9.540380426805266e-07,
         "Re_over_Ha": 567.0786908595975,
         "film": 4.602907119020419,
@@ -1335,7 +1335,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.1795925388080437e-06,
         "Re_over_Ha": 477.6865195809627,
         "film": 5.557165894306695,
@@ -1344,7 +1344,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.4654451220160155e-06,
         "Re_over_Ha": 404.30942146555833,
         "film": 6.70872938870109,
@@ -1353,7 +1353,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.8316597893220833e-06,
         "Re_over_Ha": 344.2884446716092,
         "film": 8.099184656643203,
@@ -1362,7 +1362,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.307392009147251e-06,
         "Re_over_Ha": 295.4829001588526,
         "film": 9.778919177910304,
@@ -1371,7 +1371,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.9366656242646004e-06,
         "Re_over_Ha": 256.21160766427903,
         "film": 11.808930348042441,
@@ -1380,7 +1380,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.7892266869433106e-06,
         "Re_over_Ha": 225.23102988269588,
         "film": 14.263048794995308,
@@ -1389,7 +1389,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.9825781462428745e-06,
         "Re_over_Ha": 201.77394608005795,
         "film": 17.230646774218723,
@@ -1425,7 +1425,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.4509816537059052e-05,
         "Re_over_Ha": 213.83774327691788,
         "film": 36.771960178773305,
@@ -1434,7 +1434,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 6.001047448706401e-05,
         "Re_over_Ha": 356.70130317207094,
         "film": 44.46487715562651,
@@ -1445,7 +1445,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 7.761332172168958e-07,
         "Re_over_Ha": 506.2558789297033,
         "film": 5.712155252462245,
@@ -1454,7 +1454,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 9.651319673374627e-07,
         "Re_over_Ha": 428.89782374612196,
         "film": 6.9027704005965616,
@@ -1463,7 +1463,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.207792939488651e-06,
         "Re_over_Ha": 365.6730564146024,
         "film": 8.340635412377503,
@@ -1472,7 +1472,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.5239153097649015e-06,
         "Re_over_Ha": 314.33637519983563,
         "film": 10.077960926053963,
@@ -1481,7 +1481,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.9436332703498438e-06,
         "Re_over_Ha": 273.1375858096116,
         "film": 12.178075982331338,
@@ -1490,7 +1490,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 2.515167342987407e-06,
         "Re_over_Ha": 240.80603162377767,
         "film": 14.717672961823894,
@@ -1499,7 +1499,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 3.320816440920713e-06,
         "Re_over_Ha": 216.61008816128376,
         "film": 17.789583621265756,
@@ -1508,7 +1508,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.513617712242254e-06,
         "Re_over_Ha": 200.58198044597228,
         "film": 21.506182917997982,
@@ -1526,7 +1526,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 9.829121244121343e-06,
         "Re_over_Ha": 202.74422886094976,
         "film": 31.446369804240256,
@@ -1535,7 +1535,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 1.7525557509178257e-05,
         "Re_over_Ha": 246.28557974637093,
         "film": 38.034235268123936,
@@ -1544,7 +1544,7 @@
       {
         "feasible": false,
         "limit": "Re/Ha",
-        "W": Infinity,
+        "W": null,
         "Q": 4.9494224594492775e-05,
         "Re_over_Ha": 473.86540088976744,
         "film": 46.00877854929868,
@@ -1553,7 +1553,7 @@
       {
         "feasible": false,
         "limit": "temperature",
-        "W": Infinity,
+        "W": null,
         "Q": null,
         "Re_over_Ha": null,
         "film": 55.66269930694263,
