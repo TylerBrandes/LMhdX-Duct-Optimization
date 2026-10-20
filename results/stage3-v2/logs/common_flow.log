@@ -1,0 +1,6 @@
+== common_flow
+duty 48/6: W ratio 0.99971, film 5.5809 against 5.5488 K
+duty 72/9: W ratio 0.99977, film 5.5613 against 5.5273 K
+flux 48/6: W ratio 1.25761, film 14.4236 against 15.0752 K
+flux 72/9: W ratio 1.25677, film 14.3730 against 15.0678 K
+== common_flow: 69 s

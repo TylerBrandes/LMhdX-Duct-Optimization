@@ -1,0 +1,23 @@
+panel,framing,quantity,axial_cells,value
+a,duty,wall_face_peak_K,12,624.9193604296049
+a,duty,wall_face_peak_K,24,624.9298442443862
+a,duty,wall_face_peak_K,48,624.9335735424557
+a,duty,wall_face_peak_K extrapolated,,624.9356325593602
+a,duty,hottest_cell_K,12,624.8093282604877
+a,duty,hottest_cell_K,24,624.8198120752697
+a,duty,hottest_cell_K,48,624.8235413733381
+a,duty,hottest_cell_K extrapolated,,624.8256003902408
+b,duty,undelivered_pct,12,0.03191828528528173
+b,duty,undelivered_pct,24,0.03325868382533237
+b,duty,undelivered_pct,48,0.03559511423532058
+a,flux,wall_face_peak_K,12,624.941241275586
+a,flux,wall_face_peak_K,24,624.9483047937165
+a,flux,wall_face_peak_K,48,624.9505389095743
+a,flux,wall_face_peak_K extrapolated,,624.9515724274684
+a,flux,hottest_cell_K,12,624.5331265237212
+a,flux,hottest_cell_K,24,624.5401900418523
+a,flux,hottest_cell_K,48,624.5424241577108
+a,flux,hottest_cell_K extrapolated,,624.5434576756055
+b,flux,undelivered_pct,12,0.014954398821132031
+b,flux,undelivered_pct,24,0.01651331387003685
+b,flux,undelivered_pct,48,0.018798392436703004

@@ -4,6 +4,9 @@
 the run (11ea591). They are unchanged here apart from this line. Where the run departed from them, the
 [corrections and deviations](#corrections-and-deviations) say how and why. No gate was relaxed.
 
+**Follow-up:** [Stage 3 v2](../stage3-v2/README.md) refines the open duct along its axis, measures the
+heated wall's face and compares the shapes at a common feasible flow. This record is unchanged.
+
 Stage 2 took each duct's area from a smallest allowed mean velocity, `V_min = 10 mm/s`, which stood
 in for heat removal. Stage 3 asks the question directly. Which cross-section of the Case P channel
 removes a first-wall heat load within a temperature limit, at the least pumping power? And what does

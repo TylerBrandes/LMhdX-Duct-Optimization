@@ -1,7 +1,13 @@
 # Stage 3 v2: the open duct refined, the wall face, a common feasible flow
 
-**Status: set-up, not yet run.** The specification and gates below are committed before the run and
-will not be relaxed after it.
+**Status: run 2026-10-19, results below.** The specification, method and gates were committed before
+the run (5adcd8a). They are unchanged here apart from this line. Every gate and check passes, and none
+was relaxed. The one change after the run is to how a figure is drawn; [the
+deviations](#deviations) record it.
+
+**Run:** 2026-10-19 · **LMhdX** 1.11.0 (`4e1b6b3`, `src` clean) · **Python** 3.10.21 · **JAX** 0.6.2 ·
+**NumPy** 2.2.6 · **SOLVAX** 0.19.0 · CPU, WSL2 · about 2.5 minutes in all. As in v1, the editable
+install's metadata still reads 1.10.0; the SHA is the code that ran.
 
 Stage 3 ([results/stage3-thermal](../stage3-thermal/README.md), release `stage3-v1`) left three items
 open. This study measures them. Its record stays separate, and v1's is read but never rewritten.
@@ -126,3 +132,147 @@ between 48/6 and 72/9 is reported as no difference.
 
 This README then becomes the write-up. LMhdX's plan row 5.5 and
 [uwplasma/LMhdX#271](https://github.com/uwplasma/LMhdX/pull/271) point here.
+
+## Results
+
+### A. The open duct, refined
+
+The 12-cell runs reproduce v1's G5 record bit for bit (C0: a relative difference of 0). The two
+formulations of the wall flux agree to 5e-14 of the temperature rise at every level (C1).
+
+| Fixed duty | 12 cells | 24 cells | 48 cells | Extrapolated |
+|:--|--:|--:|--:|:--|
+| Hottest wall face [K] | 624.919 | 624.930 | 624.934 | 624.936 ± 0.003 (order 1.49) |
+| Hottest cell [K] | 624.809 | 624.820 | 624.824 | 624.826 ± 0.003 (order 1.49) |
+| Delivered [% of 1500 W] | 99.968 | 99.967 | 99.964 | not monotone: 99.964 ± 0.007 |
+| Outlet mixed cup [K] | 619.436 | 619.436 | 619.435 | not monotone: 619.435 ± 0.003 |
+
+| Fixed flux | 12 cells | 24 cells | 48 cells | Extrapolated |
+|:--|--:|--:|--:|:--|
+| Hottest wall face [K] | 624.941 | 624.948 | 624.951 | 624.952 ± 0.001 (order 1.66) |
+| Hottest cell [K] | 624.533 | 624.540 | 624.542 | 624.543 ± 0.001 (order 1.66) |
+| Delivered [% of 2815 W] | 99.985 | 99.983 | 99.981 | not monotone: 99.981 ± 0.007 |
+| Outlet mixed cup [K] | 609.919 | 609.919 | 609.918 | not monotone: 609.918 ± 0.003 |
+
+![The open duct's peaks and delivered share against the axial mesh](figures/V1_refinement.png)
+
+*V1. (a) The hottest face of any wall (solid) and the hottest cell (dashed) on 12, 24 and 48 axial cells,
+with the extrapolated value and its band (open markers). (b) The share of the load conducted back out of
+the inlet rather than delivered at the outlet.*
+
+**The hottest wall face is within the limit,** at 624.936 ± 0.003 K for the fixed duty and
+624.952 ± 0.001 K for the fixed flux, so G5b passes. It sits 0.064 K and 0.048 K below 625 K, and it
+rises toward the limit as the axial mesh is refined, at an observed order of about 1.5. The hottest
+cell is the heated wall's cell at the outlet. The face is above it by exactly `q'' h / (2k)`, the
+conduction across that cell's half-width: 0.110 K and 0.408 K. v1 graded the cell; the face is the
+binding temperature.
+
+**Delivery stays far above 95 %** (G5a): 99.964 % and 99.981 % on 48 cells. The rest, 0.036 % and
+0.019 % of the load, is conducted back out through the inlet. It grows slightly as the inlet cell
+narrows and resolves the gradient there, so the differences grow rather than shrink, and the
+README's rule then gives no extrapolation. Even so, the band is 1/700 of the margin. The outlet's
+mixed-cup temperature confirms the share: `ρ c_p Q (T_out − T_in)` matches the attributed delivery to
+3e-11.
+
+**The developed screening is conservative here.** V2 draws the heated wall's face along the duct
+against the screening, which takes the profile as developed from the inlet. The open duct's wall
+stays below it everywhere:
+
+- by up to 2.4 K (fixed duty) and 7.7 K (fixed flux) in the first cell, where the thermal boundary
+  layer is thin;
+- by 0.06–0.07 K and 0.05 K over the last part of the duct.
+
+So the screening's binding peak is approached from below at the outlet, and this entrance study
+does not move it.
+
+![The heated wall's face temperature along the duct, against the screening](figures/V2_along.png)
+
+*V2. The heated wall's face temperature along the duct, its largest value across the wall in each axial
+cell, on 12, 24 and 48 cells (light to dark), against the developed screening (dashed). Each cell is
+drawn at its outlet face, where upwind transport places its value. Bottom: the difference, the entrance
+region's margin.*
+
+### B. A common feasible flow
+
+| | Fixed duty, 48/6 | | Fixed flux, 48/6 | |
+|:--|--:|--:|--:|--:|
+| | **thermal optimum** | **Stage 2's design** | **thermal optimum** | **Stage 2's design** |
+| b/a; half-width `a` [mm] | 0.144; 20.4 | 0.150; 20.0 | 0.284; 14.5 | 0.150; 20.0 |
+| Common flow | 1.7306e-5 m³/s per channel | (same) | 1.4043e-3 m²/s per m of wall | (same) |
+| Flow per channel [m³/s] | 1.7306e-5 | 1.7306e-5 | 4.083e-5 | 5.623e-5 |
+| Cost | 2.1971 mW | 2.1964 mW | 0.4605 W/m | 0.5791 W/m |
+| Stage 2 / optimum, 48/6 and 72/9 | | 0.99971, 0.99977 | | 1.2576, 1.2568 |
+| Pressure drop [Pa] | 127.0 | 126.9 | 328 | 412 |
+| Film, wall − bulk [K] | 5.549 | 5.581 | 15.075 | 14.424 |
+| Peak wall [K]; margin [K] | 624.968; 0.032 | 625.000; 0 | 625.000; 0 | 624.348; 0.652 |
+| `Re/Ha` | 17.0 | 17.6 | 70.7 | 57.3 |
+| Load per channel; channels per m of wall | 1500 W; 24.5 | 1500 W; 25.0 | 2815 W; 34.4 | 3877 W; 25.0 |
+
+The common flow is the larger of the two shapes' cheapest feasible flows. For the fixed duty that is
+Stage 2's design's, 0.07 % above the optimum's own. For the fixed flux it is the optimum's, 1.8 %
+above Stage 2's per metre of wall. The closed form matches a dimensional `developed_heat` at the
+common flow to 2.0e-12 of the rise (C2).
+
+**At a fixed duty the two shapes are the same design.**
+- At one flow, Stage 2's slightly squarer shape is 0.03 % cheaper to pump. Its film is 0.03 K
+  thicker, so it uses the whole allowance where the optimum keeps 0.03 K.
+- That 0.03 K lets the optimum run 0.07 % less flow, which is why it wins by 0.1 % at its own
+  cheapest flow (v1).
+- Both differences exceed their change from 48/6 to 72/9 (6e-5 in the ratio, 0.002 K in the film).
+  By the README's rule they are real, but they are too small for any design to notice.
+
+**At a fixed flux the shape matters at equal flow too.** Per metre of first wall and at the same bulk
+temperature rise:
+- Stage 2's design costs 26 % more to pump: 1.2576 on 48/6 and 1.2568 on 72/9.
+- Its wider, flatter channel has a film 0.65 K thinner, and it ends 0.65 K below the limit.
+- The optimum spends that margin on its film and takes the saving in pressure drop: 328 against
+  412 Pa, over 34 rather than 25 channels per metre.
+
+At each shape's own cheapest flow v1 found 21 %. The ratio is larger here because the common flow
+pushes Stage 2's design past its own minimum.
+
+![The two shapes from the common flow to twice it](figures/V3_common_flow.png)
+
+*V3. Each framing's thermal optimum and Stage 2's design from the common flow (markers) to twice it, on
+48/6: the cost (top) and the peak wall temperature (bottom). At the fixed duty the curves overlap.*
+
+## Gates and checks
+
+| Name | Fixed duty | Fixed flux | Verdict |
+|:--|:--|:--|:--|
+| C0, v1 reproduced | 0 | 0 | pass (1e-12) |
+| C1, the two formulations | 4.8e-14 | 3.3e-14 | pass (1e-9) |
+| G5a, delivered, refined | 99.964 %; 99.957 % at the band's low end | 99.981 %; 99.974 % | pass (≥ 95 %) |
+| G5b, hottest wall face, refined | 624.934 K; 624.938 K at the band's top | 624.951 K; 624.953 K | pass (≤ 625 K) |
+| C2, the common flow's closed form | 1.7e-13 | 2.0e-12 | pass (1e-10) |
+
+## What this closes in Stage 3
+
+- **The open duct.** It is now refined, with the wall face measured. On 12, 24 and 48 axial cells
+  the candidates deliver their heat and keep the heated wall's face within 625 K. The extrapolated
+  margin is 0.06 K and 0.05 K, with bands of 0.003 K and 0.001 K. The screening's peak is approached
+  from below.
+- **The common flow.** The comparison is made. At a fixed duty the shape barely matters. At a fixed
+  flux, Stage 2's design costs 26 % more per metre of first wall at equal flow, and 21 % more at each
+  shape's own cheapest flow.
+- **Still open:** v1's fixed-flux stationarity, G3 at −1.8e-6 against 1e-6. It is untouched here
+  and remains a recorded exception.
+
+## Deviations
+
+1. **V2 draws each cell at its outlet face, not its centre.** This was decided after the first draw
+   and changes no number. With upwind transport a cell carries the temperature of its outlet face,
+   exactly so for a linear rise. Drawn at its centre, each coarse curve sat `γ h / 2` above the
+   screening: 1.9, 1.0 and 0.5 K for the duty. That reads as an open duct hotter than the screening,
+   which it is not. The gated peaks are cell and face maxima, so no gate depends on this choice.
+
+## Limits
+
+- **The open duct's cross-section is 48/6 throughout.** G4 measured that mesh's effect on the
+  design. The axial refinement here is at fixed cross-section, with upwind transport and a held flow.
+- **The wall face is the fluid side of the interface.** There is no conjugate wall, so the solid's own
+  peak is not modelled.
+- **The common-flow comparison is at the screening level,** from the developed duct, not from the
+  open duct.
+- **Everything else is v1's:** the illustrative specification, the forced-convection physics
+  (constant properties, insulating walls, no buoyancy), and Case P only.

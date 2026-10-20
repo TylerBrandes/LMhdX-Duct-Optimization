@@ -1,0 +1,5 @@
+== refine_duty
+duty nx 12: delivered 0.999681, hottest cell 624.8093 K, wall face 624.9194 K, C1 1.5e-14, 4 s
+duty nx 24: delivered 0.999667, hottest cell 624.8198 K, wall face 624.9298 K, C1 2.2e-14, 6 s
+duty nx 48: delivered 0.999644, hottest cell 624.8235 K, wall face 624.9336 K, C1 4.8e-14, 15 s
+== refine_duty: 44 s

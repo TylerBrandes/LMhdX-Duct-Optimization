@@ -1,0 +1,5 @@
+== refine_flux
+flux nx 12: delivered 0.999850, hottest cell 624.5331 K, wall face 624.9412 K, C1 1.8e-14, 3 s
+flux nx 24: delivered 0.999835, hottest cell 624.5402 K, wall face 624.9483 K, C1 3.3e-14, 5 s
+flux nx 48: delivered 0.999812, hottest cell 624.5424 K, wall face 624.9505 K, C1 3.1e-14, 13 s
+== refine_flux: 39 s
